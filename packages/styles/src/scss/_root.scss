@@ -1,0 +1,35 @@
+@import "pkg:bootstrap/scss/root";
+
+:root,
+[data-bs-theme="light"] {
+  //[START] BOOTSTRAP CUSTOM TOKEN
+  @include qn-create-css-var($border-radiuses, "--#{$prefix}border-radius-");
+  @include qn-create-css-var($border-widths, "--#{$prefix}border-width-");
+  @include qn-create-css-var($spacers, "--#{$prefix}spacer-");
+  //[END] BOOTSTRAP CUSTOM TOKEN
+
+  //[START] QUANTUM CUSTOM TOKEN
+  --#{$qn-prefix}-sidebar-width: 270px;
+
+  @include qn-create-css-var(map-get($qn-tokens, "primitive", "typography"), "--#{$qn-prefix}primitive-typography-");
+  @include qn-create-css-var(map-get($qn-tokens, "colors"), "--#{$qn-prefix}colors-");
+  @include qn-create-css-var(map-get($qn-tokens, "breakpoints", "desktop", "font", "size"), "--#{$qn-prefix}font-size-");
+  @include qn-create-css-var(map-get($qn-tokens, "breakpoints", "desktop", "font", "line height"), "--#{$qn-prefix}line-height-");
+  @include qn-create-css-var(map-get($qn-tokens, "component"), "--#{$qn-prefix}component-");
+  @include qn-create-css-var(map-get($qn-tokens, "utilities"), "--#{$qn-prefix}utilities-");
+  //[END] QUANTUM CUSTOM TOKEN
+}
+
+@include media-breakpoint-down(lg) {
+  body{
+    @include qn-create-css-var(map-get($qn-tokens, "breakpoints", "tablet", "font", "size"), "--#{$qn-prefix}font-size-");
+    @include qn-create-css-var(map-get($qn-tokens, "breakpoints", "tablet", "font", "line height"), "--#{$qn-prefix}line-height-");
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  body{
+    @include qn-create-css-var(map-get($qn-tokens, "breakpoints", "mobile", "font", "size"), "--#{$qn-prefix}font-size-");
+    @include qn-create-css-var(map-get($qn-tokens, "breakpoints", "mobile", "font", "line height"), "--#{$qn-prefix}line-height-");
+  }
+}

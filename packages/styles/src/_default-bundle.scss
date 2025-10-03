@@ -1,0 +1,6 @@
+@import "pkg:select2/src/scss/core.scss";
+@import "pkg:daterangepicker/daterangepicker";
+
+@import "default";
+
+@include sym-generate-style();

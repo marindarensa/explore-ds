@@ -1,0 +1,32 @@
+{
+  "name": "@explore-ds/symbols",
+  "version": "1.3.0",
+  "description": "Explore Design System Symbol",
+  "style": "font/symbols.css",
+  "scripts": {
+    "icons": "npm-run-all icons-main --aggregate-output --parallel icons-sprite icons-font",
+    "icons-main": "node scripts/build-svgs.mjs",
+    "icons-zip": "cross-env-shell \"rm -rf quantum-symbols-$npm_package_version quantum-symbols-$npm_package_version.zip && cp -r icons/ quantum-symbols-$npm_package_version && cp quantum-symbols.svg quantum-symbols-$npm_package_version && cp -r font/ quantum-symbols-$npm_package_version && zip -qr9 quantum-symbols-$npm_package_version.zip quantum-symbols-$npm_package_version && rm -rf quantum-symbols-$npm_package_version\"",
+    "icons-sprite": "svg-sprite --config svg-sprite.json --log=info \"icons/*.svg\"",
+    "icons-font": "npm-run-all icons-font-*",
+    "icons-font-main": "fantasticon",
+    "icons-font-min": "cleancss -O1 --format breakWith=lf --with-rebase --output font/quantum-symbols.min.css font/quantum-symbols.css",
+    "release": "node scripts/publish.js",
+    "test:check-icons": "node scripts/check-icons.mjs",
+    "test": "npm-run-all --parallel --aggregate-output --continue-on-error test:*"
+  },
+  "devDependencies": {
+    "@twbs/fantasticon": "^3.0.0",
+    "clean-css-cli": "^5.6.3",
+    "cross-env": "^7.0.3",
+    "npm-run-all2": "^6.2.3",
+    "picocolors": "^1.1.0",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "svg-sprite": "^3.0.0-rc2",
+    "svgo": "^3.3.2"
+  },
+  "dependencies": {
+    "@explore-ds/symbols": "file:"
+  }
+}

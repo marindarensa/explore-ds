@@ -1,0 +1,240 @@
+{
+    "brands": {
+        "100": {
+            "description": "",
+            "type": "color",
+            "value": "{primitive.color.blue.light.100}",
+            "extensions": {
+                "org.lukasoppermann.figmaDesignTokens": {
+                    "collection": "Brands",
+                    "scopes": [],
+                    "variableId": "VariableID:40:60",
+                    "exportKey": "variables"
+                }
+            }
+        },
+        "200": {
+            "description": "",
+            "type": "color",
+            "value": "{primitive.color.blue.light.200}",
+            "extensions": {
+                "org.lukasoppermann.figmaDesignTokens": {
+                    "collection": "Brands",
+                    "scopes": [],
+                    "variableId": "VariableID:41:61",
+                    "exportKey": "variables"
+                }
+            }
+        },
+        "300": {
+            "description": "",
+            "type": "color",
+            "value": "{primitive.color.blue.light.300}",
+            "extensions": {
+                "org.lukasoppermann.figmaDesignTokens": {
+                    "collection": "Brands",
+                    "scopes": [],
+                    "variableId": "VariableID:41:62",
+                    "exportKey": "variables"
+                }
+            }
+        },
+        "400": {
+            "description": "",
+            "type": "color",
+            "value": "{primitive.color.blue.light.400}",
+            "extensions": {
+                "org.lukasoppermann.figmaDesignTokens": {
+                    "collection": "Brands",
+                    "scopes": [],
+                    "variableId": "VariableID:41:63",
+                    "exportKey": "variables"
+                }
+            }
+        },
+        "500": {
+            "description": "",
+            "type": "color",
+            "value": "{primitive.color.blue.light.500}",
+            "extensions": {
+                "org.lukasoppermann.figmaDesignTokens": {
+                    "collection": "Brands",
+                    "scopes": [],
+                    "variableId": "VariableID:41:64",
+                    "exportKey": "variables"
+                }
+            }
+        },
+        "600": {
+            "description": "",
+            "type": "color",
+            "value": "{primitive.color.blue.light.600}",
+            "extensions": {
+                "org.lukasoppermann.figmaDesignTokens": {
+                    "collection": "Brands",
+                    "scopes": [],
+                    "variableId": "VariableID:41:65",
+                    "exportKey": "variables"
+                }
+            }
+        },
+        "700": {
+            "description": "",
+            "type": "color",
+            "value": "{primitive.color.blue.light.700}",
+            "extensions": {
+                "org.lukasoppermann.figmaDesignTokens": {
+                    "collection": "Brands",
+                    "scopes": [],
+                    "variableId": "VariableID:41:66",
+                    "exportKey": "variables"
+                }
+            }
+        },
+        "800": {
+            "description": "",
+            "type": "color",
+            "value": "{primitive.color.blue.light.800}",
+            "extensions": {
+                "org.lukasoppermann.figmaDesignTokens": {
+                    "collection": "Brands",
+                    "scopes": [],
+                    "variableId": "VariableID:41:67",
+                    "exportKey": "variables"
+                }
+            }
+        },
+        "900": {
+            "description": "",
+            "type": "color",
+            "value": "{primitive.color.blue.light.900}",
+            "extensions": {
+                "org.lukasoppermann.figmaDesignTokens": {
+                    "collection": "Brands",
+                    "scopes": [],
+                    "variableId": "VariableID:41:68",
+                    "exportKey": "variables"
+                }
+            }
+        },
+        "alpha": {
+            "100": {
+                "description": "",
+                "type": "color",
+                "value": "{primitive.color.blue.alpha.100}",
+                "extensions": {
+                    "org.lukasoppermann.figmaDesignTokens": {
+                        "collection": "Brands",
+                        "scopes": [],
+                        "variableId": "VariableID:328:18",
+                        "exportKey": "variables"
+                    }
+                }
+            },
+            "200": {
+                "description": "",
+                "type": "color",
+                "value": "{primitive.color.blue.alpha.200}",
+                "extensions": {
+                    "org.lukasoppermann.figmaDesignTokens": {
+                        "collection": "Brands",
+                        "scopes": [],
+                        "variableId": "VariableID:328:19",
+                        "exportKey": "variables"
+                    }
+                }
+            },
+            "300": {
+                "description": "",
+                "type": "color",
+                "value": "{primitive.color.blue.alpha.300}",
+                "extensions": {
+                    "org.lukasoppermann.figmaDesignTokens": {
+                        "collection": "Brands",
+                        "scopes": [],
+                        "variableId": "VariableID:328:20",
+                        "exportKey": "variables"
+                    }
+                }
+            },
+            "400": {
+                "description": "",
+                "type": "color",
+                "value": "{primitive.color.blue.alpha.400}",
+                "extensions": {
+                    "org.lukasoppermann.figmaDesignTokens": {
+                        "collection": "Brands",
+                        "scopes": [],
+                        "variableId": "VariableID:328:21",
+                        "exportKey": "variables"
+                    }
+                }
+            },
+            "500": {
+                "description": "",
+                "type": "color",
+                "value": "{primitive.color.blue.alpha.500}",
+                "extensions": {
+                    "org.lukasoppermann.figmaDesignTokens": {
+                        "collection": "Brands",
+                        "scopes": [],
+                        "variableId": "VariableID:328:22",
+                        "exportKey": "variables"
+                    }
+                }
+            },
+            "600": {
+                "description": "",
+                "type": "color",
+                "value": "{primitive.color.blue.alpha.600}",
+                "extensions": {
+                    "org.lukasoppermann.figmaDesignTokens": {
+                        "collection": "Brands",
+                        "scopes": [],
+                        "variableId": "VariableID:328:23",
+                        "exportKey": "variables"
+                    }
+                }
+            },
+            "700": {
+                "description": "",
+                "type": "color",
+                "value": "{primitive.color.blue.alpha.700}",
+                "extensions": {
+                    "org.lukasoppermann.figmaDesignTokens": {
+                        "collection": "Brands",
+                        "scopes": [],
+                        "variableId": "VariableID:328:24",
+                        "exportKey": "variables"
+                    }
+                }
+            },
+            "800": {
+                "description": "",
+                "type": "color",
+                "value": "{primitive.color.blue.alpha.800}",
+                "extensions": {
+                    "org.lukasoppermann.figmaDesignTokens": {
+                        "collection": "Brands",
+                        "scopes": [],
+                        "variableId": "VariableID:328:25",
+                        "exportKey": "variables"
+                    }
+                }
+            },
+            "900": {
+                "description": "",
+                "type": "color",
+                "value": "{primitive.color.blue.alpha.900}",
+                "extensions": {
+                    "org.lukasoppermann.figmaDesignTokens": {
+                        "collection": "Brands",
+                        "scopes": [],
+                        "variableId": "VariableID:328:26",
+                        "exportKey": "variables"
+                    }
+                }
+            }
+        }
+    }
+}

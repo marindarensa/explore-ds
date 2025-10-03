@@ -1,0 +1,8 @@
+@import "pkg:bootstrap/scss/tables";
+
+.table{
+  th{
+    font-weight: 600;
+    color: #{$gray-800};
+  }
+}

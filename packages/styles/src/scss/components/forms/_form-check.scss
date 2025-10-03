@@ -1,0 +1,535 @@
+@use "sass:string";
+@import "pkg:bootstrap/scss/forms/form-check";
+
+// [START] Variables
+$form-check-input-checkbox-size-default: 18px;
+$form-check-input-checkbox-size-lg: 20px;
+$form-check-input-switch-size-default: 28px;
+$form-check-bg-image-default: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='white'/%3E%3C/svg%3E%0A");
+// [END] Variables
+
+//
+// Check/radio
+//
+
+// [START] Maps
+$check-variants: (
+    "dark": ("--#{$qn-prefix}form-check-input-outline-color": #{$qn-colors-semantic-border-light-default},
+        "--#{$qn-prefix}form-check-input-radio-border-color": var(--#{$qn-prefix}colors-semantic-border-light-default),
+        // states: hover, active, and focus
+        "--#{$qn-prefix}form-check-input-checked-focus-bg-color": #{$qn-colors-component-bg-dark-pressed},
+        "--#{$qn-prefix}form-check-input-hover-border-color": #{$qn-colors-component-radio-border-dark},
+        "--#{$qn-prefix}form-check-input-hover-box-shadow-color": #{$qn-primitive-color-base-white},
+        "--#{$qn-prefix}form-check-input-active-border-color": #{$qn-colors-semantic-border-selected-brand},
+        "--#{$qn-prefix}form-check-input-active-box-shadow-color": #{$qn-primitive-color-base-white},
+        // checked
+        "--#{$qn-prefix}form-check-input-checked-bg-color": var(--#{$qn-prefix}colors-component-bg-dark-default),
+        "--#{$qn-prefix}form-check-input-checked-hover-bg-color": var(--#{$qn-prefix}colors-component-bg-dark-hovered),
+        // switch
+        "--#{$qn-prefix}form-switch-form-check-input-bg-color": var(--#{$qn-prefix}colors-component-bg-dark-default),
+        "--#{$qn-prefix}form-switch-form-check-input-hover-bg-color": var(--#{$qn-prefix}colors-component-bg-dark-hovered),
+        "--#{$qn-prefix}form-switch-form-check-input-pressed-bg-color": var(--#{$qn-prefix}colors-component-bg-dark-pressed),
+        "--#{$qn-prefix}form-switch-form-check-input-border-color": rgba(255, 255, 255, 0.20),
+        "--#{$qn-prefix}form-switch-form-check-input-outline-color": #{$qn-colors-component-button-effect-dark-default-2},
+        "--#{$qn-prefix}form-switch-form-check-input-box-shadow": #{0 0.563px 1.125px 0 $qn-colors-component-button-effect-dark-default-1 inset, 0 0 0 0.338px $qn-colors-component-button-effect-dark-default-2 inset},
+        //  switch states: hover, active, and focus
+        "--#{$qn-prefix}form-switch-form-check-input-focus-box-shadow": #{0 0 0 0.563px $qn-colors-component-button-effect-dark-default-1 inset, 0 -1.125px 0 0 $qn-colors-component-button-effect-dark-default-2 inset, 0 0.563px 1.125px 0 $qn-colors-component-button-effect-dark-default-2})
+);
+$check-symbol-variants: (
+    "dark": #{$qn-colors-semantic-symbol-dark-default}
+);
+$check-sizes: (
+    "lg": ("--#{$qn-prefix}form-check-input-bg-image-size": 16px 16px,
+        "--#{$qn-prefix}form-check-input-width": var(--#{$qn-prefix}form-check-input-checkbox-size, #{$form-check-input-checkbox-size-lg}),
+        "--#{$qn-prefix}form-check-input-height": var(--#{$qn-prefix}form-check-input-checkbox-size, #{$form-check-input-checkbox-size-lg}),
+        "--#{$qn-prefix}form-check-input-radius": #{$qn-utilities-radius-xs},
+    )
+);
+$check-text-sizes: (
+    "lg": ("--#{$qn-prefix}form-check-input-checkbox-size": #{$form-check-input-checkbox-size-lg},
+        "--#{$qn-prefix}form-check-font-size": var(--#{$qn-prefix}font-size-label-md),
+    )
+);
+$check-text-description-sizes: (
+    "lg": ("font-size": var(--#{$qn-prefix}font-size-paragraph-md),
+        "line-height": var(--#{$qn-prefix}line-height-paragraph-md),
+    )
+);
+// [END] Maps
+
+// [START] Function & Mixins
+@function form-check-bg-image($color) {
+    $color: str-slice(#{$color}, 2);
+    @return url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='white'/%3E%3Cpath d='M6.49727 11.2308C6.38168 11.2308 6.26607 11.1853 6.17561 11.0994L3.66269 8.57392C3.48679 8.39713 3.48679 8.10922 3.66269 7.93244C3.83859 7.75565 4.12508 7.75565 4.30098 7.93244L6.49224 10.1347L11.699 4.90182C11.8749 4.72503 12.1614 4.72503 12.3373 4.90182C12.5132 5.0786 12.5132 5.36651 12.3373 5.5433L6.80887 11.0994C6.71841 11.1904 6.6028 11.2308 6.48721 11.2308H6.49727Z' fill='%23#{$color}'/%3E%3C/svg%3E%0A");
+}
+
+@mixin switch-animation($color, $state: null) {
+    $color: str-slice(#{$color}, 2);
+    $animation-name: switch;
+
+    @if $state !=null {
+        $animation-name: switch-#{$state};
+    }
+
+    @keyframes #{$animation-name} {
+        0% {
+            --bs-form-switch-bg: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='white'/%3E%3C/svg%3E%0A");
+            background-position: calc(0% - 1px) center;
+        }
+
+        12.5% {
+            --bs-form-switch-bg: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='white'/%3E%3Cg opacity='0.125'%3E%3Cpath d='M11.2306 9.50267C11.2306 9.61826 11.1851 9.73386 11.0993 9.82433L8.57374 12.3372C8.39695 12.5132 8.10904 12.5132 7.93225 12.3372C7.75547 12.1613 7.75547 11.8749 7.93225 11.699L10.1345 9.5077L4.90163 4.30094C4.72485 4.12503 4.72485 3.83855 4.90163 3.66264C5.07842 3.48674 5.36633 3.48674 5.54311 3.66264L11.0993 9.19107C11.1902 9.28153 11.2306 9.39714 11.2306 9.51273V9.50267Z' fill='%23#{$color}'/%3E%3C/g%3E%3C/svg%3E%0A");
+            background-position: calc(12.5% - 1px) center;
+        }
+
+        25% {
+            --bs-form-switch-bg: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='white'/%3E%3Cg opacity='0.25'%3E%3Cpath d='M10.4096 10.6247C10.3654 10.7315 10.2791 10.8209 10.1652 10.8716L6.87025 12.2267C6.63961 12.3216 6.37361 12.2114 6.2776 11.9813C6.18159 11.7511 6.29122 11.4864 6.52186 11.3916L9.39504 10.2099L6.55304 3.39691C6.45702 3.16674 6.56665 2.90207 6.7973 2.8072C7.02794 2.71234 7.29394 2.82252 7.38995 3.05269L10.4075 10.2865C10.4569 10.4049 10.45 10.5272 10.4058 10.634L10.4096 10.6247Z' fill='%23#{$color}'/%3E%3C/g%3E%3C/svg%3E%0A");
+            background-position: calc(25% - 1px) center;
+        }
+
+        37.5% {
+            --bs-form-switch-bg: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='white'/%3E%3Cg opacity='0.375'%3E%3Cpath d='M9.85124 11.0444C9.78702 11.1405 9.685 11.2114 9.56334 11.2389L6.06735 11.9252C5.82263 11.9733 5.58324 11.8133 5.53398 11.5688C5.48471 11.3244 5.64387 11.0862 5.88859 11.0381L8.9371 10.4397L7.47884 3.20316C7.42958 2.95868 7.58874 2.72048 7.83346 2.67244C8.07818 2.6244 8.31757 2.78435 8.36683 3.02883L9.91516 10.7124C9.9405 10.8381 9.90987 10.9567 9.84565 11.0528L9.85124 11.0444Z' fill='%23#{$color}'/%3E%3C/g%3E%3C/svg%3E%0A");
+            background-position: calc(37.5% - 1px) center;
+        }
+
+        50% {
+            --bs-form-switch-bg: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='white'/%3E%3Cg opacity='0.5'%3E%3Cpath d='M9.22181 11.3471C9.14007 11.4288 9.02619 11.4784 8.9015 11.4817L5.33879 11.4728C5.0894 11.4721 4.88582 11.2686 4.88519 11.0192C4.88457 10.7698 5.08714 10.5672 5.33653 10.5678L8.44321 10.5756L8.42475 3.19367C8.42413 2.94428 8.6267 2.74171 8.87609 2.74233C9.12548 2.74295 9.32906 2.94653 9.32969 3.19592L9.34928 11.0339C9.3496 11.1622 9.29643 11.2725 9.2147 11.3542L9.22181 11.3471Z' fill='%23#{$color}'/%3E%3C/g%3E%3C/svg%3E%0A");
+            background-position: calc(50% - 1px) center;
+        }
+
+        62.5% {
+            --bs-form-switch-bg: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='white'/%3E%3Cg opacity='0.625'%3E%3Cpath d='M8.54566 11.5212C8.44955 11.5854 8.32817 11.6118 8.20525 11.5907L4.71273 10.8869C4.46825 10.8376 4.3083 10.5982 4.35634 10.3535C4.40438 10.1088 4.64258 9.94963 4.88706 9.9989L7.93253 10.6126L9.35457 3.3689C9.40261 3.12418 9.64081 2.96502 9.88529 3.01429C10.1298 3.06355 10.2897 3.30294 10.2417 3.54766L8.73178 11.2389C8.70708 11.3647 8.63341 11.4625 8.53729 11.5268L8.54566 11.5212Z' fill='%23#{$color}'/%3E%3C/g%3E%3C/svg%3E%0A");
+            background-position: calc(62.5% - 1px) center;
+        }
+
+        75% {
+            --bs-form-switch-bg: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='white'/%3E%3Cg opacity='0.75'%3E%3Cpath d='M7.84819 11.5599C7.74139 11.6041 7.61719 11.6064 7.50075 11.5617L4.21264 10.1901C3.98248 10.094 3.8723 9.82805 3.96716 9.5974C4.06202 9.36676 4.3267 9.25713 4.55686 9.35314L7.42409 10.5492L10.232 3.72211C10.3268 3.49147 10.5915 3.38183 10.8217 3.47785C11.0518 3.57386 11.162 3.83985 11.0672 4.0705L8.08581 11.3193C8.03702 11.438 7.94569 11.5195 7.83889 11.5638L7.84819 11.5599Z' fill='%23#{$color}'/%3E%3C/g%3E%3C/svg%3E%0A");
+            background-position: calc(75% - 1px) center;
+        }
+
+        87.5% {
+            --bs-form-switch-bg: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='white'/%3E%3Cg opacity='0.875'%3E%3Cpath d='M7.15642 11.4618C7.04305 11.4844 6.9208 11.4623 6.81532 11.3958L3.85798 9.40903C3.65097 9.26996 3.5948 8.98759 3.73283 8.77988C3.87087 8.57217 4.15185 8.51628 4.35886 8.65536L6.93765 10.3878L11.0235 4.23968C11.1615 4.03198 11.4425 3.97609 11.6495 4.11516C11.8565 4.25423 11.9127 4.53661 11.7747 4.74431L7.43641 11.2722C7.36542 11.3791 7.25993 11.4412 7.14655 11.4638L7.15642 11.4618Z' fill='%23#{$color}'/%3E%3C/g%3E%3C/svg%3E%0A");
+            background-position: calc(87.5% - 1px) center;
+        }
+
+        100% {
+            --bs-form-switch-bg: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='white'/%3E%3Cpath d='M6.49727 11.2308C6.38168 11.2308 6.26607 11.1853 6.17561 11.0994L3.66269 8.57392C3.48679 8.39713 3.48679 8.10922 3.66269 7.93244C3.83859 7.75565 4.12508 7.75565 4.30098 7.93244L6.49224 10.1347L11.699 4.90182C11.8749 4.72503 12.1614 4.72503 12.3373 4.90182C12.5132 5.0786 12.5132 5.36651 12.3373 5.5433L6.80887 11.0994C6.71841 11.1904 6.6028 11.2308 6.48721 11.2308H6.49727Z' fill='%23#{$color}'/%3E%3C/svg%3E%0A");
+            background-position: calc(100% - 1px) center;
+        }
+    }
+}
+
+@mixin form-check-disabled($checked: false) {
+    @if $checked ==true {
+        --#{$prefix}form-switch-bg: #{form-check-bg-image($qn-colors-semantic-symbol-disabled-default)};
+    }
+
+    @if $checked ==false {
+        --#{$prefix}form-switch-bg: #{$form-check-bg-image-default};
+    }
+
+    --#{$qn-prefix}form-check-input-bg-color: var(--#{$qn-prefix}colors-semantic-disabled-default);
+    --#{$qn-prefix}form-check-input-border-width: 0.563px;
+    --#{$qn-prefix}form-check-input-border-color: var(--#{$qn-prefix}colors-semantic-border-disabled-default);
+    box-shadow: none;
+}
+
+// [END] Function & Mixins
+
+// [START] Keyframes
+@keyframes check {
+    0% {
+        --#{$prefix}form-check-bg-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_90_28' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='2' y='3' width='2' height='8'%3E%3Crect width='2' height='8' transform='translate(2 3)' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_90_28)'%3E%3Cpath d='M5.49727 10.2306C5.38168 10.2306 5.26607 10.1851 5.17561 10.0993L2.66269 7.57374C2.48679 7.39695 2.48679 7.10904 2.66269 6.93225C2.83859 6.75547 3.12508 6.75547 3.30098 6.93225L5.49224 9.13451L10.699 3.90163C10.8749 3.72485 11.1614 3.72485 11.3373 3.90163C11.5132 4.07842 11.5132 4.36633 11.3373 4.54311L5.80887 10.0993C5.71841 10.1902 5.6028 10.2306 5.48721 10.2306H5.49727Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+    }
+
+    25% {
+        --#{$prefix}form-check-bg-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_90_28' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='2' y='3' width='3' height='8'%3E%3Crect width='3' height='8' transform='translate(2 3)' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_90_28)'%3E%3Cpath d='M5.49727 10.2306C5.38168 10.2306 5.26607 10.1851 5.17561 10.0993L2.66269 7.57374C2.48679 7.39695 2.48679 7.10904 2.66269 6.93225C2.83859 6.75547 3.12508 6.75547 3.30098 6.93225L5.49224 9.13451L10.699 3.90163C10.8749 3.72485 11.1614 3.72485 11.3373 3.90163C11.5132 4.07842 11.5132 4.36633 11.3373 4.54311L5.80887 10.0993C5.71841 10.1902 5.6028 10.2306 5.48721 10.2306H5.49727Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+    }
+
+    50% {
+        --#{$prefix}form-check-bg-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_90_28' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='2' y='3' width='4' height='8'%3E%3Crect width='4' height='8' transform='translate(2 3)' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_90_28)'%3E%3Cpath d='M5.49727 10.2306C5.38168 10.2306 5.26607 10.1851 5.17561 10.0993L2.66269 7.57374C2.48679 7.39695 2.48679 7.10904 2.66269 6.93225C2.83859 6.75547 3.12508 6.75547 3.30098 6.93225L5.49224 9.13451L10.699 3.90163C10.8749 3.72485 11.1614 3.72485 11.3373 3.90163C11.5132 4.07842 11.5132 4.36633 11.3373 4.54311L5.80887 10.0993C5.71841 10.1902 5.6028 10.2306 5.48721 10.2306H5.49727Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+    }
+
+    58.33% {
+        --#{$prefix}form-check-bg-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_90_28' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='2' y='3' width='5' height='8'%3E%3Crect width='5' height='8' transform='translate(2 3)' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_90_28)'%3E%3Cpath d='M5.49727 10.2306C5.38168 10.2306 5.26607 10.1851 5.17561 10.0993L2.66269 7.57374C2.48679 7.39695 2.48679 7.10904 2.66269 6.93225C2.83859 6.75547 3.12508 6.75547 3.30098 6.93225L5.49224 9.13451L10.699 3.90163C10.8749 3.72485 11.1614 3.72485 11.3373 3.90163C11.5132 4.07842 11.5132 4.36633 11.3373 4.54311L5.80887 10.0993C5.71841 10.1902 5.6028 10.2306 5.48721 10.2306H5.49727Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+    }
+
+    66.67% {
+        --#{$prefix}form-check-bg-image: url("data:image/svg+xml,%0A%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_90_28' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='2' y='3' width='6' height='8'%3E%3Crect width='6' height='8' transform='translate(2 3)' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_90_28)'%3E%3Cpath d='M5.49727 10.2306C5.38168 10.2306 5.26607 10.1851 5.17561 10.0993L2.66269 7.57374C2.48679 7.39695 2.48679 7.10904 2.66269 6.93225C2.83859 6.75547 3.12508 6.75547 3.30098 6.93225L5.49224 9.13451L10.699 3.90163C10.8749 3.72485 11.1614 3.72485 11.3373 3.90163C11.5132 4.07842 11.5132 4.36633 11.3373 4.54311L5.80887 10.0993C5.71841 10.1902 5.6028 10.2306 5.48721 10.2306H5.49727Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+    }
+
+    75% {
+        --#{$prefix}form-check-bg-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_90_28' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='2' y='3' width='7' height='8'%3E%3Crect width='7' height='8' transform='translate(2 3)' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_90_28)'%3E%3Cpath d='M5.49727 10.2306C5.38168 10.2306 5.26607 10.1851 5.17561 10.0993L2.66269 7.57374C2.48679 7.39695 2.48679 7.10904 2.66269 6.93225C2.83859 6.75547 3.12508 6.75547 3.30098 6.93225L5.49224 9.13451L10.699 3.90163C10.8749 3.72485 11.1614 3.72485 11.3373 3.90163C11.5132 4.07842 11.5132 4.36633 11.3373 4.54311L5.80887 10.0993C5.71841 10.1902 5.6028 10.2306 5.48721 10.2306H5.49727Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+    }
+
+    83.33% {
+        --#{$prefix}form-check-bg-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_90_28' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='2' y='3' width='8' height='8'%3E%3Crect width='8' height='8' transform='translate(2 3)' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_90_28)'%3E%3Cpath d='M5.49727 10.2306C5.38168 10.2306 5.26607 10.1851 5.17561 10.0993L2.66269 7.57374C2.48679 7.39695 2.48679 7.10904 2.66269 6.93225C2.83859 6.75547 3.12508 6.75547 3.30098 6.93225L5.49224 9.13451L10.699 3.90163C10.8749 3.72485 11.1614 3.72485 11.3373 3.90163C11.5132 4.07842 11.5132 4.36633 11.3373 4.54311L5.80887 10.0993C5.71841 10.1902 5.6028 10.2306 5.48721 10.2306H5.49727Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+    }
+
+    91.67% {
+        --#{$prefix}form-check-bg-image: url("data:image/svg+xml,%0A%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_90_28' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='2' y='3' width='9' height='8'%3E%3Crect width='9' height='8' transform='translate(2 3)' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_90_28)'%3E%3Cpath d='M5.49727 10.2306C5.38168 10.2306 5.26607 10.1851 5.17561 10.0993L2.66269 7.57374C2.48679 7.39695 2.48679 7.10904 2.66269 6.93225C2.83859 6.75547 3.12508 6.75547 3.30098 6.93225L5.49224 9.13451L10.699 3.90163C10.8749 3.72485 11.1614 3.72485 11.3373 3.90163C11.5132 4.07842 11.5132 4.36633 11.3373 4.54311L5.80887 10.0993C5.71841 10.1902 5.6028 10.2306 5.48721 10.2306H5.49727Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+    }
+
+    100% {
+        --#{$prefix}form-check-bg-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_90_28' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='2' y='3' width='10' height='8'%3E%3Crect width='10' height='8' transform='translate(2 3)' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_90_28)'%3E%3Cpath d='M5.49727 10.2306C5.38168 10.2306 5.26607 10.1851 5.17561 10.0993L2.66269 7.57374C2.48679 7.39695 2.48679 7.10904 2.66269 6.93225C2.83859 6.75547 3.12508 6.75547 3.30098 6.93225L5.49224 9.13451L10.699 3.90163C10.8749 3.72485 11.1614 3.72485 11.3373 3.90163C11.5132 4.07842 11.5132 4.36633 11.3373 4.54311L5.80887 10.0993C5.71841 10.1902 5.6028 10.2306 5.48721 10.2306H5.49727Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+    }
+}
+
+@include switch-animation($qn-colors-semantic-symbol-brand-default, null);
+
+@each $state, $value in $check-symbol-variants {
+    @include switch-animation($value, $state);
+}
+
+// [END] Keyframes
+
+.form-check {
+    // scss-docs-start form-check-css-vars
+    --#{$qn-prefix}form-check-gap: #{$qn-utilities-spacing-md};
+    --#{$qn-prefix}form-check-input-checkbox-size: #{$form-check-input-checkbox-size-default};
+    --#{$qn-prefix}form-check-padding-left: calc(var(--#{$qn-prefix}form-check-input-checkbox-size) + var(--#{$qn-prefix}form-check-gap));
+    --#{$qn-prefix}form-check-font-color: var(--#{$qn-prefix}colors-semantic-text-dark-default);
+    --#{$qn-prefix}form-check-font-size: var(--#{$qn-prefix}font-size-label-sm);
+    // scss-docs-end form-check-css-vars
+
+    min-height: auto;
+    padding-left: var(--#{$qn-prefix}form-check-padding-left);
+    margin-bottom: #{$qn-utilities-spacing-2xl};
+
+    color: var(--#{$qn-prefix}form-check-font-color);
+    font-size: var(--#{$qn-prefix}form-check-font-size);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--#{$qn-prefix}form-check-input-checkbox-size);
+    letter-spacing: #{$qn-primitive-typography-letter-spacing-xs};
+
+    .form-check-input {
+        margin-left: calc(var(--#{$qn-prefix}form-check-padding-left) * -1);
+    }
+}
+
+// scss-docs-start check-text-modifiers
+@each $state, $properties in $check-text-sizes {
+    .form-check-#{$state} {
+        @each $property, $value in $properties {
+            #{$property}: $value;
+        }
+
+        .form-description {
+            @each $property, $value in map-get($check-text-description-sizes, $state) {
+                #{$property}: $value;
+            }
+        }
+    }
+}
+
+// scss-docs-end check-text-modifiers
+
+.form-check-reverse {
+    padding-right: var(--#{$qn-prefix}form-check-padding-left);
+
+    .form-check-input {
+        margin-right: calc(var(--#{$qn-prefix}form-check-padding-left) * -1);
+    }
+}
+
+.form-check-input {
+    // scss-docs-start form-check-input-css-vars
+    --#{$prefix}border-width: 1px;
+    --#{$qn-prefix}form-check-input-bg-color: #{$qn-colors-semantic-fill-light-default};
+    --#{$qn-prefix}form-check-input-border-width: #{$qn-utilities-border-sm};
+    --#{$qn-prefix}form-check-input-border-color: #{$qn-colors-semantic-border-light-default};
+    --#{$qn-prefix}form-check-input-outline-color: #{$qn-colors-component-button-effect-brand-default-1};
+    --#{$qn-prefix}form-check-input-height: var(--#{$qn-prefix}form-check-input-checkbox-size, #{$form-check-input-checkbox-size-default});
+    --#{$qn-prefix}form-check-input-width: var(--#{$qn-prefix}form-check-input-height, #{$form-check-input-checkbox-size-default});
+    --#{$qn-prefix}form-check-input-radius: #{$qn-utilities-radius-xs};
+    --#{$qn-prefix}form-check-input-bg-image-size: 14px 14px;
+    --#{$qn-prefix}form-check-input-radio-border-width: 4px;
+    --#{$qn-prefix}form-check-input-radio-border-color: var(--#{$qn-prefix}colors-component-bg-brand-default);
+    //  states: hover, active, and focus
+    --#{$qn-prefix}form-check-input-hover-bg-color: var(--#{$qn-prefix}colors-semantic-fill-light-secondary);
+    --#{$qn-prefix}form-check-input-hover-border-color: #{$qn-colors-semantic-border-selected-brand};
+    --#{$qn-prefix}form-check-input-hover-box-shadow-color: #{$qn-primitive-color-base-white};
+    --#{$qn-prefix}form-check-input-active-border-color: #{$qn-colors-semantic-border-selected-brand};
+    --#{$qn-prefix}form-check-input-active-box-shadow-color: #{$qn-primitive-color-base-white};
+    --#{$qn-prefix}form-check-input-focus-outline-width: 3px;
+    //  checked
+    --#{$qn-prefix}form-check-checked-anim-duration: 150ms;
+    --#{$qn-prefix}form-check-input-checked-bg-color: var(--#{$qn-prefix}colors-component-bg-brand-default);
+    --#{$qn-prefix}form-check-input-checked-hover-bg-color: var(--#{$qn-prefix}colors-component-bg-brand-hovered);
+    --#{$qn-prefix}form-check-input-checked-focus-bg-color: var(--#{$qn-prefix}colors-component-bg-brand-pressed);
+    //  disabled
+    --#{$qn-prefix}form-check-input-disabled-border-color: var(--#{$qn-prefix}colors-semantic-border-disabled-default);
+    --#{$qn-prefix}form-check-input-disabled-bg-color: var(--#{$qn-prefix}colors-semantic-fill-light-secondary);
+    // switch
+    --#{$qn-prefix}form-switch-form-check-input-bg-color: var(--#{$qn-prefix}colors-component-bg-brand-default);
+    --#{$qn-prefix}form-switch-form-check-input-hover-bg-color: var(--#{$qn-prefix}colors-component-bg-brand-hovered);
+    --#{$qn-prefix}form-switch-form-check-input-pressed-bg-color: var(--#{$qn-prefix}colors-component-bg-brand-pressed);
+    --#{$qn-prefix}form-switch-form-check-input-border-width: 0.563px;
+    --#{$qn-prefix}form-switch-form-check-input-border-color: rgba(255, 255, 255, 0.20);
+    --#{$qn-prefix}form-switch-form-check-input-outline-color: #{$qn-colors-component-button-effect-brand-default-2};
+    --#{$qn-prefix}form-switch-form-check-input-box-shadow: 0 0.563px 1.125px 0 #{$qn-colors-component-button-effect-brand-default-2},
+    0 0 0 0.338px #{$qn-colors-component-button-effect-brand-default-1};
+    --#{$qn-prefix}form-switch-form-check-checked-anim-duration: 150ms;
+    //  switch states: hover, active, and focus
+    --#{$qn-prefix}form-switch-form-check-input-focus-box-shadow: 0 0.563px 1.125px 0 #{$qn-colors-component-button-effect-brand-default-2},
+    0 0 0 0.338px #{$qn-colors-component-button-effect-brand-default-1};
+    // scss-docs-end form-check-input-css-vars
+
+    width: var(--#{$qn-prefix}form-check-input-width);
+    height: var(--#{$qn-prefix}form-check-input-height);
+    margin: 0;
+    background-color: var(--#{$qn-prefix}form-check-input-bg-color);
+    background-size: var(--#{$qn-prefix}form-check-input-bg-image-size);
+    border-color: var(--#{$qn-prefix}form-check-input-border-color);
+
+    cursor: pointer;
+    transition: border-width 150ms ease-in 100ms,
+    background-color 250ms ease-in-out,
+    background-position var(--#{$qn-prefix}form-check-checked-anim-duration) ease-in-out;
+
+    &[type="checkbox"] {
+        --#{$qn-prefix}form-check-input-radio-border-width: 1px;
+        --#{$qn-prefix}form-check-input-radio-hover-border-width: 1px;
+        --#{$qn-prefix}form-check-input-radio-active-border-width: 1px;
+        border-radius: var(--#{$qn-prefix}form-check-input-radius);
+    }
+
+    &[type="radio"] {
+        --#{$prefix}form-check-bg-image: unset !important;
+        border-radius: var(--#{$qn-prefix}form-check-input-height);
+        transition: outline 150ms ease-in 100ms, background-color 250ms ease-in-out, box-shadow 340ms ease-in-out;
+    }
+
+    &:hover {
+        background-color: var(--#{$qn-prefix}form-check-input-hover-bg-color);
+        border: 1px solid var(--#{$qn-prefix}form-check-input-hover-border-color);
+        // outline: 1px solid var(--#{$qn-prefix}form-check-input-hover-box-shadow-color);
+        // outline-offset: -1.5px;
+        box-shadow: none;
+
+    }
+
+    &:focus,
+    &:active {
+        border: 1px solid var(--#{$qn-prefix}form-check-input-active-border-color);
+        outline: 1px solid var(--#{$qn-prefix}form-check-input-active-box-shadow-color);
+        outline-offset: -1.5px;
+        // box-shadow: 0 0 0 var(--#{$qn-prefix}form-check-input-border-width) var(--#{$qn-prefix}form-check-input-active-border-color) inset, 0px 0px 0px 2px var(--#{$qn-prefix}form-check-input-active-box-shadow-color) inset;
+        // &:not([disabled],.disabled) {
+        //     outline: var(--#{$qn-prefix}form-check-input-outline-color) solid var(--#{$qn-prefix}form-check-input-focus-outline-width);
+        // }
+    }
+
+    &:checked,
+    &:indeterminate {
+        &[type="checkbox"] {
+            --#{$prefix}form-check-bg-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_90_28' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='2' y='3' width='10' height='8'%3E%3Crect width='10' height='8' transform='translate(2 3)' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_90_28)'%3E%3Cpath d='M5.49727 10.2306C5.38168 10.2306 5.26607 10.1851 5.17561 10.0993L2.66269 7.57374C2.48679 7.39695 2.48679 7.10904 2.66269 6.93225C2.83859 6.75547 3.12508 6.75547 3.30098 6.93225L5.49224 9.13451L10.699 3.90163C10.8749 3.72485 11.1614 3.72485 11.3373 3.90163C11.5132 4.07842 11.5132 4.36633 11.3373 4.54311L5.80887 10.0993C5.71841 10.1902 5.6028 10.2306 5.48721 10.2306H5.49727Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+            --#{$qn-prefix}form-check-input-bg-color: var(--#{$qn-prefix}form-check-input-checked-bg-color);
+            background-color: var(--#{$qn-prefix}form-check-input-bg-color);
+            box-shadow: var(--#{$qn-prefix}form-check-input-bg-color);
+            animation: check var(--#{$qn-prefix}form-check-checked-anim-duration) cubic-bezier(.48, .26, .75, .18);
+            border: none;
+
+            &:hover {
+                background-color: var(--#{$qn-prefix}form-check-input-checked-hover-bg-color);
+                // border: 1px solid var(--#{$qn-prefix}form-check-input-hover-border-color);
+                // outline: 1px solid var(--#{$qn-prefix}form-check-input-hover-box-shadow-color);
+                // outline-offset: -1.5px;
+            }
+
+            &:active,
+            &:focus {
+                background-color: var(--#{$qn-prefix}form-check-input-checked-focus-bg-color);
+                border: 1px solid var(--#{$qn-prefix}form-check-input-active-border-color);
+                outline: 1px solid var(--#{$qn-prefix}form-check-input-active-box-shadow-color);
+                outline-offset: -1.5px;
+                box-shadow: none;
+            }
+
+            &:disabled {
+                --#{$prefix}form-check-bg-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M5.49727 10.2308C5.38168 10.2308 5.26607 10.1853 5.17561 10.0994L2.66269 7.57392C2.48679 7.39713 2.48679 7.10922 2.66269 6.93244C2.83859 6.75565 3.12508 6.75565 3.30098 6.93244L5.49224 9.13469L10.699 3.90182C10.8749 3.72503 11.1614 3.72503 11.3373 3.90182C11.5132 4.0786 11.5132 4.36651 11.3373 4.5433L5.80887 10.0994C5.71841 10.1904 5.6028 10.2308 5.48721 10.2308H5.49727Z' fill='%2386878A'/%3E%3C/svg%3E");
+                background-color: var(--#{$qn-prefix}form-check-input-disabled-bg-color);
+                opacity: 1;
+                border-color: var(--#{$qn-prefix}form-check-input-disabled-border-color);
+            }
+        }
+
+        &[type="radio"] {
+            --#{$prefix}form-check-bg-image: unset !important;
+            background-color: var(--#{$qn-prefix}form-check-input-bg-color);
+            transition: outline 150ms ease-in 100ms, background-color 250ms ease-in-out, box-shadow 340ms ease-in-out;
+
+            &:checked {
+                --#{$qn-prefix}form-check-input-bg-color: var(--#{$qn-prefix}form-check-input-checked-bg-color);
+                background-color: var(--#{$qn-prefix}form-check-input-bg-color);
+                border: 1px solid var(--#{$qn-prefix}form-check-input-hover-border-color);
+                outline: 4px solid var(--#{$qn-prefix}form-check-input-active-box-shadow-color);
+                outline-offset: -5px;
+                // box-shadow: 0 0 0 var(--#{$qn-prefix}form-check-input-border-width) var(--#{$qn-prefix}form-check-input-border-color) inset,
+                // 0 0 1px 1px rgba(255, 255, 255, 0.20) inset,
+                // 0 1.2px 0 0 rgba(255, 255, 255, 0.30) inset,
+                // 0 0 0 var(--#{$qn-prefix}form-check-input-radio-border-width) var(--#{$qn-prefix}form-check-input-radio-border-color) inset,
+                // 0 0 0 var(--#{$qn-prefix}form-check-input-radio-inner-border-width, 0) var(--#{$qn-prefix}form-check-input-border-color) inset;
+
+                &:active,
+                &:focus {
+                    background-color: var(--#{$qn-prefix}form-check-input-checked-focus-bg-color);
+                    border: 2px solid var(--#{$qn-prefix}form-check-input-active-border-color);
+                }
+
+                &:disabled {
+                    --#{$qn-prefix}form-check-input-border-color: var(--#{$qn-prefix}colors-semantic-border-disabled-default);
+                    --#{$qn-prefix}form-check-input-border-width: 1px;
+                    --#{$qn-prefix}form-check-input-disabled-bg-color: #FFF;
+                    --#{$qn-prefix}form-check-input-radio-border-color: var(--#{$qn-prefix}colors-component-form-bg-disabled-default);
+                    --#{$qn-prefix}form-check-input-radio-inner-border-width: calc(var(--#{$qn-prefix}form-check-input-radio-border-width) + 1px);
+                }
+            }
+        }
+    }
+
+    &[type="checkbox"]:indeterminate {
+        animation: unset;
+        --#{$prefix}form-check-bg-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M10.3398 7.48461H3.66013C3.42157 7.48461 3.23071 7.26923 3.23071 7C3.23071 6.73077 3.42157 6.51538 3.66013 6.51538H10.3398C10.5783 6.51538 10.7692 6.73077 10.7692 7C10.7692 7.26923 10.5783 7.48461 10.3398 7.48461Z' fill='white'/%3E%3C/svg%3E");
+
+        &:disabled {
+            --#{$prefix}form-check-bg-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M10.3398 7.48461H3.66013C3.42157 7.48461 3.23071 7.26923 3.23071 7C3.23071 6.73077 3.42157 6.51538 3.66013 6.51538H10.3398C10.5783 6.51538 10.7692 6.73077 10.7692 7C10.7692 7.26923 10.5783 7.48461 10.3398 7.48461Z' fill='%2386878A'/%3E%3C/svg%3E");
+        }
+    }
+
+    &[disabled],
+    &:disabled {
+        --#{$qn-prefix}form-check-input-bg-color: var(--#{$qn-prefix}form-check-input-disabled-bg-color);
+        opacity: 1;
+        box-shadow: 0 0 0 var(--#{$qn-prefix}form-check-input-border-width) var(--#{$qn-prefix}form-check-input-disabled-border-color) inset;
+
+        ~.form-check-label {
+            opacity: 1;
+            color: var(--#{$qn-prefix}colors-semantic-text-disabled-default);
+        }
+
+        ~* .form-description,
+        ~.form-description {
+            color: var(--#{$qn-prefix}colors-semantic-text-disabled-default);
+        }
+    }
+}
+
+// scss-docs-start check-modifiers
+@each $state, $properties in $check-variants {
+    .form-check-input-#{$state} {
+        @each $property, $value in $properties {
+            #{$property}: $value;
+        }
+    }
+}
+
+@each $state, $properties in $check-sizes {
+    .form-check-input-#{$state} {
+        @each $property, $value in $properties {
+            #{$property}: $value;
+        }
+    }
+}
+
+// scss-docs-end check-modifiers
+
+//
+// Switch
+//
+
+.form-switch {
+    --#{$qn-prefix}form-check-input-width: #{$form-check-input-switch-size-default};
+    --#{$qn-prefix}form-check-padding-left: calc(var(--#{$qn-prefix}form-check-input-width) + var(--#{$qn-prefix}form-check-gap));
+
+    .form-check-input {
+        // scss-docs-start form-switch-css-vars
+        --#{$prefix}form-switch-bg: #{$form-check-bg-image-default};
+        --#{$qn-prefix}form-check-input-bg-color: var(--#{$qn-prefix}colors-semantic-fill-light-tertiary); // FIXME: diskusi lebih lanjut dengan designer: butuh ditokenkan
+        --#{$qn-prefix}form-check-input-width: #{$form-check-input-switch-size-default};
+        --#{$qn-prefix}form-check-input-radius: var(--#{$qn-prefix}form-check-input-height);
+        --#{$qn-prefix}form-check-input-outline-color: rgba(16, 24, 40, 0.08);
+        --#{$qn-prefix}form-check-input-bg-image-size: 16px 16px;
+        --#{$qn-prefix}form-check-input-hover-bg-color: var(--#{$qn-prefix}colors-semantic-fill-light-tertiary); // FIXME: diskusi lebih lanjut dengan designer: butuh ditokenkan
+        --#{$qn-prefix}form-check-input-focus-bg-color: var(--#{$qn-prefix}colors-semantic-fill-light-tertiary); // FIXME: diskusi lebih lanjut dengan designer: butuh ditokenkan
+        // scss-docs-end form-switch-css-vars
+
+        background-position: 1px center;
+        box-shadow: none;
+        border: var(--#{$qn-prefix}form-check-input-border-width) solid var(--#{$qn-prefix}form-check-input-border-color);
+
+        &:hover {
+            --#{$qn-prefix}form-check-input-bg-color: var(--#{$qn-prefix}form-check-input-hover-bg-color);
+        }
+
+        &:focus,
+        &:active {
+            --#{$prefix}form-switch-bg: #{$form-check-bg-image-default};
+            --#{$qn-prefix}form-check-input-bg-color: var(--#{$qn-prefix}form-check-input-focus-bg-color);
+            box-shadow: 0 0 0 0.563px rgba(16, 24, 40, 0.04) inset, 0 -1.125px 0 0 rgba(16, 24, 40, 0.05) inset, 0 0.563px 1.125px 0 rgba(16, 24, 40, 0.05);
+        }
+
+        &:checked {
+            --#{$prefix}form-switch-bg: #{form-check-bg-image($qn-colors-semantic-symbol-brand-default)};
+            --#{$qn-prefix}form-check-input-bg-color: var(--#{$qn-prefix}form-switch-form-check-input-bg-color);
+            --#{$qn-prefix}form-check-input-border-width: var(--#{$qn-prefix}form-switch-form-check-input-border-width);
+            --#{$qn-prefix}form-check-input-border-color: var(--#{$qn-prefix}form-switch-form-check-input-border-color);
+            --#{$qn-prefix}form-check-input-outline-color: var(--#{$qn-prefix}form-switch-form-check-input-outline-color);
+            --#{$qn-prefix}form-check-input-box-shadow: var(--#{$qn-prefix}form-switch-form-check-input-outline-color);
+            --#{$qn-prefix}form-check-checked-anim-duration: var(--#{$qn-prefix}form-switch-form-check-checked-anim-duration);
+
+            animation: switch var(--#{$qn-prefix}form-check-checked-anim-duration) ease-in;
+            background-position: calc(100% - 1px) center;
+            // outline-offset = var(--#{$qn-prefix}form-check-input-border-width)
+
+            &:not([disabled], .disabled) {
+                box-shadow: var(--#{$qn-prefix}form-check-input-box-shadow);
+            }
+
+            &:hover {
+                --#{$qn-prefix}form-check-input-bg-color: var(--#{$qn-prefix}form-switch-form-check-input-hover-bg-color);
+            }
+
+            &:focus,
+            &:active {
+                --#{$qn-prefix}form-check-input-bg-color: var(--#{$qn-prefix}form-switch-form-check-input-pressed-bg-color);
+                box-shadow: var(--#{$qn-prefix}form-switch-form-check-input-focus-box-shadow);
+            }
+
+            @each $state, $value in $check-symbol-variants {
+                &.form-check-input-#{$state}:not([disabled], .disabled) {
+                    --#{$prefix}form-switch-bg: #{form-check-bg-image($value)};
+                    animation-name: switch-#{$state};
+                }
+            }
+
+            &[disabled],
+            .disabled {
+                @include form-check-disabled(true);
+            }
+        }
+
+        &[disabled],
+        .disabled {
+            @include form-check-disabled();
+        }
+    }
+
+    &.form-switch-single {
+        --#{$qn-prefix}form-check-padding-left: var(--#{$qn-prefix}form-check-input-width);
+    }
+
+    &.form-check-reverse {
+        padding-right: var(--#{$qn-prefix}form-check-padding-left);
+
+        .form-check-input {
+            margin-right: calc(var(--#{$qn-prefix}form-check-padding-left) * -1);
+        }
+    }
+}
+
+.form-check-inline {
+    display: inline-block;
+    margin-right: #{$qn-utilities-spacing-2xl};
+}

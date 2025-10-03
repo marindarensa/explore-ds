@@ -1,0 +1,12 @@
+/* stylelint-disable declaration-no-important */
+.qn-btn-nav-mobile {
+  &:hover,
+  &:active,
+  &:focus,
+  &.active {
+    color: var(--bs-link-color) !important;
+  }
+  &.active {
+    font-weight: 600;
+  }
+}

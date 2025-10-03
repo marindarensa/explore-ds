@@ -1,0 +1,20 @@
+.qn-identity {
+  width: fit-content;
+  min-width: 3.25rem;
+  max-width: 10rem;
+  height: 3.25rem;
+  min-height: 3.25rem;
+  max-height: 3.25rem;
+  padding: .5rem;
+}
+
+.qn-avatar-name {
+  max-width: 4rem;
+}
+
+.qn-header-pattern {
+  background-image: url("#{$qn-assets-path}patterns/sevima-header.webp");
+  background-repeat: repeat-x;
+  background-position: bottom 0 left 0;
+  background-size: auto 100%;
+}

@@ -1,0 +1,38 @@
+/* stylelint-disable scss/dollar-variable-default */
+@import "pkg:bootstrap/scss/utilities";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "border-width": (
+      property: border-width,
+      class: border,
+      values: $border-widths
+    ),
+    "rounded": (
+      property: border-radius,
+      class: rounded,
+      values: $border-radiuses
+    ),
+    "rounded-top": (
+      property: border-top-left-radius border-top-right-radius,
+      class: rounded-top,
+      values: $border-radiuses
+    ),
+    "rounded-end": (
+      property: border-top-right-radius border-bottom-right-radius,
+      class: rounded-end,
+      values: $border-radiuses
+    ),
+    "rounded-bottom": (
+      property: border-bottom-right-radius border-bottom-left-radius,
+      class: rounded-bottom,
+      values: $border-radiuses
+    ),
+    "rounded-start": (
+      property: border-bottom-left-radius border-top-left-radius,
+      class: rounded-start,
+      values: $border-radiuses
+    )
+  )
+);

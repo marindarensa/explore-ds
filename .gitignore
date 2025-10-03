@@ -1,0 +1,65 @@
+# pages/index.html
+index.html
+*.map
+*.diff
+*.err
+*.log
+*.orig
+*.rej
+*.swo
+*.swp
+*.vi
+*.zip
+*~
+
+**/node_modules/**
+
+temp
+.npmrc*
+.nx
+.env
+.tmp
+npm-debug.log*
+.DS_Store
+.idea
+lerna-debug.log
+yarn-error.log
+package-lock.json
+.nx
+._*
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+*.sublime-project
+*.sublime-workspace
+nbproject
+Thumbs.db
+
+# dist
+# !dist/assets
+!quantum-tokens/dist
+
+.storybook/storybook-static
+storybook-static
+build-storybook.log
+# Custom diff tool
+.diff-output
+
+.eslintcache
+.stylelintcache
+
+# yarn 3
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+!.yarn/versions
+
+*.dev.*
+zim

@@ -1,0 +1,35 @@
+@import "pkg:bootstrap/scss/button-group";
+
+.btn-group {
+
+    >.btn:not(:last-child):not(.dropdown-toggle),
+    >.btn.dropdown-toggle-split:first-child,
+    >.btn-group:not(:last-child)>.btn {
+        border-right: none;
+
+        &:hover,
+        &:active,
+        &:focus {
+            border-right: 1px solid var(--#{$qn-prefix}colors-semantic-border-dark-default);
+        }
+    }
+
+    &-xs>.btn {
+        @extend .btn-xs;
+    }
+
+    &-md>.btn {
+        @extend .btn-md;
+    }
+
+    &-xl>.btn {
+        @extend .btn-xl;
+    }
+
+    > :not(.btn-check:first-child)+.btn.dropdown-toggle,
+    >.btn-group:not(:first-child) {
+        margin-left: -2px;
+        position: relative;
+    }
+
+}

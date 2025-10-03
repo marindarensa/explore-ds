@@ -1,0 +1,65 @@
+// [START] Maps
+$link-sizes: (
+    "xs": (
+        "--#{$qn-prefix}link-font": var(--#{$qn-prefix}font-size-label-xs),
+        "--#{$qn-prefix}link-line-height": var(--#{$qn-prefix}line-height-label-xs)
+    ),
+    "sm": (
+        "--#{$qn-prefix}link-font": var(--#{$qn-prefix}font-size-label-sm),
+        "--#{$qn-prefix}link-line-height": var(--#{$qn-prefix}line-height-label-sm)
+    ),
+    "md": (
+        "--#{$qn-prefix}link-font": var(--#{$qn-prefix}font-size-label-sm),
+        "--#{$qn-prefix}link-line-height": var(--#{$qn-prefix}line-height-label-sm)
+    ),
+    "lg": (
+        "--#{$qn-prefix}link-font": var(--#{$qn-prefix}font-size-label-sm),
+        "--#{$qn-prefix}link-line-height": var(--#{$qn-prefix}line-height-label-sm)
+    ),
+    "xl": (
+        "--#{$qn-prefix}link-font": var(--#{$qn-prefix}font-size-label-md),
+        "--#{$qn-prefix}link-line-height": var(--#{$qn-prefix}line-height-label-md)
+    )
+);
+// [END] Maps
+
+
+.link {
+    color: var(--#{$qn-prefix}colors-semantic-link-default);
+    font-size: var(--#{$qn-prefix}link-font);
+    line-height: var(--#{$qn-prefix}link-line-height);
+    gap: #{$qn-utilities-spacing-xxs};
+    display: inline-flex;
+    text-decoration: underline;
+
+    &:hover {
+        color: var(--#{$qn-prefix}colors-semantic-link-hovered);
+    }
+
+    &:active,
+    &:focus{
+        color: var(--#{$qn-prefix}colors-semantic-link-pressed);
+    }
+
+    //variant inverse
+    &-inverse{
+        color: var(--#{$qn-prefix}colors-semantic-link-light-default);
+        &:hover {
+            color: var(--#{$qn-prefix}colors-semantic-link-light-hovered);
+        }
+
+        &:active,
+        &:focus{
+            color: var(--#{$qn-prefix}colors-semantic-link-light-pressed);
+        }
+    }
+
+    @each $state, $properties in $link-sizes {
+        &-#{$state} {
+            @each $property, $value in $properties {
+                #{$property}: $value;
+            }
+        }
+    }
+
+}

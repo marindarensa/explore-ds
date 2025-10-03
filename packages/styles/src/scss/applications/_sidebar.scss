@@ -1,0 +1,49 @@
+.qn-sidebar {
+  background-image: url("#{$qn-assets-path}patterns/sevima-sidebar.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% auto;
+  &:not(.show) {
+    z-index: 1;
+  }
+  &.offcanvas {
+    width: var(--qn-sidebar-width, 270px);
+    @include media-breakpoint-up(xl) {
+      top: var(--qn-header-height, 0);
+      height: calc(100vh - var(--qn-header-height, 0));
+      visibility: visible;
+      transform: none;
+
+      & ~ .qn-main {
+        margin-left: var(--qn-sidebar-width, 270px) !important;
+      }
+    }
+    &.show {
+      & + .qn-sidebar-toggle {
+        top: var(--qn-header-height, 0);
+        left: calc(var(--qn-sidebar-width, 270px) + var(--qn-sidebar-toggle-offset, 0px));
+        z-index: calc(1 + var(--qn-sidebar-toggle-z-index, 0) + var(--bs-offcanvas-zindex, 1045));
+
+        & > * > * {
+          &:not(.show) {
+            display: block;
+          }
+          &.show {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.qn-sidebar-toggle {
+  top: var(--qn-header-height, 0);
+  left: 0;
+  z-index: calc(1 + var(--qn-sidebar-toggle-z-index, 0));
+  transition: all .35ms linear;
+
+  & > * > *:not(.show) {
+    display: none;
+  }
+}

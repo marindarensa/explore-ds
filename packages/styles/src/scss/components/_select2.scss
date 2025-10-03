@@ -1,0 +1,636 @@
+.select2-container--quantum {
+    // scss-docs-start select2-css-vars
+    --#{$qn-prefix}form-select-height: 36px;
+    --#{$qn-prefix}form-select-border-width: #{$qn-utilities-border-sm};
+    --#{$qn-prefix}form-select-border-color: var(--#{$qn-prefix}colors-semantic-border-light-default);
+    --#{$qn-prefix}form-select-focus-border-color: #{$qn-colors-component-form-effect-brand-3};
+    --#{$qn-prefix}form-select-focus-outline-color: #{$qn-colors-component-form-effect-brand-4};
+    --#{$qn-prefix}form-select-disabled-border-color: var(--#{$qn-prefix}colors-semantic-border-light-default);
+    // scss-docs-end select2-css-vars
+
+    .select2-search--dropdown {
+        position: relative;
+        padding: 0;
+        margin: 0;
+
+        .select2-search__field {
+            padding: #{$qn-utilities-spacing-md} #{$qn-utilities-spacing-lg} #{$qn-utilities-spacing-md} #{$qn-utilities-spacing-6xl};
+            border-radius: #{$qn-utilities-radius-sm};
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom: #{$qn-utilities-border-xs} solid var(--#{$qn-prefix}colors-semantic-border-light-default);
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            outline: none;
+        }
+
+        &::before {
+            @include sym-config-pseudo($sym-var-search-default);
+            color: var(--#{$qn-prefix}colors-semantic-symbol-dark-default);
+            display: block;
+            position: absolute;
+            left: 10px;
+            top: 25%;
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    .select2-search--inline {
+        display: inline;
+
+        .select2-search__field {
+            background: transparent;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            -webkit-appearance: textfield;
+            margin-top: #{$qn-utilities-spacing-md};
+            margin-left: #{$qn-utilities-spacing-md};
+        }
+    }
+
+    .select2-results>.select2-results__options {
+        max-height: 200px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        padding: #{$qn-utilities-spacing-xxs} #{$qn-utilities-spacing-xs};
+
+        .description {
+            font-size: var(--#{$qn-prefix}font-size-label-xs);
+            color: #667085;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            aspect-ratio: 1/1;
+            border-radius: 3px;
+
+            &-warning {
+                background: var(--#{$qn-prefix}colors-semantic-symbol-warning-default);
+            }
+
+            &-attention {
+                background: var(--#{$qn-prefix}colors-semantic-symbol-attention-default);
+            }
+
+            &-brand {
+                background: var(--#{$qn-prefix}colors-semantic-symbol-brand-default);
+            }
+
+            &-success {
+                background: var(--#{$qn-prefix}colors-semantic-symbol-success-default);
+            }
+
+            &-info {
+                background: var(--#{$qn-prefix}colors-semantic-symbol-info-default);
+            }
+
+            &-danger {
+                background: var(--#{$qn-prefix}colors-semantic-symbol-danger-default);
+            }
+        }
+    }
+
+    .select2-results__option {
+        padding: #{$qn-utilities-spacing-sm} #{$qn-utilities-spacing-md};
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        img {
+            max-width: 32px;
+            max-height: 32px;
+        }
+
+        .sym {
+            width: 18px;
+            height: 18px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 3px;
+
+            &-warning {
+                background: var(--#{$qn-prefix}colors-semantic-symbol-warning-default);
+            }
+
+            &-attention {
+                background: var(--#{$qn-prefix}colors-semantic-symbol-attention-default);
+            }
+
+            &-brand {
+                background: var(--#{$qn-prefix}colors-semantic-symbol-brand-default);
+            }
+
+            &-success {
+                background: var(--#{$qn-prefix}colors-semantic-symbol-success-default);
+            }
+
+            &-info {
+                background: var(--#{$qn-prefix}colors-semantic-symbol-info-default);
+            }
+
+            &-danger {
+                background: var(--#{$qn-prefix}colors-semantic-symbol-danger-default);
+            }
+        }
+
+        .select2-results__option {
+            padding: #{$qn-utilities-spacing-sm} #{$qn-utilities-spacing-md};
+
+            .select2-results__group {
+                padding-left: 0;
+            }
+
+            .select2-results__option {
+                margin-left: -1em;
+                padding-left: 2em;
+
+                .select2-results__option {
+                    margin-left: -2em;
+                    padding-left: 3em;
+
+                    .select2-results__option {
+                        margin-left: -3em;
+                        padding-left: 4em;
+
+                        .select2-results__option {
+                            margin-left: -4em;
+                            padding-left: 5em;
+
+                            .select2-results__option {
+                                margin-left: -5em;
+                                padding-left: 6em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .select2-results__option--group {
+        padding: 0;
+        border-top: 0.6px solid var(--#{$qn-prefix}colors-semantic-border-light-secondary);
+        flex-direction: column;
+        align-items: normal;
+
+        &:first-child {
+            border-top: none;
+        }
+    }
+
+
+
+    .select2-results__option--disabled {
+        color: #999;
+    }
+
+    .select2-results__option--selected {
+        background-color: var(--#{$qn-prefix}colors-component-bg-light-default);
+        color: var(--#{$qn-prefix}colors-semantic-text-dark-default);
+        border-radius: #{$qn-utilities-radius-sm};
+        position: relative;
+
+        &:before {
+            @include sym-config-pseudo($sym-var-check);
+            color: var(--#{$qn-prefix}colors-semantic-symbol-brand-default);
+            display: block;
+            position: absolute;
+            right: 10px;
+            width: 16px;
+            height: 16px;
+        }
+
+        img {
+            max-width: 32px;
+            max-height: 32px;
+        }
+
+        .sym {
+            width: 18px;
+            height: 18px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 3px;
+
+            &-warning {
+                background: var(--#{$qn-prefix}colors-semantic-symbol-warning-default);
+            }
+
+            &-attention {
+                background: var(--#{$qn-prefix}colors-semantic-symbol-attention-default);
+            }
+
+            &-brand {
+                background: var(--#{$qn-prefix}colors-semantic-symbol-brand-default);
+            }
+
+            &-success {
+                background: var(--#{$qn-prefix}colors-semantic-symbol-success-default);
+            }
+
+            &-info {
+                background: var(--#{$qn-prefix}colors-semantic-symbol-info-default);
+            }
+
+            &-danger {
+                background: var(--#{$qn-prefix}colors-semantic-symbol-danger-default);
+            }
+        }
+    }
+
+    .select2-results__option--highlighted.select2-results__option--selectable {
+        background-color: var(--#{$qn-prefix}colors-component-bg-light-hovered);
+        color: var(--#{$qn-prefix}colors-semantic-text-dark-default);
+        border-radius: #{$qn-utilities-radius-sm};
+        display: flex;
+        align-items: center;
+        gap: #{$qn-utilities-spacing-md};
+    }
+
+    .select2-results__group {
+        cursor: default;
+        display: block;
+        padding: 3px 8px;
+        font-size: 11px;
+        color: #667085;
+        font-weight: 400;
+    }
+
+    //[START] Single
+    .select2-selection--single {
+        display: flex;
+        align-items: center;
+        background-color: var(--#{$qn-prefix}colors-component-bg-light-default);
+        border: 0;
+        border-radius: #{$qn-utilities-radius-sm};
+        height: var(--#{$qn-prefix}form-select-height);
+        outline: 0 solid var(--#{$qn-prefix}form-select-focus-outline-color);
+        box-shadow: 0 0 0 var(--#{$qn-prefix}form-select-border-width) var(--#{$qn-prefix}form-select-border-color);
+        transition: outline 150ms ease-in 100ms, border-width 150ms ease-in 0ms, background-color 250ms ease-in-out, box-shadow 100ms ease-in-out; // relate to ./form-check.scss
+
+        .select2-selection__rendered {
+            color: var(--#{$qn-prefix}colors-semantic-text-dark-default);
+            line-height: var(--#{$qn-prefix}line-height-label-sm);
+            padding: #{$qn-utilities-spacing-none} 2.625rem #{$qn-utilities-spacing-none} #{$qn-utilities-spacing-lg};
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            img {
+                max-width: 32px;
+                max-height: 32px;
+            }
+
+            .sym {
+                width: 18px;
+                height: 18px;
+            }
+
+            .dot {
+                width: 8px;
+                height: 8px;
+                border-radius: 3px;
+
+                &-warning {
+                    background: var(--#{$qn-prefix}colors-semantic-symbol-warning-default);
+                }
+
+                &-attention {
+                    background: var(--#{$qn-prefix}colors-semantic-symbol-attention-default);
+                }
+
+                &-brand {
+                    background: var(--#{$qn-prefix}colors-semantic-symbol-brand-default);
+                }
+
+                &-success {
+                    background: var(--#{$qn-prefix}colors-semantic-symbol-success-default);
+                }
+
+                &-info {
+                    background: var(--#{$qn-prefix}colors-semantic-symbol-info-default);
+                }
+
+                &-danger {
+                    background: var(--#{$qn-prefix}colors-semantic-symbol-danger-default);
+                }
+            }
+        }
+
+        .select2-selection__clear {
+            cursor: pointer;
+            float: right;
+            font-weight: bold;
+            height: 26px;
+            margin-right: 20px;
+            padding-right: 0px;
+        }
+
+        .select2-selection__placeholder {
+            color: var(--#{$qn-prefix}colors-semantic-text-dark-tertiary);
+        }
+
+        .select2-selection__arrow {
+            height: 26px;
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            width: 20px;
+
+            b {
+                display: block;
+                width: 1.125rem;
+                height: 1.125rem;
+                left: 50%;
+                margin-left: -10px;
+                margin-top: -4px;
+                position: absolute;
+                top: 50%;
+
+                &::before {
+                    @include sym-config-pseudo($sym-var-chevron-down);
+                    width: 1.125rem;
+                    height: 1.125rem;
+                }
+            }
+
+        }
+    }
+
+    &[dir="rtl"] {
+        .select2-selection--single {
+            .select2-selection__clear {
+                float: left;
+            }
+
+            .select2-selection__arrow {
+                left: 1px;
+                right: auto;
+            }
+        }
+    }
+
+    &.select2-container--disabled {
+        .select2-selection--single {
+            border-color: var(--#{$qn-prefix}colors-semantic-border-disabled-default);
+            background-color: var(--#{$qn-prefix}colors-component-form-bg-disabled-default);
+            box-shadow: 0px 1px 2px 0px var(--#{$qn-prefix}colors-semantic-effect-extra-small-1, rgba(10, 13, 20, 0.03));
+            color: var(--#{$qn-prefix}colors-semantic-text-disabled-default);
+            cursor: default;
+
+            .select2-selection__clear {
+                display: none;
+            }
+        }
+    }
+
+    &.select2-container--open {
+        .select2-dropdown {
+            padding: #{$qn-utilities-spacing-none};
+            margin-top: #{$qn-utilities-spacing-md};
+            border-radius: #{$qn-utilities-radius-sm};
+            border: none;
+            border-top: 1px;
+            box-shadow: 0px 4px 8px -4px var(--#{$qn-prefix}colors-semantic-effect-medium-1, rgba(10, 13, 20, 0.12)),
+            0px 4px 12px -2px var(--#{$qn-prefix}colors-semantic-effect-medium-2, rgba(10, 13, 20, 0.16)),
+            0px 0px 0px 1px var(--#{$qn-prefix}colors-semantic-effect-medium-3, rgba(10, 13, 20, 0.03)) inset;
+        }
+
+        .select2-selection--single {
+            box-shadow: 0px 0px 0.8px 1px rgba(5, 134, 255, 0.16) inset, 0px 1px 2px 0px rgba(5, 134, 255, 0.16), 0px 0px 0px 1px rgba(0, 62, 219, 0.84), 0px 0px 0px 3px rgba(5, 134, 255, 0.16);
+            display: flex;
+            align-items: center;
+
+            .select2-selection__arrow {
+                b {
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+
+                    &::before {
+                        @include sym-config-pseudo($sym-var-chevron-up);
+                    }
+                }
+            }
+        }
+    }
+
+    //[END] Single
+
+    //[START] Multiple
+    .select2-selection--multiple {
+        background-color: var(--#{$qn-prefix}colors-component-bg-light-default);
+        border: 0;
+        border-radius: #{$qn-utilities-radius-sm};
+        min-height: var(--#{$qn-prefix}form-select-height);
+        outline: 0 solid var(--#{$qn-prefix}form-select-focus-outline-color);
+        box-shadow: 0 0 0 var(--#{$qn-prefix}form-select-border-width) var(--#{$qn-prefix}form-select-border-color);
+        cursor: text;
+        position: relative;
+
+        .select2-selection__rendered:has(*)~.select2-search--inline .select2-search__field {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        &.select2-selection--clearable {
+            padding-right: 25px;
+        }
+
+        .select2-selection__clear {
+            cursor: pointer;
+            font-weight: bold;
+            height: 20px;
+            margin-right: 10px;
+            margin-top: 5px;
+
+            position: absolute;
+            right: 0;
+
+            // This padding is to account for the bottom border for the first
+            // selection row and the top border of the second selection row.
+            // Without it, selections on the first row may be offset incorrectly
+            // and appear in their own row instead of going to the second row
+            padding: 1px;
+        }
+
+        .select2-selection__choice {
+            font-size: var(--#{$qn-prefix}font-size-label-sm);
+            line-height: var(--#{$qn-prefix}line-height-label-sm);
+            background-color: var(--#{$qn-prefix}colors-semantic-fill-light-secondary);
+            border: #{$qn-utilities-border-xs} solid var(--#{$qn-prefix}colors-semantic-border-light-default);
+            padding: #{$qn-utilities-spacing-xs} 20px #{$qn-utilities-spacing-xs} #{$qn-utilities-spacing-xs};
+            border-radius: #{$qn-utilities-radius-xs};
+            box-sizing: border-box;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            vertical-align: bottom;
+            white-space: nowrap;
+            max-width: 100%;
+            margin-left: 4px;
+            margin-top: 4px;
+            margin-bottom: 0;
+
+            &:first-child {
+                margin-left: 6px;
+            }
+        }
+
+        .select2-selection__choice__display {
+            cursor: default;
+            padding: 0 $qn-utilities-spacing-xxs;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            img {
+                display: none;
+                // max-width: 32px;
+                // max-height: 32px;
+            }
+
+            .sym {
+                display: none;
+                // width: 18px;
+                // height: 18px;
+            }
+
+            .dot {
+                display: none;
+            }
+        }
+
+        .select2-selection__choice__remove {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            padding-left: 2px;
+            position: absolute;
+            right: 0;
+
+            >* {
+                display: none;
+            }
+
+            &:before {
+                @include sym-config-pseudo($sym-var-x-close-solid);
+                font-size: 14px;
+
+                color: var(--#{$qn-prefix}colors-semantic-symbol-dark-default);
+            }
+        }
+    }
+
+    &[dir="rtl"] {
+        .select2-selection--multiple {
+            .select2-selection__choice {
+                margin-left: 5px;
+                margin-right: auto;
+            }
+
+            .select2-selection__choice__display {
+                padding-left: 5px;
+                padding-right: 2px;
+            }
+
+            .select2-selection__choice__remove {
+                display: block;
+
+                &::before {
+                    @include sym-config-pseudo($sym-var-x-close);
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+
+            .select2-selection__clear {
+                float: left;
+                margin-left: 10px;
+                margin-right: auto;
+            }
+        }
+    }
+
+    &.select2-container--focus {
+
+        .select2-selection--single,
+        .select2-selection--multiple {
+            --#{$qn-prefix}form-select-border-color: var(--#{$qn-prefix}form-select-focus-border-color);
+            color: var(--#{$qn-prefix}colors-semantic-text-dark-default);
+            background-color: var(--#{$qn-prefix}colors-component-bg-light-default);
+            border-width: 1px;
+            // outline: 3px solid var(--#{$qn-prefix}form-select-focus-outline-color);
+            box-shadow: 0px 1px 2px 0px var(--#{$qn-prefix}colors-component-form-effect-brand-1, rgba(10, 13, 20, 0.03)),
+            0px 0px 0.8px 1px var(--#{$qn-prefix}colors-component-form-effect-brand-2, rgba(5, 134, 255, 0.16)) inset,
+            0px 1px 2px 0px var(--#{$qn-prefix}colors-component-form-effect-brand-3, rgba(5, 134, 255, 0.16)),
+            0px 0px 0px 1px var(--#{$qn-prefix}colors-component-form-effect-brand-4, rgba(0, 62, 219, 0.84)),
+            0px 0px 0px 3px var(--#{$qn-prefix}colors-component-form-effect-brand-5, rgba(5, 134, 255, 0.16)),
+            0 0 0 var(--#{$qn-prefix}form-select-border-width) var(--#{$qn-prefix}form-select-border-color);
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &.select2-container--disabled {
+        .select2-selection--multiple {
+            background-color: #eee;
+            cursor: default;
+        }
+
+        .select2-selection__choice__remove {
+            display: none;
+        }
+    }
+
+    //[END] Multiple
+
+    // Invalid
+    .is-invalid+&,
+    .was-validated select:invalid+& {
+
+        // Set border color
+        .select2-selection {
+            background-color: var(--#{$qn-prefix}colors-component-bg-light-default);
+            border: 0;
+            border-radius: #{$qn-utilities-radius-sm};
+            min-height: var(--#{$qn-prefix}form-select-height);
+            outline: 0 solid var(--#{$qn-prefix}form-select-focus-outline-color);
+            box-shadow: 0 0 0 var(--#{$qn-prefix}form-select-border-width) var(--#{$qn-prefix}form-select-border-color);
+        }
+
+        &.select2-container--focus,
+        &.select2-container--open {
+
+            // Set border color & box shadow
+            .select2-selection {
+                --#{$qn-prefix}form-select-border-color: var(--#{$qn-prefix}form-select-focus-border-color);
+                color: var(--#{$qn-prefix}colors-semantic-text-dark-default);
+                background-color: var(--#{$qn-prefix}colors-component-bg-light-default);
+                border-width: 1px;
+                // outline: 3px solid var(--#{$qn-prefix}form-select-focus-outline-color);
+                box-shadow: 0px 1px 2px 0px var(--#{$qn-prefix}colors-component-form-effect-brand-1, rgba(10, 13, 20, 0.03)),
+                0px 0px 0.8px 1px var(--#{$qn-prefix}colors-component-form-effect-brand-2, rgba(5, 134, 255, 0.16)) inset,
+                0px 1px 2px 0px var(--#{$qn-prefix}colors-component-form-effect-brand-3, rgba(5, 134, 255, 0.16)),
+                0px 0px 0px 1px var(--#{$qn-prefix}colors-component-form-effect-brand-4, rgba(0, 62, 219, 0.84)),
+                0px 0px 0px 3px var(--#{$qn-prefix}colors-component-form-effect-brand-5, rgba(5, 134, 255, 0.16)),
+                0 0 0 var(--#{$qn-prefix}form-select-border-width) var(--#{$qn-prefix}form-select-border-color);
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}

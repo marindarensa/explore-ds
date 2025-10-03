@@ -1,0 +1,522 @@
+@use "sass:map";
+@import "pkg:bootstrap/scss/buttons";
+
+// [START] Maps
+$btn-theme-colors: (
+    "primary" : map-get($theme-colors, primary),
+    // "secondary" : map-get($theme-colors, secondary),
+    // "success" : map-get($theme-colors, success),
+    // "info" : map-get($theme-colors, info),
+    // "warning" : map-get($theme-colors, warning),
+    // "light"     : map-get($theme-colors, light),
+    "danger" : map-get($theme-colors, danger),
+    "dark" : map-get($theme-colors, dark),
+    // "attention" : map-get($theme-colors, attention),
+    // "decor" : map-get($theme-colors, decor),
+    // "mystic" : map-get($theme-colors, mystic),
+    // "assistive" : map-get($theme-colors, assistive)
+);
+
+$btn-sizes: (
+    "xs": ("--#{$qn-prefix}btn-height": 28px,
+        "--#{$prefix}btn-padding-x": 6px,
+        "--#{$prefix}btn-padding-y": 0,
+        "--#{$prefix}btn-border-radius": #{$qn-utilities-radius-xs},
+        "--#{$prefix}btn-font-size": var(--#{$qn-prefix}font-size-label-xs),
+        "--#{$prefix}btn-line-height": var(--#{$qn-prefix}line-height-label-xs),
+        "--#{$qn-prefix}btn-logo-size": 18px,
+    ),
+    "sm": ("--#{$qn-prefix}btn-height": 32px,
+        "--#{$prefix}btn-padding-x": 6px,
+        "--#{$prefix}btn-padding-y": 0,
+        "--#{$prefix}btn-border-radius": #{$qn-utilities-radius-sm},
+        "--#{$prefix}btn-font-size": var(--#{$qn-prefix}font-size-label-sm),
+        "--#{$prefix}btn-line-height": var(--#{$qn-prefix}line-height-label-sm),
+        "--#{$qn-prefix}btn-logo-size": 18px,
+    ),
+    "md": ("--#{$qn-prefix}btn-height": 36px,
+        "--#{$prefix}btn-padding-x": #{$qn-utilities-spacing-md},
+        "--#{$prefix}btn-padding-y": 0,
+        "--#{$prefix}btn-border-radius": #{$qn-utilities-radius-sm},
+        "--#{$prefix}btn-font-size": var(--#{$qn-prefix}font-size-label-sm),
+        "--#{$prefix}btn-line-height": var(--#{$qn-prefix}line-height-label-sm),
+        "--#{$qn-prefix}btn-logo-size": 20px,
+    ),
+    "lg": ("--#{$qn-prefix}btn-height": 40px,
+        "--#{$prefix}btn-padding-x": 10px,
+        "--#{$prefix}btn-padding-y": 0,
+        "--#{$prefix}btn-border-radius": #{$qn-utilities-radius-sm},
+        "--#{$prefix}btn-font-size": var(--#{$qn-prefix}font-size-label-sm),
+        "--#{$prefix}btn-line-height": var(--#{$qn-prefix}line-height-label-sm),
+        "--#{$qn-prefix}btn-logo-size": 22px,
+    ),
+    "xl": ("--#{$qn-prefix}btn-height": 44px,
+        "--#{$prefix}btn-padding-x": #{$qn-utilities-spacing-xl},
+        "--#{$prefix}btn-padding-y": 0,
+        "--#{$prefix}btn-border-radius": 10px,
+        "--#{$prefix}btn-font-size": var(--#{$qn-prefix}font-size-label-md),
+        "--#{$prefix}btn-line-height": var(--#{$qn-prefix}line-height-label-md),
+        "--#{$qn-prefix}btn-logo-size": 24px,
+    ),
+);
+
+// [END] Maps
+
+.btn {
+    --#{$prefix}btn-font-weight: 500;
+    --#{$qn-prefix}btn-letter-spacing: #{$qn-primitive-typography-letter-spacing-xs};
+    letter-spacing: var(--#{$qn-prefix}btn-letter-spacing);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @each $state, $properties in $btn-sizes {
+        @if $state =="md" {
+            @each $property, $value in $properties {
+                #{$property}: $value;
+            }
+        }
+    }
+
+    .btn-check:checked+&,
+    :not(.btn-check)+&:active,
+    &:first-child:active,
+    &.active,
+    &.show {
+        background: var(--#{$prefix}btn-active-bg);
+    }
+
+    &:focus-visible {
+        background: var(--#{$prefix}btn-active-bg);
+        border-color: var(--#{$prefix}-btn-active-border-color);
+        box-shadow: var(--#{$prefix}btn-active-shadow);
+    }
+
+    .sym{
+        font-size: var(--#{$qn-prefix}btn-logo-size);
+    }
+
+    //ghost
+    &-ghost {
+        --#{$prefix}btn-color: var(--#{$qn-prefix}colors-semantic-text-light-default);
+        --#{$prefix}btn-hover-color: var(--#{$qn-prefix}colors-semantic-text-light-default);
+        --#{$prefix}btn-active-color: var(--#{$qn-prefix}colors-semantic-text-light-default);
+        --#{$prefix}btn-disabled-color: var(--#{$qn-prefix}colors-semantic-text-disabled-tertiary);
+        --#{$prefix}btn-bg: transparent;
+        --#{$prefix}btn-hover-bg: var(--#{$qn-prefix}colors-component-bg-light-hovered-secondary);
+        --#{$prefix}btn-active-bg: transparent;
+        --#{$prefix}btn-disabled-bg: transparent;
+        --#{$prefix}btn-border-color: var(--#{$qn-prefix}colors-semantic-border-light-secondary);
+        --#{$prefix}btn-hover-border-color: var(--#{$qn-prefix}colors-semantic-border-light-secondary);
+        --#{$prefix}btn-active-border-color: var(--#{$qn-prefix}colors-semantic-border-light-secondary);
+        --#{$prefix}btn-disabled-border-color: var(--#{$qn-prefix}colors-semantic-border-disabled-secondary);
+
+        background: var(--#{$prefix}btn-bg);
+        height: var(--#{$qn-prefix}btn-height);
+
+        &:hover {
+            background: var(--#{$prefix}btn-hover-bg);
+        }
+
+        &:active,
+        &:focus {
+            background: var(--#{$prefix}btn-active-bg);
+        }
+
+        &:disabled,
+        &.disabled {
+            background: var(--#{$prefix}btn-disabled-bg);
+        }
+    }
+
+    &-ghost-brand {
+        --#{$prefix}btn-color: var(--#{$qn-prefix}colors-semantic-text-brand-secondary);
+        --#{$prefix}btn-hover-color: var(--#{$qn-prefix}colors-semantic-text-brand-secondary);
+        --#{$prefix}btn-active-color: var(--#{$qn-prefix}colors-semantic-text-brand-secondary);
+        --#{$prefix}btn-disabled-color: var(--#{$qn-prefix}colors-semantic-text-disabled-default);
+        --#{$prefix}btn-bg: var(--#{$qn-prefix}colors-component-bg-light-default);
+        --#{$prefix}btn-hover-bg: var(--#{$qn-prefix}colors-component-bg-light-default);
+        --#{$prefix}btn-active-bg: var(--#{$qn-prefix}colors-component-bg-light-default);
+        --#{$prefix}btn-disabled-bg: var(--#{$qn-prefix}colors-semantic-disabled-secondary);
+        --#{$prefix}btn-border-color: transparent;
+        --#{$prefix}btn-hover-border-color: transparent;
+        --#{$prefix}btn-active-border-color: transparent;
+        --#{$prefix}btn-disabled-border-color: transparent;
+        --#{$prefix}btn-border-width: 0rem;
+
+        background: var(--#{$prefix}btn-bg);
+        height: var(--#{$qn-prefix}btn-height);
+
+        &:hover {
+            background: var(--#{$prefix}btn-hover-bg);
+        }
+
+        &:active,
+        &:focus {
+            background: var(--#{$prefix}btn-active-bg);
+        }
+
+        &:disabled,
+        &.disabled {
+            background: var(--#{$prefix}btn-disabled-bg);
+        }
+    }
+
+
+    // scss-docs-start button-modifiers
+    @each $state in map-keys($btn-theme-colors) {
+
+        //solid
+        &-#{$state} {
+            --#{$prefix}btn-color: var(--#{$qn-prefix}colors-semantic-text-light-default);
+            --#{$prefix}btn-hover-color: var(--#{$qn-prefix}colors-semantic-text-light-default);
+            --#{$prefix}btn-active-color: var(--#{$qn-prefix}colors-semantic-text-light-default);
+            --#{$prefix}btn-disabled-color: var(--#{$qn-prefix}colors-semantic-text-light-default);
+            --#{$prefix}btn-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.00) 100%),
+            var(--#{$qn-prefix}colors-component-bg-#{ map-get($theme-alias-names, $state) }-default);
+            --#{$prefix}btn-hover-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.00) 100%),
+            var(--#{$qn-prefix}colors-component-bg-#{ map-get($theme-alias-names, $state) }-hovered);
+            --#{$prefix}btn-active-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.14) 100%),
+            var(--#{$qn-prefix}colors-component-bg-#{ map-get($theme-alias-names, $state) }-pressed);
+            --#{$prefix}btn-disabled-bg: var(--#{$qn-prefix}colors-semantic-disabled-default);
+            --#{$prefix}btn-border-color: transparent;
+            --#{$prefix}btn-hover-border-color: transparent;
+            --#{$prefix}btn-active-border-color: transparent;
+            --#{$prefix}btn-box-shadow:0px 0px 0px 0.6px var(--#{$qn-prefix}colors-component-button-effect-#{ map-get($theme-alias-names, $state) }-default-1) inset,
+            0px 1px 2px 0px var(--#{$qn-prefix}colors-component-button-effect-#{ map-get($theme-alias-names, $state) }-default-2) inset;
+            --#{$qn-prefix}btn-hover-shadow: 0px 0px 0px 0.6px var(--#{$qn-prefix}colors-component-button-effect-#{ map-get($theme-alias-names, $state) }-hovered-1) inset,
+            0px 1px 2px 0px var(--#{$qn-prefix}colors-component-button-effect-#{ map-get($theme-alias-names, $state) }-hovered-2) inset;
+            --#{$prefix}btn-active-shadow: 0px 0px 0px 2px var(--#{$qn-prefix}color-base-white) inset;
+            --#{$prefix}btn-disabled-border-color: transparent;
+            --#{$prefix}btn-border-width: 0rem;
+
+            background: var(--#{$prefix}btn-bg);
+            height: var(--#{$qn-prefix}btn-height);
+            outline-offset: -1.5px;
+            outline: #{$qn-utilities-border-sm} solid var(--#{$qn-prefix}colors-component-button-border-default);
+
+            &:hover {
+                background: var(--#{$prefix}btn-hover-bg);
+                box-shadow: var(--#{$qn-prefix}btn-hover-shadow);
+            }
+
+            &:focus,
+            &:active {
+                box-shadow: var(--#{$prefix}btn-active-shadow);
+                background: var(--#{$prefix}btn-active-bg);
+                outline: 1px solid var(--#{$qn-prefix}colors-component-bg-light-default);
+                outline-offset: -1.5px;
+            }
+
+            &:disabled,
+            &.disabled {
+                background: var(--#{$prefix}btn-disabled-bg);
+                outline: none;
+            }
+        }
+
+        //outline
+        &-outline-#{$state} {
+            --#{$prefix}btn-color: var(--#{$qn-prefix}colors-semantic-text-#{ map-get($theme-alias-names, $state) }-secondary);
+            --#{$prefix}btn-hover-color: var(--#{$qn-prefix}colors-semantic-text-#{ map-get($theme-alias-names, $state) }-secondary);
+            --#{$prefix}btn-active-color: var(--#{$qn-prefix}colors-semantic-text-#{ map-get($theme-alias-names, $state) }-secondary);
+            --#{$prefix}btn-disabled-color: var(--#{$qn-prefix}colors-semantic-text-disabled-default);
+            --#{$prefix}btn-bg: transparent;
+            --#{$prefix}btn-hover-bg: var(--#{$qn-prefix}colors-component-bg-light-hovered);
+            --#{$prefix}btn-active-bg: transparent;
+            --#{$prefix}btn-disabled-bg: transparent;
+            --#{$prefix}btn-border-color: var(--#{$qn-prefix}colors-semantic-border-#{ map-get($theme-alias-names, $state) }-default);
+            --#{$prefix}btn-hover-border-color: var(--#{$qn-prefix}colors-semantic-border-#{ map-get($theme-alias-names, $state) }-default);
+            --#{$prefix}btn-active-border-color: var(--#{$qn-prefix}colors-semantic-border-#{ map-get($theme-alias-names, $state) }-default);
+            --#{$prefix}btn-disabled-border-color: var(--#{$qn-prefix}colors-semantic-border-disabled-default);
+            --#{$prefix}btn-box-shadow: none;
+            --#{$prefix}btn-active-shadow: none;
+
+            background: var(--#{$prefix}btn-bg);
+            height: var(--#{$qn-prefix}btn-height);
+
+            &:hover,
+            &:active,
+            &:focus {
+                background: var(--#{$prefix}btn-hover-bg);
+            }
+
+            // &:active,
+            // &:focus {
+            //     background: var(--#{$prefix}btn-active-bg);
+            // }
+
+            &:disabled,
+            &.disabled {
+                background: var(--#{$prefix}btn-disabled-bg);
+            }
+        }
+
+        //link
+        &-link-#{$state} {
+            --#{$prefix}btn-color: var(--#{$qn-prefix}colors-semantic-text-#{ map-get($theme-alias-names, $state) }-secondary);
+            --#{$prefix}btn-hover-color: var(--#{$qn-prefix}colors-semantic-text-#{ map-get($theme-alias-names, $state) }-secondary);
+            --#{$prefix}btn-active-color: var(--#{$qn-prefix}colors-semantic-text-#{ map-get($theme-alias-names, $state) }-secondary);
+            --#{$prefix}btn-disabled-color: var(--#{$qn-prefix}colors-semantic-text-disabled-default);
+            --#{$prefix}btn-hover-bg: var(--#{$qn-prefix}colors-component-bg-#{ map-get($theme-alias-names, $state) }-hovered-secondary);
+            --#{$prefix}btn-active-border-color: transparent;
+
+            height: var(--#{$qn-prefix}btn-height);
+            border: transparent;
+            text-decoration: none;
+            box-shadow: none;
+
+            &:hover {
+                background: var(--#{$prefix}btn-hover-bg);
+            }
+
+            &:active,
+            &:focus {
+                border: transparent;
+            }
+        }
+
+
+        //size
+        @each $state, $properties in $btn-sizes {
+            &-#{$state} {
+                @each $property, $value in $properties {
+                    #{$property}: $value;
+                }
+            }
+        }
+    }
+
+    &-apple-white {
+        height: var(--#{$qn-prefix}btn-height);
+        border-radius: #{$qn-utilities-radius-xs};
+        border: #{$qn-utilities-border-xs} solid #A1A1A1;
+        background: var(--#{$qn-prefix}colors-component-bg-light-default);
+        box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+        color: var(--#{$qn-prefix}colors-semantic-text-dark-default);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: #{$qn-utilities-spacing-xxs};
+
+        .btn-logo {
+            content: url("#{$qn-assets-path}/misc-icons/brand-logo/apple-original.svg");
+            width: var(--#{$qn-prefix}btn-logo-size);
+            height: var(--#{$qn-prefix}btn-logo-size);
+        }
+
+        &:hover {
+            border-color: #888;
+            background: #F0F0F0;
+            box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+        }
+
+        &:focus,
+        &:active {
+            --#{$prefix}btn-active-color: var(--#{$qn-prefix}colors-semantic-text-dark-default);
+            --#{$prefix}btn-active-bg: #E0E0E0;
+            --#{$prefix}btn-active-border-color: #666;
+            box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+        }
+
+        &:disabled,
+        &.disabled {
+            border-color: var(--#{$qn-prefix}colors-semantic-text-disabled-default);
+            background: var(--#{$qn-prefix}colors-semantic-disabled-default);
+            border-color: var(--#{$qn-prefix}colors-semantic-border-disabled-default);
+            box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+
+            .btn-logo {
+                content: url("#{$qn-assets-path}/misc-icons/brand-logo/apple-disabled.svg");
+            }
+        }
+    }
+
+    &-apple {
+        height: var(--#{$qn-prefix}btn-height);
+        border-radius: #{$qn-utilities-radius-xs};
+        border: none;
+        background: #000;
+        box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+        color: var(--#{$qn-prefix}colors-semantic-text-light-default);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: #{$qn-utilities-spacing-xxs};
+
+        .btn-logo {
+            content: url("#{$qn-assets-path}/misc-icons/brand-logo/apple-white.svg");
+            width: var(--#{$qn-prefix}btn-logo-size);
+            height: var(--#{$qn-prefix}btn-logo-size);
+        }
+
+        &:hover {
+            color: var(--#{$qn-prefix}colors-semantic-text-light-default);
+            background: #333;
+            box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+        }
+
+        &:focus,
+        &:active {
+            --#{$prefix}btn-active-color: var(--#{$qn-prefix}colors-semantic-text-light-default);
+            --#{$prefix}btn-active-bg: #555;
+            --#{$prefix}btn-active-border-color: none;
+            box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+        }
+
+        &:disabled,
+        &.disabled {
+            background: var(--#{$qn-prefix}colors-semantic-disabled-default);
+            box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+
+            .btn-logo {
+                content: url("#{$qn-assets-path}/misc-icons/brand-logo/apple-disabled.svg");
+            }
+        }
+    }
+
+    &-facebook-white {
+        height: var(--#{$qn-prefix}btn-height);
+        border-radius: #{$qn-utilities-radius-xs};
+        border: #{$qn-utilities-border-sm} solid #1877F2;
+        background: var(--#{$qn-prefix}colors-component-bg-light-default);
+        box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+        color: #1877F2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: #{$qn-utilities-spacing-xxs};
+
+        .btn-logo {
+            content: url("#{$qn-assets-path}/misc-icons/brand-logo/facebook-original.svg");
+            width: var(--#{$qn-prefix}btn-logo-size);
+            height: var(--#{$qn-prefix}btn-logo-size);
+        }
+
+        &:hover {
+            color: #166FE5;
+            border-color: #166FE5;
+            background: #F0F6FF;
+            box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+        }
+
+        &:focus,
+        &:active {
+            --#{$prefix}btn-active-color: #0E5ABD;
+            --#{$prefix}btn-active-bg: #E7F3FF;
+            --#{$prefix}btn-active-border-color: #0E5ABD;
+            box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+        }
+
+        &:disabled,
+        &.disabled {
+            border-color: var(--#{$qn-prefix}colors-semantic-border-disabled-default);
+            background: var(--#{$qn-prefix}colors-semantic-disabled-default);
+            box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+
+            .btn-logo {
+                content: url("#{$qn-assets-path}/misc-icons/brand-logo/facebook-disabled.svg");
+            }
+        }
+    }
+
+    &-facebook {
+        height: var(--#{$qn-prefix}btn-height);
+        border-radius: #{$qn-utilities-radius-xs};
+        border: none;
+        background: #1877F2;
+        box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+        color: var(--#{$qn-prefix}colors-semantic-text-light-default);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: #{$qn-utilities-spacing-xxs};
+
+        .btn-logo {
+            content: url("#{$qn-assets-path}/misc-icons/brand-logo/facebook-white.svg");
+            width: var(--#{$qn-prefix}btn-logo-size);
+            height: var(--#{$qn-prefix}btn-logo-size);
+        }
+
+        &:hover {
+            color: var(--#{$qn-prefix}colors-semantic-text-light-default);
+            background: #166FE5;
+            box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+        }
+
+        &:focus,
+        &:active {
+            --#{$prefix}btn-active-color: var(--#{$qn-prefix}colors-semantic-text-light-default);
+            --#{$prefix}btn-active-bg: #0E5ABD;
+            --#{$prefix}btn-active-border-color: none;
+            box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+        }
+
+        &:disabled,
+        &.disabled {
+            background: var(--#{$qn-prefix}colors-semantic-border-disabled-default);
+            box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+
+            .btn-logo {
+                content: url("#{$qn-assets-path}/misc-icons/brand-logo/facebook-disabled.svg");
+            }
+        }
+    }
+
+    &-google {
+        height: var(--#{$qn-prefix}btn-height);
+        border-radius: #{$qn-utilities-radius-xs};
+        border: #{$qn-utilities-border-sm} solid #DADCE0;
+        background: var(--#{$qn-prefix}colors-component-bg-light-default);
+        box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+        color: #3C4043;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: #{$qn-utilities-spacing-xxs};
+
+        .btn-logo {
+            content: url("#{$qn-assets-path}/misc-icons/brand-logo/google-original.svg");
+            width: var(--#{$qn-prefix}btn-logo-size);
+            height: var(--#{$qn-prefix}btn-logo-size);
+        }
+
+        &:hover {
+            color: #3C4043;
+            border-color: #DADCE0;
+            background: #F8F9FA;
+            box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+        }
+
+        &:focus,
+        &:active {
+            --#{$prefix}btn-active-color: #3C4043;
+            --#{$prefix}btn-active-bg: #E8EAED;
+            --#{$prefix}btn-active-border-color: #DADCE0;
+            box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+        }
+
+        &:disabled,
+        &.disabled {
+            border-color: var(--#{$qn-prefix}colors-semantic-border-disabled-default);
+            background: var(--#{$qn-prefix}colors-semantic-disabled-default);
+            box-shadow: 0px 1px 2px 0px rgba(10, 13, 20, 0.03);
+
+            .btn-logo {
+                content: url("#{$qn-assets-path}/misc-icons/brand-logo/google-disabled.svg");
+            }
+        }
+    }
+}
+
+.btn.btn-icon {
+    height: calc(var(--#{$prefix}btn-line-height) + var(--#{$prefix}btn-padding-y) * 2);
+    aspect-ratio: 1/1;
+    padding: 0;
+
+    >i:only-child,
+    >svg:only-child,
+    >.sym:only-child {
+        font-size: 1.25em;
+    }
+}

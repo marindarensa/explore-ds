@@ -1,0 +1,22 @@
+@import "pkg:bootstrap/scss/forms/form-text";
+
+//
+// Form text
+//
+
+.form-text {
+    margin-top: #{$qn-utilities-spacing-sm};
+    font-size: var(--#{$qn-prefix}font-size-label-xs);
+    font-weight: 400;
+    line-height: var(--#{$qn-prefix}line-height-label-xs);
+    letter-spacing: #{$qn-primitive-typography-letter-spacing-xs};
+    color: var(--#{$qn-prefix}colors-semantic-text-dark-tertiary);
+}
+.form-description {
+    margin-top: #{$qn-utilities-spacing-xs};
+    font-size: var(--#{$qn-prefix}font-size-paragraph-sm);
+    font-weight: 400;
+    line-height: var(--#{$qn-prefix}line-height-paragraph-sm);
+    letter-spacing: #{$qn-primitive-typography-letter-spacing-xs};
+    color: var(--#{$qn-prefix}colors-semantic-text-dark-tertiary);
+}

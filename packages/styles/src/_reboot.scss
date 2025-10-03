@@ -1,0 +1,8 @@
+@import "scss/config";
+@import "pkg:bootstrap/scss/reboot";
+
+a {
+    --#{$prefix}link-color-rgb: var(--#{$qn-prefix}colors-semantic-link-hovered);
+    color: var(--#{$qn-prefix}colors-semantic-link-default);
+    cursor: pointer;
+}

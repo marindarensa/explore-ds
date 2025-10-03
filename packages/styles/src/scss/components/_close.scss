@@ -1,0 +1,120 @@
+@import "pkg:bootstrap/scss/close";
+
+// [START] Maps
+$close-variants: (
+    "outline": (
+        "--#{$qn-prefix}btn-close-border-color": var(--#{$qn-prefix}colors-semantic-border-light-default),
+        "--#{$qn-prefix}btn-close-border-width": #{$qn-utilities-border-xs}
+    ),
+    "solid": (
+        "--#{$qn-prefix}btn-close-bg-color": var(--#{$qn-prefix}colors-component-bg-light-default),
+    ),
+    "inverse": (
+        "--#{$prefix}btn-close-color": var(--#{$qn-prefix}colors-semantic-symbol-light-default),
+        "--#{$qn-prefix}btn-close-hover-bg-color": #586072,
+        "--#{$qn-prefix}btn-close-disabled-color": var(--#{$qn-prefix}colors-semantic-symbol-disabled-default)
+    ),
+    "outline-inverse": (
+        "--#{$prefix}btn-close-color": var(--#{$qn-prefix}colors-semantic-symbol-light-default),
+        "--#{$qn-prefix}btn-close-hover-bg-color": #586072,
+        "--#{$qn-prefix}btn-close-disabled-color": var(--#{$qn-prefix}colors-semantic-symbol-disabled-default),
+        "--#{$qn-prefix}btn-close-border-color": var(--#{$qn-prefix}colors-semantic-border-light-default),
+        "--#{$qn-prefix}btn-close-border-width": #{$qn-utilities-border-xs}
+    ),
+    "solid-inverse": (
+        "--#{$prefix}btn-close-color": var(--#{$qn-prefix}colors-semantic-symbol-light-default),
+        "--#{$qn-prefix}btn-close-hover-bg-color": #586072,
+        "--#{$qn-prefix}btn-close-disabled-color": var(--#{$qn-prefix}colors-semantic-symbol-disabled-default),
+        "--#{$qn-prefix}btn-close-bg-color": #000
+    )
+);
+$close-sizes: (
+    "sm": (
+        "--#{$qn-prefix}btn-close-width": 18px,
+        "--#{$qn-prefix}btn-close-height": 18px,
+        "--#{$qn-prefix}btn-close-symbol-size": 14px
+    )
+);
+// [END] Maps
+
+// [START] Override .btn-close
+.btn-close {
+    // scss-docs-start close-css-vars
+    --#{$prefix}btn-close-color: var(--#{$qn-prefix}colors-semantic-symbol-dark-default);
+    --#{$prefix}btn-close-bg: none;
+    --#{$prefix}btn-close-opacity: unset;
+    --#{$prefix}btn-close-hover-opacity: unset;
+    --#{$prefix}btn-close-focus-shadow: unset;
+    --#{$prefix}btn-close-focus-opacity: unset;
+    --#{$prefix}btn-close-disabled-opacity: unset;
+    --#{$prefix}btn-close-white-filter: unset;
+    --#{$qn-prefix}btn-close-width: 24px;
+    --#{$qn-prefix}btn-close-height: 24px;
+    --#{$qn-prefix}btn-close-bg-color: transparent;
+    --#{$qn-prefix}btn-close-border-color: unset;
+    --#{$qn-prefix}btn-close-border-width: 0;
+    --#{$qn-prefix}btn-close-symbol-size: 18px;
+    --#{$qn-prefix}btn-close-hover-bg-color: var(--#{$qn-prefix}colors-component-bg-dark-hovered-secondary);
+    --#{$qn-prefix}btn-close-hover-border-width: 0;
+    --#{$qn-prefix}btn-close-focus-color: var(--#{$prefix}btn-close-color);
+    --#{$qn-prefix}btn-close-focus-border-width: 0;
+    --#{$qn-prefix}btn-close-disabled-color: var(--#{$qn-prefix}colors-semantic-symbol-disabled-default);
+    // scss-docs-end close-css-vars
+
+    box-sizing: border-box;
+    width: var(--#{$qn-prefix}btn-close-width);
+    height: var(--#{$qn-prefix}btn-close-height);
+    padding: 0;
+    background: var(--#{$prefix}btn-close-bg) center / var(--#{$qn-prefix}btn-close-width) auto no-repeat, var(--#{$qn-prefix}btn-close-bg-color); // include transparent for button elements
+    border: var(--#{$qn-prefix}btn-close-border-width) solid var(--#{$qn-prefix}btn-close-border-color); // for button elements
+    border-radius: #{$qn-utilities-radius-xs};
+    opacity: var(--#{$prefix}btn-close-opacity);
+    transition: color 350ms ease-in-out, background-color 350ms ease-out, border-width 150ms ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--#{$qn-prefix}btn-close-symbol-size);
+    line-height: var(--#{$qn-prefix}btn-close-symbol-size);
+
+    &::before {
+        @include sym-config-pseudo($sym-var-x-close);
+    }
+
+    // Override <a>'s hover style
+    &:hover {
+        --#{$qn-prefix}btn-close-bg-color: var(--#{$qn-prefix}btn-close-hover-bg-color);
+        --#{$qn-prefix}btn-close-border-width: var(--#{$qn-prefix}btn-close-hover-border-width);
+        color: var(--#{$prefix}btn-close-color);
+    }
+
+    &:focus,
+    &:active {
+        --#{$prefix}btn-close-color: var(--#{$qn-prefix}btn-close-focus-color);
+        --#{$qn-prefix}btn-close-border-width: var(--#{$qn-prefix}btn-close-focus-border-width);
+        box-shadow: unset;
+    }
+
+    &:disabled,
+    &.disabled {
+        --#{$prefix}btn-close-color: var(--#{$qn-prefix}btn-close-disabled-color);
+    }
+}
+
+// scss-docs-start alert-modifiers
+@each $state, $properties in $close-variants {
+    .btn-close-#{$state} {
+        @each $property, $value in $properties {
+            #{$property}: $value;
+        }
+    }
+}
+@each $state, $properties in $close-sizes {
+    .btn-close-#{$state} {
+        @each $property, $value in $properties {
+            #{$property}: $value;
+        }
+    }
+}
+// scss-docs-end alert-modifiers
+// [END] Override .btn-close

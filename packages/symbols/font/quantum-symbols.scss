@@ -1,0 +1,2187 @@
+$sym-font-name: "quantum-symbols" !default;
+$sym-assets-path: "./fonts/" !default;
+$sym-font-hash: "24e3eb84d0bcaf83d77f904c78ac1f47" !default;
+
+$sym-var-activity-solid: "\f101";
+$sym-var-activity: "\f102";
+$sym-var-airplay-solid: "\f103";
+$sym-var-airplay: "\f104";
+$sym-var-alarm-clock-plus-solid: "\f105";
+$sym-var-alarm-clock-plus: "\f106";
+$sym-var-alarm-clock-solid: "\f107";
+$sym-var-alarm-clock: "\f108";
+$sym-var-alert-circle-solid: "\f109";
+$sym-var-alert-circle: "\f10a";
+$sym-var-alert-octagon-solid: "\f10b";
+$sym-var-alert-octagon: "\f10c";
+$sym-var-alert-triangle-solid: "\f10d";
+$sym-var-alert-triangle: "\f10e";
+$sym-var-align-bottom-solid: "\f10f";
+$sym-var-align-bottom: "\f110";
+$sym-var-align-center-solid: "\f111";
+$sym-var-align-center: "\f112";
+$sym-var-align-horizontal-center-solid: "\f113";
+$sym-var-align-horizontal-center: "\f114";
+$sym-var-align-justify-solid: "\f115";
+$sym-var-align-justify: "\f116";
+$sym-var-align-left-02-solid: "\f117";
+$sym-var-align-left-02: "\f118";
+$sym-var-align-left-solid: "\f119";
+$sym-var-align-left: "\f11a";
+$sym-var-align-right-02-solid: "\f11b";
+$sym-var-align-right-02: "\f11c";
+$sym-var-align-right-solid: "\f11d";
+$sym-var-align-right: "\f11e";
+$sym-var-align-top-arrow-solid: "\f11f";
+$sym-var-align-top-arrow: "\f120";
+$sym-var-align-vertical-center-solid: "\f121";
+$sym-var-align-vertical-center: "\f122";
+$sym-var-annotation-alert-solid: "\f123";
+$sym-var-annotation-alert: "\f124";
+$sym-var-annotation-check-solid: "\f125";
+$sym-var-annotation-check: "\f126";
+$sym-var-annotation-info-solid: "\f127";
+$sym-var-annotation-info: "\f128";
+$sym-var-annotation-solid: "\f129";
+$sym-var-annotation: "\f12a";
+$sym-var-announcement-02-solid: "\f12b";
+$sym-var-announcement-02: "\f12c";
+$sym-var-announcement-solid: "\f12d";
+$sym-var-announcement: "\f12e";
+$sym-var-archive-solid: "\f12f";
+$sym-var-archive: "\f130";
+$sym-var-arrow-circle-down-left-solid: "\f131";
+$sym-var-arrow-circle-down-left: "\f132";
+$sym-var-arrow-circle-down-right-solid: "\f133";
+$sym-var-arrow-circle-down-right: "\f134";
+$sym-var-arrow-circle-down-solid: "\f135";
+$sym-var-arrow-circle-down: "\f136";
+$sym-var-arrow-circle-left-solid: "\f137";
+$sym-var-arrow-circle-left: "\f138";
+$sym-var-arrow-circle-right-solid: "\f139";
+$sym-var-arrow-circle-right: "\f13a";
+$sym-var-arrow-circle-up-left-solid: "\f13b";
+$sym-var-arrow-circle-up-left: "\f13c";
+$sym-var-arrow-circle-up-right-solid: "\f13d";
+$sym-var-arrow-circle-up-right: "\f13e";
+$sym-var-arrow-circle-up-solid: "\f13f";
+$sym-var-arrow-circle-up: "\f140";
+$sym-var-arrow-down-02-solid: "\f141";
+$sym-var-arrow-down-02: "\f142";
+$sym-var-arrow-down-left-solid: "\f143";
+$sym-var-arrow-down-left: "\f144";
+$sym-var-arrow-down-right-solid: "\f145";
+$sym-var-arrow-down-right: "\f146";
+$sym-var-arrow-down-solid: "\f147";
+$sym-var-arrow-down: "\f148";
+$sym-var-arrow-left-02-solid: "\f149";
+$sym-var-arrow-left-02: "\f14a";
+$sym-var-arrow-left-solid: "\f14b";
+$sym-var-arrow-left: "\f14c";
+$sym-var-arrow-narrow-down-left-solid: "\f14d";
+$sym-var-arrow-narrow-down-left: "\f14e";
+$sym-var-arrow-narrow-down-right-solid: "\f14f";
+$sym-var-arrow-narrow-down-right: "\f150";
+$sym-var-arrow-narrow-down-solid: "\f151";
+$sym-var-arrow-narrow-down: "\f152";
+$sym-var-arrow-narrow-left-solid: "\f153";
+$sym-var-arrow-narrow-left: "\f154";
+$sym-var-arrow-narrow-right-solid: "\f155";
+$sym-var-arrow-narrow-right: "\f156";
+$sym-var-arrow-narrow-up-left-solid: "\f157";
+$sym-var-arrow-narrow-up-left: "\f158";
+$sym-var-arrow-narrow-up-right-solid: "\f159";
+$sym-var-arrow-narrow-up-right: "\f15a";
+$sym-var-arrow-narrow-up-solid: "\f15b";
+$sym-var-arrow-narrow-up: "\f15c";
+$sym-var-arrow-right-02-solid: "\f15d";
+$sym-var-arrow-right-02: "\f15e";
+$sym-var-arrow-right-solid: "\f15f";
+$sym-var-arrow-right: "\f160";
+$sym-var-arrow-up-02-solid: "\f161";
+$sym-var-arrow-up-02: "\f162";
+$sym-var-arrow-up-left-solid: "\f163";
+$sym-var-arrow-up-left: "\f164";
+$sym-var-arrow-up-right-solid: "\f165";
+$sym-var-arrow-up-right: "\f166";
+$sym-var-arrow-up-solid: "\f167";
+$sym-var-arrow-up: "\f168";
+$sym-var-asterisk-solid: "\f169";
+$sym-var-asterisk: "\f16a";
+$sym-var-at-sign-solid: "\f16b";
+$sym-var-at-sign: "\f16c";
+$sym-var-atom-solid: "\f16d";
+$sym-var-atom: "\f16e";
+$sym-var-attachment-02-solid: "\f16f";
+$sym-var-attachment-02: "\f170";
+$sym-var-attachment-solid: "\f171";
+$sym-var-attachment: "\f172";
+$sym-var-award-02-solid: "\f173";
+$sym-var-award-02: "\f174";
+$sym-var-award-03-solid: "\f175";
+$sym-var-award-03: "\f176";
+$sym-var-award-04-solid: "\f177";
+$sym-var-award-04: "\f178";
+$sym-var-award-solid: "\f179";
+$sym-var-award: "\f17a";
+$sym-var-backpack-solid: "\f17b";
+$sym-var-backpack: "\f17c";
+$sym-var-bank-note-02-solid: "\f17d";
+$sym-var-bank-note-02: "\f17e";
+$sym-var-bank-note-03-solid: "\f17f";
+$sym-var-bank-note-03: "\f180";
+$sym-var-bank-note-solid: "\f181";
+$sym-var-bank-note: "\f182";
+$sym-var-bank-solid: "\f183";
+$sym-var-bank: "\f184";
+$sym-var-battery-charging-solid: "\f185";
+$sym-var-battery-charging: "\f186";
+$sym-var-battery-empty-solid: "\f187";
+$sym-var-battery-empty: "\f188";
+$sym-var-battery-full-solid: "\f189";
+$sym-var-battery-full: "\f18a";
+$sym-var-battery-low-solid: "\f18b";
+$sym-var-battery-low: "\f18c";
+$sym-var-battery-mid-solid: "\f18d";
+$sym-var-battery-mid: "\f18e";
+$sym-var-beaker-solid: "\f18f";
+$sym-var-beaker: "\f190";
+$sym-var-bell-02-solid: "\f191";
+$sym-var-bell-02: "\f192";
+$sym-var-bell-off-02-solid: "\f193";
+$sym-var-bell-off-02: "\f194";
+$sym-var-bell-off-solid: "\f195";
+$sym-var-bell-off: "\f196";
+$sym-var-bell-plus-solid: "\f197";
+$sym-var-bell-plus: "\f198";
+$sym-var-bell-ringing-solid: "\f199";
+$sym-var-bell-ringing: "\f19a";
+$sym-var-bell-solid: "\f19b";
+$sym-var-bell: "\f19c";
+$sym-var-bluetooth-off-solid: "\f19d";
+$sym-var-bluetooth-off: "\f19e";
+$sym-var-bluetooth-on-solid: "\f19f";
+$sym-var-bluetooth-on: "\f1a0";
+$sym-var-bold-solid: "\f1a1";
+$sym-var-bold: "\f1a2";
+$sym-var-book-closed-solid: "\f1a3";
+$sym-var-book-closed: "\f1a4";
+$sym-var-book-open-solid: "\f1a5";
+$sym-var-book-open: "\f1a6";
+$sym-var-bookmark-add-solid: "\f1a7";
+$sym-var-bookmark-add: "\f1a8";
+$sym-var-bookmark-check-solid: "\f1a9";
+$sym-var-bookmark-check: "\f1aa";
+$sym-var-bookmark-minus-solid: "\f1ab";
+$sym-var-bookmark-minus: "\f1ac";
+$sym-var-bookmark-solid: "\f1ad";
+$sym-var-bookmark: "\f1ae";
+$sym-var-box-solid: "\f1af";
+$sym-var-box: "\f1b0";
+$sym-var-brackets-solid: "\f1b1";
+$sym-var-brackets: "\f1b2";
+$sym-var-briefcase-solid: "\f1b3";
+$sym-var-briefcase: "\f1b4";
+$sym-var-browser-solid: "\f1b5";
+$sym-var-browser: "\f1b6";
+$sym-var-brush-solid: "\f1b7";
+$sym-var-brush: "\f1b8";
+$sym-var-building-02-solid: "\f1b9";
+$sym-var-building-02: "\f1ba";
+$sym-var-building-03-solid: "\f1bb";
+$sym-var-building-03: "\f1bc";
+$sym-var-building-04-solid: "\f1bd";
+$sym-var-building-04: "\f1be";
+$sym-var-building-05-solid: "\f1bf";
+$sym-var-building-05: "\f1c0";
+$sym-var-building-06-solid: "\f1c1";
+$sym-var-building-06: "\f1c2";
+$sym-var-building-07-solid: "\f1c3";
+$sym-var-building-07: "\f1c4";
+$sym-var-building-08-solid: "\f1c5";
+$sym-var-building-08: "\f1c6";
+$sym-var-building-solid: "\f1c7";
+$sym-var-building: "\f1c8";
+$sym-var-calculator-solid: "\f1c9";
+$sym-var-calculator: "\f1ca";
+$sym-var-calendar-check-solid: "\f1cb";
+$sym-var-calendar-check: "\f1cc";
+$sym-var-calendar-date-solid: "\f1cd";
+$sym-var-calendar-date: "\f1ce";
+$sym-var-camera-lens-solid: "\f1cf";
+$sym-var-camera-lens: "\f1d0";
+$sym-var-camera-off-solid: "\f1d1";
+$sym-var-camera-off: "\f1d2";
+$sym-var-camera-plus-solid: "\f1d3";
+$sym-var-camera-plus: "\f1d4";
+$sym-var-camera-solid: "\f1d5";
+$sym-var-camera: "\f1d6";
+$sym-var-certificate-solid: "\f1d7";
+$sym-var-certificate: "\f1d8";
+$sym-var-check-circle-broken-solid: "\f1d9";
+$sym-var-check-circle-broken: "\f1da";
+$sym-var-check-circle-solid: "\f1db";
+$sym-var-check-circle: "\f1dc";
+$sym-var-check-solid: "\f1dd";
+$sym-var-check-square-broken-solid: "\f1de";
+$sym-var-check-square-broken: "\f1df";
+$sym-var-check-square-empty-solid: "\f1e0";
+$sym-var-check-square-empty: "\f1e1";
+$sym-var-check-square-solid: "\f1e2";
+$sym-var-check-square: "\f1e3";
+$sym-var-check-verified-02-solid: "\f1e4";
+$sym-var-check-verified-02: "\f1e5";
+$sym-var-check-verified-solid: "\f1e6";
+$sym-var-check-verified: "\f1e7";
+$sym-var-check: "\f1e8";
+$sym-var-chevron-down-double-solid: "\f1e9";
+$sym-var-chevron-down-double: "\f1ea";
+$sym-var-chevron-down-solid: "\f1eb";
+$sym-var-chevron-down: "\f1ec";
+$sym-var-chevron-left-double-solid: "\f1ed";
+$sym-var-chevron-left-double: "\f1ee";
+$sym-var-chevron-left-solid: "\f1ef";
+$sym-var-chevron-left: "\f1f0";
+$sym-var-chevron-right-double-solid: "\f1f1";
+$sym-var-chevron-right-double: "\f1f2";
+$sym-var-chevron-right-solid: "\f1f3";
+$sym-var-chevron-right: "\f1f4";
+$sym-var-chevron-selector-horizontal-solid: "\f1f5";
+$sym-var-chevron-selector-horizontal: "\f1f6";
+$sym-var-chevron-selector-vertical-solid: "\f1f7";
+$sym-var-chevron-selector-vertical: "\f1f8";
+$sym-var-chevron-up-double-solid: "\f1f9";
+$sym-var-chevron-up-double: "\f1fa";
+$sym-var-chevron-up-solid: "\f1fb";
+$sym-var-chevron-up: "\f1fc";
+$sym-var-chrome-cast-solid: "\f1fd";
+$sym-var-chrome-cast: "\f1fe";
+$sym-var-circle-cut-solid: "\f1ff";
+$sym-var-circle-cut: "\f200";
+$sym-var-clipboard-check-solid: "\f201";
+$sym-var-clipboard-check: "\f202";
+$sym-var-clipboard-download-solid: "\f203";
+$sym-var-clipboard-download: "\f204";
+$sym-var-clipboard-solid: "\f205";
+$sym-var-clipboard: "\f206";
+$sym-var-clock-check-solid: "\f207";
+$sym-var-clock-check: "\f208";
+$sym-var-clock-fast-forward-solid: "\f209";
+$sym-var-clock-fast-forward: "\f20a";
+$sym-var-clock-plus-solid: "\f20b";
+$sym-var-clock-plus: "\f20c";
+$sym-var-clock-refresh-solid: "\f20d";
+$sym-var-clock-refresh: "\f20e";
+$sym-var-clock-rewind-solid: "\f20f";
+$sym-var-clock-rewind: "\f210";
+$sym-var-clock-solid: "\f211";
+$sym-var-clock-stopwatch-solid: "\f212";
+$sym-var-clock-stopwatch: "\f213";
+$sym-var-clock: "\f214";
+$sym-var-cloud-blank-solid: "\f215";
+$sym-var-cloud-blank: "\f216";
+$sym-var-code-02-solid: "\f217";
+$sym-var-code-02: "\f218";
+$sym-var-code-browser-solid: "\f219";
+$sym-var-code-browser: "\f21a";
+$sym-var-code-solid: "\f21b";
+$sym-var-code: "\f21c";
+$sym-var-coins-solid: "\f21d";
+$sym-var-coins: "\f21e";
+$sym-var-colors-solid: "\f21f";
+$sym-var-colors: "\f220";
+$sym-var-columns-02-solid: "\f221";
+$sym-var-columns-02: "\f222";
+$sym-var-columns-03-solid: "\f223";
+$sym-var-columns-03: "\f224";
+$sym-var-columns-solid: "\f225";
+$sym-var-columns: "\f226";
+$sym-var-command-solid: "\f227";
+$sym-var-command: "\f228";
+$sym-var-compass-02-solid: "\f229";
+$sym-var-compass-02: "\f22a";
+$sym-var-compass-solid: "\f22b";
+$sym-var-compass: "\f22c";
+$sym-var-copy-solid: "\f22d";
+$sym-var-copy: "\f22e";
+$sym-var-credit-card-solid: "\f22f";
+$sym-var-credit-card: "\f230";
+$sym-var-crop-solid: "\f231";
+$sym-var-crop: "\f232";
+$sym-var-cryptocurrency-solid: "\f233";
+$sym-var-cryptocurrency: "\f234";
+$sym-var-currency-bitcoin-solid: "\f235";
+$sym-var-currency-bitcoin: "\f236";
+$sym-var-currency-dollar-solid: "\f237";
+$sym-var-currency-dollar: "\f238";
+$sym-var-currency-euro-solid: "\f239";
+$sym-var-currency-euro: "\f23a";
+$sym-var-currency-pound-solid: "\f23b";
+$sym-var-currency-pound: "\f23c";
+$sym-var-currency-ruble-solid: "\f23d";
+$sym-var-currency-ruble: "\f23e";
+$sym-var-currency-rupee-solid: "\f23f";
+$sym-var-currency-rupee: "\f240";
+$sym-var-currency-rupiah-solid: "\f241";
+$sym-var-currency-rupiah: "\f242";
+$sym-var-currency-yen-solid: "\f243";
+$sym-var-currency-yen: "\f244";
+$sym-var-cursor-box-solid: "\f245";
+$sym-var-cursor-box: "\f246";
+$sym-var-cursor-click-solid: "\f247";
+$sym-var-cursor-click: "\f248";
+$sym-var-cursor-solid: "\f249";
+$sym-var-cursor: "\f24a";
+$sym-var-database-solid: "\f24b";
+$sym-var-database: "\f24c";
+$sym-var-delete-solid: "\f24d";
+$sym-var-delete: "\f24e";
+$sym-var-diamond-02-solid: "\f24f";
+$sym-var-diamond-02: "\f250";
+$sym-var-diamond-solid: "\f251";
+$sym-var-diamond: "\f252";
+$sym-var-distribute-spacing-horizontal-solid: "\f253";
+$sym-var-distribute-spacing-horizontal: "\f254";
+$sym-var-distribute-spacing-vertical-solid: "\f255";
+$sym-var-distribute-spacing-vertical: "\f256";
+$sym-var-divide-solid: "\f257";
+$sym-var-divide: "\f258";
+$sym-var-divider-solid: "\f259";
+$sym-var-divider: "\f25a";
+$sym-var-dotpoints-solid: "\f25b";
+$sym-var-dotpoints: "\f25c";
+$sym-var-dots-grid-02-solid: "\f25d";
+$sym-var-dots-grid-02: "\f25e";
+$sym-var-dots-grid-solid: "\f25f";
+$sym-var-dots-grid: "\f260";
+$sym-var-dots-horizontal-solid: "\f261";
+$sym-var-dots-horizontal: "\f262";
+$sym-var-dots-vertical-solid: "\f263";
+$sym-var-dots-vertical: "\f264";
+$sym-var-download-02-solid: "\f265";
+$sym-var-download-02: "\f266";
+$sym-var-download-cloud-02-solid: "\f267";
+$sym-var-download-cloud-02: "\f268";
+$sym-var-download-cloud-solid: "\f269";
+$sym-var-download-cloud: "\f26a";
+$sym-var-download-solid: "\f26b";
+$sym-var-download: "\f26c";
+$sym-var-drop-solid: "\f26d";
+$sym-var-drop: "\f26e";
+$sym-var-dropper-solid: "\f26f";
+$sym-var-dropper: "\f270";
+$sym-var-edit-02-solid: "\f271";
+$sym-var-edit-02: "\f272";
+$sym-var-edit-solid: "\f273";
+$sym-var-edit: "\f274";
+$sym-var-equal-not-solid: "\f275";
+$sym-var-equal-not: "\f276";
+$sym-var-equal-solid: "\f277";
+$sym-var-equal: "\f278";
+$sym-var-eraser-solid: "\f279";
+$sym-var-eraser: "\f27a";
+$sym-var-expand-02-solid: "\f27b";
+$sym-var-expand-02: "\f27c";
+$sym-var-expand-03-solid: "\f27d";
+$sym-var-expand-03: "\f27e";
+$sym-var-expand-solid: "\f27f";
+$sym-var-expand: "\f280";
+$sym-var-eye-off-solid: "\f281";
+$sym-var-eye-off: "\f282";
+$sym-var-eye-solid: "\f283";
+$sym-var-eye: "\f284";
+$sym-var-face-content-solid: "\f285";
+$sym-var-face-content: "\f286";
+$sym-var-face-frown-solid: "\f287";
+$sym-var-face-frown: "\f288";
+$sym-var-face-happy-solid: "\f289";
+$sym-var-face-happy: "\f28a";
+$sym-var-face-id-solid: "\f28b";
+$sym-var-face-id: "\f28c";
+$sym-var-face-neutral-solid: "\f28d";
+$sym-var-face-neutral: "\f28e";
+$sym-var-face-sad-solid: "\f28f";
+$sym-var-face-sad: "\f290";
+$sym-var-face-smile-solid: "\f291";
+$sym-var-face-smile: "\f292";
+$sym-var-face-wink-solid: "\f293";
+$sym-var-face-wink: "\f294";
+$sym-var-fast-backward-solid: "\f295";
+$sym-var-fast-backward: "\f296";
+$sym-var-fast-forward-solid: "\f297";
+$sym-var-fast-forward: "\f298";
+$sym-var-figma-solid: "\f299";
+$sym-var-figma: "\f29a";
+$sym-var-file-02-solid: "\f29b";
+$sym-var-file-02: "\f29c";
+$sym-var-file-03-solid: "\f29d";
+$sym-var-file-03: "\f29e";
+$sym-var-file-attachment-solid: "\f29f";
+$sym-var-file-attachment: "\f2a0";
+$sym-var-file-check-02-solid: "\f2a1";
+$sym-var-file-check-02: "\f2a2";
+$sym-var-file-check-solid: "\f2a3";
+$sym-var-file-check: "\f2a4";
+$sym-var-file-download-02-solid: "\f2a5";
+$sym-var-file-download-02: "\f2a6";
+$sym-var-file-download-solid: "\f2a7";
+$sym-var-file-download: "\f2a8";
+$sym-var-file-lock-solid: "\f2a9";
+$sym-var-file-lock: "\f2aa";
+$sym-var-file-minus-solid: "\f2ab";
+$sym-var-file-minus: "\f2ac";
+$sym-var-file-plus-solid: "\f2ad";
+$sym-var-file-plus: "\f2ae";
+$sym-var-file-shield-solid: "\f2af";
+$sym-var-file-shield: "\f2b0";
+$sym-var-file-solid: "\f2b1";
+$sym-var-file: "\f2b2";
+$sym-var-film-solid: "\f2b3";
+$sym-var-film: "\f2b4";
+$sym-var-filter-funnel-solid: "\f2b5";
+$sym-var-filter-funnel: "\f2b6";
+$sym-var-filter-lines-solid: "\f2b7";
+$sym-var-filter-lines: "\f2b8";
+$sym-var-fingerprint-02-solid: "\f2b9";
+$sym-var-fingerprint-02: "\f2ba";
+$sym-var-fingerprint-solid: "\f2bb";
+$sym-var-fingerprint: "\f2bc";
+$sym-var-flag-solid: "\f2bd";
+$sym-var-flag: "\f2be";
+$sym-var-flex-align-bottom-solid: "\f2bf";
+$sym-var-flex-align-bottom: "\f2c0";
+$sym-var-flex-align-left-solid: "\f2c1";
+$sym-var-flex-align-left: "\f2c2";
+$sym-var-flex-align-right-solid: "\f2c3";
+$sym-var-flex-align-right: "\f2c4";
+$sym-var-flex-align-top-solid: "\f2c5";
+$sym-var-flex-align-top: "\f2c6";
+$sym-var-flip-backward-solid: "\f2c7";
+$sym-var-flip-backward: "\f2c8";
+$sym-var-flip-forward-solid: "\f2c9";
+$sym-var-flip-forward: "\f2ca";
+$sym-var-folder-check-solid: "\f2cb";
+$sym-var-folder-check: "\f2cc";
+$sym-var-folder-closed-solid: "\f2cd";
+$sym-var-folder-closed: "\f2ce";
+$sym-var-folder-download-solid: "\f2cf";
+$sym-var-folder-download: "\f2d0";
+$sym-var-folder-lock-solid: "\f2d1";
+$sym-var-folder-lock: "\f2d2";
+$sym-var-folder-minus-solid: "\f2d3";
+$sym-var-folder-minus: "\f2d4";
+$sym-var-folder-plus-solid: "\f2d5";
+$sym-var-folder-plus: "\f2d6";
+$sym-var-folder-solid: "\f2d7";
+$sym-var-folder: "\f2d8";
+$sym-var-git-branch-solid: "\f2d9";
+$sym-var-git-branch: "\f2da";
+$sym-var-git-commit-solid: "\f2db";
+$sym-var-git-commit: "\f2dc";
+$sym-var-git-merge-solid: "\f2dd";
+$sym-var-git-merge: "\f2de";
+$sym-var-git-pull-request-solid: "\f2df";
+$sym-var-git-pull-request: "\f2e0";
+$sym-var-glasses-solid: "\f2e1";
+$sym-var-glasses: "\f2e2";
+$sym-var-globe-02-solid: "\f2e3";
+$sym-var-globe-02: "\f2e4";
+$sym-var-globe-03-solid: "\f2e5";
+$sym-var-globe-03: "\f2e6";
+$sym-var-globe-slated-02-solid: "\f2e7";
+$sym-var-globe-slated-02: "\f2e8";
+$sym-var-globe-slated-solid: "\f2e9";
+$sym-var-globe-slated: "\f2ea";
+$sym-var-globe-solid: "\f2eb";
+$sym-var-globe: "\f2ec";
+$sym-var-graduation-hat-02-solid: "\f2ed";
+$sym-var-graduation-hat-02: "\f2ee";
+$sym-var-graduation-hat-solid: "\f2ef";
+$sym-var-graduation-hat: "\f2f0";
+$sym-var-grid-02-solid: "\f2f1";
+$sym-var-grid-02: "\f2f2";
+$sym-var-grid-03-solid: "\f2f3";
+$sym-var-grid-03: "\f2f4";
+$sym-var-grid-dots-blank-solid: "\f2f5";
+$sym-var-grid-dots-blank: "\f2f6";
+$sym-var-grid-dots-bottom-solid: "\f2f7";
+$sym-var-grid-dots-bottom: "\f2f8";
+$sym-var-grid-dots-horizontal-center-solid: "\f2f9";
+$sym-var-grid-dots-horizontal-center: "\f2fa";
+$sym-var-grid-dots-left-solid: "\f2fb";
+$sym-var-grid-dots-left: "\f2fc";
+$sym-var-grid-dots-outer-solid: "\f2fd";
+$sym-var-grid-dots-outer: "\f2fe";
+$sym-var-grid-dots-right-solid: "\f2ff";
+$sym-var-grid-dots-right: "\f300";
+$sym-var-grid-dots-top-solid: "\f301";
+$sym-var-grid-dots-top: "\f302";
+$sym-var-grid-dots-vertical-center-solid: "\f303";
+$sym-var-grid-dots-vertical-center: "\f304";
+$sym-var-grid-solid: "\f305";
+$sym-var-grid: "\f306";
+$sym-var-hand-solid: "\f307";
+$sym-var-hand: "\f308";
+$sym-var-hard-drive-solid: "\f309";
+$sym-var-hard-drive: "\f30a";
+$sym-var-hash-solid: "\f30b";
+$sym-var-hash: "\f30c";
+$sym-var-heading-solid: "\f30d";
+$sym-var-heading: "\f30e";
+$sym-var-headphones-solid: "\f30f";
+$sym-var-headphones: "\f310";
+$sym-var-heart-solid: "\f311";
+$sym-var-heart: "\f312";
+$sym-var-hearts-solid: "\f313";
+$sym-var-hearts: "\f314";
+$sym-var-help-circle-solid: "\f315";
+$sym-var-help-circle: "\f316";
+$sym-var-home-line-solid: "\f317";
+$sym-var-home-line: "\f318";
+$sym-var-home-smile-solid: "\f319";
+$sym-var-home-smile: "\f31a";
+$sym-var-home-solid: "\f31b";
+$sym-var-home: "\f31c";
+$sym-var-hourglass-02-solid: "\f31d";
+$sym-var-hourglass-02: "\f31e";
+$sym-var-hourglass-solid: "\f31f";
+$sym-var-hourglass: "\f320";
+$sym-var-image-02-solid: "\f321";
+$sym-var-image-02: "\f322";
+$sym-var-image-check-solid: "\f323";
+$sym-var-image-check: "\f324";
+$sym-var-image-down-solid: "\f325";
+$sym-var-image-down: "\f326";
+$sym-var-image-indent-left-solid: "\f327";
+$sym-var-image-indent-left: "\f328";
+$sym-var-image-indent-right-solid: "\f329";
+$sym-var-image-indent-right: "\f32a";
+$sym-var-image-left-solid: "\f32b";
+$sym-var-image-left: "\f32c";
+$sym-var-image-plus-solid: "\f32d";
+$sym-var-image-plus: "\f32e";
+$sym-var-image-right-solid: "\f32f";
+$sym-var-image-right: "\f330";
+$sym-var-image-solid: "\f331";
+$sym-var-image-up-solid: "\f332";
+$sym-var-image-up: "\f333";
+$sym-var-image-x-solid: "\f334";
+$sym-var-image-x: "\f335";
+$sym-var-image: "\f336";
+$sym-var-inbox-02-solid: "\f337";
+$sym-var-inbox-02: "\f338";
+$sym-var-inbox-solid: "\f339";
+$sym-var-inbox: "\f33a";
+$sym-var-infinity-solid: "\f33b";
+$sym-var-infinity: "\f33c";
+$sym-var-info-circle-solid: "\f33d";
+$sym-var-info-circle: "\f33e";
+$sym-var-info-default-solid: "\f33f";
+$sym-var-info-default: "\f340";
+$sym-var-info-octagon-solid: "\f341";
+$sym-var-info-octagon: "\f342";
+$sym-var-info-square-solid: "\f343";
+$sym-var-info-square: "\f344";
+$sym-var-italic-solid: "\f345";
+$sym-var-italic: "\f346";
+$sym-var-key-solid: "\f347";
+$sym-var-key: "\f348";
+$sym-var-keyboard-solid: "\f349";
+$sym-var-keyboard: "\f34a";
+$sym-var-laptop-solid: "\f34b";
+$sym-var-laptop: "\f34c";
+$sym-var-layers-three-solid: "\f34d";
+$sym-var-layers-three: "\f34e";
+$sym-var-layers-two-solid: "\f34f";
+$sym-var-layers-two: "\f350";
+$sym-var-layout-alt-02-solid: "\f351";
+$sym-var-layout-alt-02: "\f352";
+$sym-var-layout-alt-03-solid: "\f353";
+$sym-var-layout-alt-03: "\f354";
+$sym-var-layout-alt-04-solid: "\f355";
+$sym-var-layout-alt-04: "\f356";
+$sym-var-layout-alt-solid: "\f357";
+$sym-var-layout-alt: "\f358";
+$sym-var-layout-bottom-solid: "\f359";
+$sym-var-layout-bottom: "\f35a";
+$sym-var-layout-grid-02-solid: "\f35b";
+$sym-var-layout-grid-02: "\f35c";
+$sym-var-layout-grid-solid: "\f35d";
+$sym-var-layout-grid: "\f35e";
+$sym-var-layout-left-solid: "\f35f";
+$sym-var-layout-left: "\f360";
+$sym-var-layout-right-solid: "\f361";
+$sym-var-layout-right: "\f362";
+$sym-var-layout-top-solid: "\f363";
+$sym-var-layout-top: "\f364";
+$sym-var-left-indent-solid: "\f365";
+$sym-var-left-indent: "\f366";
+$sym-var-letter-spacing-solid: "\f367";
+$sym-var-letter-spacing: "\f368";
+$sym-var-lightbulb-solid: "\f369";
+$sym-var-lightbulb: "\f36a";
+$sym-var-line-height-solid: "\f36b";
+$sym-var-line-height: "\f36c";
+$sym-var-link-02-solid: "\f36d";
+$sym-var-link-02: "\f36e";
+$sym-var-link-broken-02-solid: "\f36f";
+$sym-var-link-broken-02: "\f370";
+$sym-var-link-broken-solid: "\f371";
+$sym-var-link-broken: "\f372";
+$sym-var-link-external-solid: "\f373";
+$sym-var-link-external: "\f374";
+$sym-var-link-solid: "\f375";
+$sym-var-link: "\f376";
+$sym-var-list-solid: "\f377";
+$sym-var-list: "\f378";
+$sym-var-loading-02-solid: "\f379";
+$sym-var-loading-02: "\f37a";
+$sym-var-loading-solid: "\f37b";
+$sym-var-loading: "\f37c";
+$sym-var-lock-02-solid: "\f37d";
+$sym-var-lock-02: "\f37e";
+$sym-var-lock-solid: "\f37f";
+$sym-var-lock-unlocked-02-solid: "\f380";
+$sym-var-lock-unlocked-02: "\f381";
+$sym-var-lock-unlocked-solid: "\f382";
+$sym-var-lock-unlocked: "\f383";
+$sym-var-lock: "\f384";
+$sym-var-log-in-02-solid: "\f385";
+$sym-var-log-in-02: "\f386";
+$sym-var-log-in-solid: "\f387";
+$sym-var-log-in: "\f388";
+$sym-var-log-out-02-solid: "\f389";
+$sym-var-log-out-02: "\f38a";
+$sym-var-log-out-solid: "\f38b";
+$sym-var-log-out: "\f38c";
+$sym-var-mail-02-solid: "\f38d";
+$sym-var-mail-02: "\f38e";
+$sym-var-mail-solid: "\f38f";
+$sym-var-mail: "\f390";
+$sym-var-map-solid: "\f391";
+$sym-var-map: "\f392";
+$sym-var-mark-solid: "\f393";
+$sym-var-mark: "\f394";
+$sym-var-marker-pin-02-solid: "\f395";
+$sym-var-marker-pin-02: "\f396";
+$sym-var-marker-pin-solid: "\f397";
+$sym-var-marker-pin: "\f398";
+$sym-var-maximize-02-solid: "\f399";
+$sym-var-maximize-02: "\f39a";
+$sym-var-maximize-solid: "\f39b";
+$sym-var-maximize: "\f39c";
+$sym-var-menu-02-solid: "\f39d";
+$sym-var-menu-02: "\f39e";
+$sym-var-menu-03-solid: "\f39f";
+$sym-var-menu-03: "\f3a0";
+$sym-var-menu-04-solid: "\f3a1";
+$sym-var-menu-04: "\f3a2";
+$sym-var-menu-05-solid: "\f3a3";
+$sym-var-menu-05: "\f3a4";
+$sym-var-menu-solid: "\f3a5";
+$sym-var-menu: "\f3a6";
+$sym-var-message-alert-circle-solid: "\f3a7";
+$sym-var-message-alert-circle: "\f3a8";
+$sym-var-message-chat-circle-solid: "\f3a9";
+$sym-var-message-chat-circle: "\f3aa";
+$sym-var-message-circle-solid: "\f3ab";
+$sym-var-message-circle: "\f3ac";
+$sym-var-message-dots-circle-solid: "\f3ad";
+$sym-var-message-dots-circle: "\f3ae";
+$sym-var-message-notification-circle-solid: "\f3af";
+$sym-var-message-notification-circle: "\f3b0";
+$sym-var-message-notification-square-solid: "\f3b1";
+$sym-var-message-notification-square: "\f3b2";
+$sym-var-microphone-off-solid: "\f3b3";
+$sym-var-microphone-off: "\f3b4";
+$sym-var-microphone-solid: "\f3b5";
+$sym-var-microphone: "\f3b6";
+$sym-var-microscope-solid: "\f3b7";
+$sym-var-microscope: "\f3b8";
+$sym-var-minimize-02-solid: "\f3b9";
+$sym-var-minimize-02: "\f3ba";
+$sym-var-minimize-solid: "\f3bb";
+$sym-var-minimize: "\f3bc";
+$sym-var-minus-circle-solid: "\f3bd";
+$sym-var-minus-circle: "\f3be";
+$sym-var-minus-solid: "\f3bf";
+$sym-var-minus-square-solid: "\f3c0";
+$sym-var-minus-square: "\f3c1";
+$sym-var-minus: "\f3c2";
+$sym-var-modem-solid: "\f3c3";
+$sym-var-modem: "\f3c4";
+$sym-var-monitor-solid: "\f3c5";
+$sym-var-monitor: "\f3c6";
+$sym-var-mouse-solid: "\f3c7";
+$sym-var-mouse: "\f3c8";
+$sym-var-move-solid: "\f3c9";
+$sym-var-move: "\f3ca";
+$sym-var-navigation-pointer-02-solid: "\f3cb";
+$sym-var-navigation-pointer-02: "\f3cc";
+$sym-var-navigation-pointer-off-02-solid: "\f3cd";
+$sym-var-navigation-pointer-off-02: "\f3ce";
+$sym-var-navigation-pointer-off-solid: "\f3cf";
+$sym-var-navigation-pointer-off: "\f3d0";
+$sym-var-navigation-pointer-solid: "\f3d1";
+$sym-var-navigation-pointer: "\f3d2";
+$sym-var-notification-box-solid: "\f3d3";
+$sym-var-notification-box: "\f3d4";
+$sym-var-paint-pour-solid: "\f3d5";
+$sym-var-paint-pour: "\f3d6";
+$sym-var-paint-solid: "\f3d7";
+$sym-var-paint: "\f3d8";
+$sym-var-palette-solid: "\f3d9";
+$sym-var-palette: "\f3da";
+$sym-var-paperclip-solid: "\f3db";
+$sym-var-paperclip: "\f3dc";
+$sym-var-paragraph-spacing-solid: "\f3dd";
+$sym-var-paragraph-spacing: "\f3de";
+$sym-var-paragraph-wrap-solid: "\f3df";
+$sym-var-paragraph-wrap: "\f3e0";
+$sym-var-passcode-lock-solid: "\f3e1";
+$sym-var-passcode-lock: "\f3e2";
+$sym-var-passcode-solid: "\f3e3";
+$sym-var-passcode: "\f3e4";
+$sym-var-pencil-02-solid: "\f3e5";
+$sym-var-pencil-02: "\f3e6";
+$sym-var-pencil-line-solid: "\f3e7";
+$sym-var-pencil-line: "\f3e8";
+$sym-var-pencil-solid: "\f3e9";
+$sym-var-pencil: "\f3ea";
+$sym-var-perspective-solid: "\f3eb";
+$sym-var-perspective: "\f3ec";
+$sym-var-phone-02-solid: "\f3ed";
+$sym-var-phone-02: "\f3ee";
+$sym-var-phone-call-solid: "\f3ef";
+$sym-var-phone-call: "\f3f0";
+$sym-var-phone-hang-up-solid: "\f3f1";
+$sym-var-phone-hang-up: "\f3f2";
+$sym-var-phone-incoming-02-solid: "\f3f3";
+$sym-var-phone-incoming-02: "\f3f4";
+$sym-var-phone-incoming-solid: "\f3f5";
+$sym-var-phone-incoming: "\f3f6";
+$sym-var-phone-outgoing-02-solid: "\f3f7";
+$sym-var-phone-outgoing-02: "\f3f8";
+$sym-var-phone-outgoing-solid: "\f3f9";
+$sym-var-phone-outgoing: "\f3fa";
+$sym-var-phone-solid: "\f3fb";
+$sym-var-phone: "\f3fc";
+$sym-var-pin-02-solid: "\f3fd";
+$sym-var-pin-02: "\f3fe";
+$sym-var-pin-solid: "\f3ff";
+$sym-var-pin: "\f400";
+$sym-var-placeholder-solid: "\f401";
+$sym-var-placeholder: "\f402";
+$sym-var-plane-solid: "\f403";
+$sym-var-plane: "\f404";
+$sym-var-play-solid: "\f405";
+$sym-var-play: "\f406";
+$sym-var-plus-circle-solid: "\f407";
+$sym-var-plus-circle: "\f408";
+$sym-var-plus-solid: "\f409";
+$sym-var-plus-square-solid: "\f40a";
+$sym-var-plus-square: "\f40b";
+$sym-var-plus: "\f40c";
+$sym-var-podcast-solid: "\f40d";
+$sym-var-podcast: "\f40e";
+$sym-var-printer-solid: "\f40f";
+$sym-var-printer: "\f410";
+$sym-var-puzzle-piece-solid: "\f411";
+$sym-var-puzzle-piece: "\f412";
+$sym-var-qr-code-solid: "\f413";
+$sym-var-qr-code: "\f414";
+$sym-var-recording-solid: "\f415";
+$sym-var-recording: "\f416";
+$sym-var-reflect-solid: "\f417";
+$sym-var-reflect: "\f418";
+$sym-var-refresh-ccw-02-solid: "\f419";
+$sym-var-refresh-ccw-02: "\f41a";
+$sym-var-refresh-ccw-solid: "\f41b";
+$sym-var-refresh-ccw: "\f41c";
+$sym-var-repeat-solid: "\f41d";
+$sym-var-repeat: "\f41e";
+$sym-var-reverse-left-solid: "\f41f";
+$sym-var-reverse-left: "\f420";
+$sym-var-reverse-right-solid: "\f421";
+$sym-var-reverse-right: "\f422";
+$sym-var-right-indent-solid: "\f423";
+$sym-var-right-indent: "\f424";
+$sym-var-route-solid: "\f425";
+$sym-var-route: "\f426";
+$sym-var-rows-02-solid: "\f427";
+$sym-var-rows-02: "\f428";
+$sym-var-rows-03-solid: "\f429";
+$sym-var-rows-03: "\f42a";
+$sym-var-rows-solid: "\f42b";
+$sym-var-rows: "\f42c";
+$sym-var-ruler-solid: "\f42d";
+$sym-var-ruler: "\f42e";
+$sym-var-sale-solid: "\f42f";
+$sym-var-sale: "\f430";
+$sym-var-save-solid: "\f431";
+$sym-var-save: "\f432";
+$sym-var-scale-02-solid: "\f433";
+$sym-var-scale-02: "\f434";
+$sym-var-scale-03-solid: "\f435";
+$sym-var-scale-03: "\f436";
+$sym-var-scale-solid: "\f437";
+$sym-var-scale: "\f438";
+$sym-var-scan-solid: "\f439";
+$sym-var-scan: "\f43a";
+$sym-var-scissors-cut-solid: "\f43b";
+$sym-var-scissors-cut: "\f43c";
+$sym-var-scissors-solid: "\f43d";
+$sym-var-scissors: "\f43e";
+$sym-var-search-default-solid: "\f43f";
+$sym-var-search-default: "\f440";
+$sym-var-send-02-solid: "\f441";
+$sym-var-send-02: "\f442";
+$sym-var-send-03-solid: "\f443";
+$sym-var-send-03: "\f444";
+$sym-var-send-solid: "\f445";
+$sym-var-send: "\f446";
+$sym-var-server-solid: "\f447";
+$sym-var-server: "\f448";
+$sym-var-settings-02-solid: "\f449";
+$sym-var-settings-02: "\f44a";
+$sym-var-settings-solid: "\f44b";
+$sym-var-settings: "\f44c";
+$sym-var-share-02-solid: "\f44d";
+$sym-var-share-02: "\f44e";
+$sym-var-share-03-solid: "\f44f";
+$sym-var-share-03: "\f450";
+$sym-var-share-04-solid: "\f451";
+$sym-var-share-04: "\f452";
+$sym-var-share-05-solid: "\f453";
+$sym-var-share-05: "\f454";
+$sym-var-share-solid: "\f455";
+$sym-var-share: "\f456";
+$sym-var-shield-off-solid: "\f457";
+$sym-var-shield-off: "\f458";
+$sym-var-shield-solid: "\f459";
+$sym-var-shield-tick-solid: "\f45a";
+$sym-var-shield-tick: "\f45b";
+$sym-var-shield: "\f45c";
+$sym-var-shopping-bag-solid: "\f45d";
+$sym-var-shopping-bag: "\f45e";
+$sym-var-shuffle-solid: "\f45f";
+$sym-var-shuffle: "\f460";
+$sym-var-signal-solid: "\f461";
+$sym-var-signal: "\f462";
+$sym-var-skew-solid: "\f463";
+$sym-var-skew: "\f464";
+$sym-var-skip-back-solid: "\f465";
+$sym-var-skip-back: "\f466";
+$sym-var-skip-forward-solid: "\f467";
+$sym-var-skip-forward: "\f468";
+$sym-var-slash-circle-solid: "\f469";
+$sym-var-slash-circle: "\f46a";
+$sym-var-slash-divider-solid: "\f46b";
+$sym-var-slash-divider: "\f46c";
+$sym-var-slash-octagon-solid: "\f46d";
+$sym-var-slash-octagon: "\f46e";
+$sym-var-sliders-02-solid: "\f46f";
+$sym-var-sliders-02: "\f470";
+$sym-var-sliders-03-solid: "\f471";
+$sym-var-sliders-03: "\f472";
+$sym-var-sliders-solid: "\f473";
+$sym-var-sliders: "\f474";
+$sym-var-spacing-height-solid: "\f475";
+$sym-var-spacing-height: "\f476";
+$sym-var-spacing-width-solid: "\f477";
+$sym-var-spacing-width: "\f478";
+$sym-var-stand-solid: "\f479";
+$sym-var-stand: "\f47a";
+$sym-var-sticker-square-solid: "\f47b";
+$sym-var-sticker-square: "\f47c";
+$sym-var-stop-solid: "\f47d";
+$sym-var-stop: "\f47e";
+$sym-var-strikethrough-solid: "\f47f";
+$sym-var-strikethrough: "\f480";
+$sym-var-subscript-solid: "\f481";
+$sym-var-subscript: "\f482";
+$sym-var-switch-horizontal-solid: "\f483";
+$sym-var-switch-horizontal: "\f484";
+$sym-var-switch-vertical-solid: "\f485";
+$sym-var-switch-vertical: "\f486";
+$sym-var-table-solid: "\f487";
+$sym-var-table: "\f488";
+$sym-var-tablet-solid: "\f489";
+$sym-var-tablet: "\f48a";
+$sym-var-tag-solid: "\f48b";
+$sym-var-tag: "\f48c";
+$sym-var-telescope-solid: "\f48d";
+$sym-var-telescope: "\f48e";
+$sym-var-terminal-solid: "\f48f";
+$sym-var-terminal-square-solid: "\f490";
+$sym-var-terminal-square: "\f491";
+$sym-var-terminal: "\f492";
+$sym-var-text-input-solid: "\f493";
+$sym-var-text-input: "\f494";
+$sym-var-thumbs-down-solid: "\f495";
+$sym-var-thumbs-down: "\f496";
+$sym-var-thumbs-up-solid: "\f497";
+$sym-var-thumbs-up: "\f498";
+$sym-var-ticket-solid: "\f499";
+$sym-var-ticket: "\f49a";
+$sym-var-transform-solid: "\f49b";
+$sym-var-transform: "\f49c";
+$sym-var-translate-solid: "\f49d";
+$sym-var-translate: "\f49e";
+$sym-var-trash-solid: "\f49f";
+$sym-var-trash: "\f4a0";
+$sym-var-trophy-solid: "\f4a1";
+$sym-var-trophy: "\f4a2";
+$sym-var-type-solid: "\f4a3";
+$sym-var-type-strikethrough-solid: "\f4a4";
+$sym-var-type-strikethrough: "\f4a5";
+$sym-var-type: "\f4a6";
+$sym-var-underline-solid: "\f4a7";
+$sym-var-underline: "\f4a8";
+$sym-var-upload-02-solid: "\f4a9";
+$sym-var-upload-02: "\f4aa";
+$sym-var-upload-cloud-02-solid: "\f4ab";
+$sym-var-upload-cloud-02: "\f4ac";
+$sym-var-upload-cloud-solid: "\f4ad";
+$sym-var-upload-cloud: "\f4ae";
+$sym-var-upload-solid: "\f4af";
+$sym-var-upload: "\f4b0";
+$sym-var-user-check-solid: "\f4b1";
+$sym-var-user-check: "\f4b2";
+$sym-var-user-circle-solid: "\f4b3";
+$sym-var-user-circle: "\f4b4";
+$sym-var-user-down-solid: "\f4b5";
+$sym-var-user-down: "\f4b6";
+$sym-var-user-left-solid: "\f4b7";
+$sym-var-user-left: "\f4b8";
+$sym-var-user-right-solid: "\f4b9";
+$sym-var-user-right: "\f4ba";
+$sym-var-user-solid: "\f4bb";
+$sym-var-user-up-solid: "\f4bc";
+$sym-var-user-up: "\f4bd";
+$sym-var-user-x-solid: "\f4be";
+$sym-var-user-x: "\f4bf";
+$sym-var-user: "\f4c0";
+$sym-var-users-check-solid: "\f4c1";
+$sym-var-users-check: "\f4c2";
+$sym-var-users-down-solid: "\f4c3";
+$sym-var-users-down: "\f4c4";
+$sym-var-users-left-solid: "\f4c5";
+$sym-var-users-left: "\f4c6";
+$sym-var-users-minus-solid: "\f4c7";
+$sym-var-users-minus: "\f4c8";
+$sym-var-users-plus-solid: "\f4c9";
+$sym-var-users-plus: "\f4ca";
+$sym-var-users-right-solid: "\f4cb";
+$sym-var-users-right: "\f4cc";
+$sym-var-users-solid: "\f4cd";
+$sym-var-users-up-solid: "\f4ce";
+$sym-var-users-up: "\f4cf";
+$sym-var-users-x-solid: "\f4d0";
+$sym-var-users-x: "\f4d1";
+$sym-var-users: "\f4d2";
+$sym-var-variable-solid: "\f4d3";
+$sym-var-variable: "\f4d4";
+$sym-var-video-recorder-off-solid: "\f4d5";
+$sym-var-video-recorder-off: "\f4d6";
+$sym-var-video-recorder-solid: "\f4d7";
+$sym-var-video-recorder: "\f4d8";
+$sym-var-voicemail-solid: "\f4d9";
+$sym-var-voicemail: "\f4da";
+$sym-var-volume-max-solid: "\f4db";
+$sym-var-volume-max: "\f4dc";
+$sym-var-volume-min-solid: "\f4dd";
+$sym-var-volume-min: "\f4de";
+$sym-var-volume-minus-solid: "\f4df";
+$sym-var-volume-minus: "\f4e0";
+$sym-var-volume-plus-solid: "\f4e1";
+$sym-var-volume-plus: "\f4e2";
+$sym-var-volume-x-solid: "\f4e3";
+$sym-var-volume-x: "\f4e4";
+$sym-var-wallet-02-solid: "\f4e5";
+$sym-var-wallet-02: "\f4e6";
+$sym-var-wallet-03-solid: "\f4e7";
+$sym-var-wallet-03: "\f4e8";
+$sym-var-wallet-solid: "\f4e9";
+$sym-var-wallet: "\f4ea";
+$sym-var-webcam-solid: "\f4eb";
+$sym-var-webcam: "\f4ec";
+$sym-var-wifi-off-solid: "\f4ed";
+$sym-var-wifi-off: "\f4ee";
+$sym-var-wifi-solid: "\f4ef";
+$sym-var-wifi: "\f4f0";
+$sym-var-x-circle-solid: "\f4f1";
+$sym-var-x-circle: "\f4f2";
+$sym-var-x-close-solid: "\f4f3";
+$sym-var-x-close: "\f4f4";
+$sym-var-zap-solid: "\f4f5";
+$sym-var-zap: "\f4f6";
+$sym-var-zoom-in-solid: "\f4f7";
+$sym-var-zoom-in: "\f4f8";
+$sym-var-zoom-out-solid: "\f4f9";
+$sym-var-zoom-out: "\f4fa";
+$sym-var-calendar-date-number-solid: "\f4fb";
+$sym-var-calendar-date-number: "\f4fc";
+$sym-var-check-list-solid: "\f4fd";
+$sym-var-check-list: "\f4fe";
+$sym-var-clean-solid: "\f4ff";
+$sym-var-clean: "\f500";
+$sym-var-dot-list-solid: "\f501";
+$sym-var-dot-list: "\f502";
+$sym-var-dot-solid: "\f503";
+$sym-var-dot: "\f504";
+$sym-var-function-solid: "\f505";
+$sym-var-function: "\f506";
+$sym-var-heading-1-solid: "\f507";
+$sym-var-heading-1: "\f508";
+$sym-var-heading-2-solid: "\f509";
+$sym-var-heading-2: "\f50a";
+$sym-var-heading-3-solid: "\f50b";
+$sym-var-heading-3: "\f50c";
+$sym-var-heading-4-solid: "\f50d";
+$sym-var-heading-4: "\f50e";
+$sym-var-heading-5-solid: "\f50f";
+$sym-var-heading-5: "\f510";
+$sym-var-heading-6-solid: "\f511";
+$sym-var-heading-6: "\f512";
+$sym-var-number-list-solid: "\f513";
+$sym-var-number-list: "\f514";
+$sym-var-paragraph-solid: "\f515";
+$sym-var-paragraph: "\f516";
+$sym-var-quote-solid: "\f517";
+$sym-var-quote: "\f518";
+$sym-var-resize-handle-solid: "\f519";
+$sym-var-resize-handle: "\f51a";
+$sym-var-solid-solid: "\f51b";
+$sym-var-solid-strikethrough-solid: "\f51c";
+$sym-var-solid-strikethrough: "\f51d";
+$sym-var-solid: "\f51e";
+$sym-var-superscript-solid: "\f51f";
+$sym-var-superscript: "\f520";
+$sym-var-text-color-solid: "\f521";
+$sym-var-text-color: "\f522";
+$sym-var-Superscript: "\f523";
+$sym-var-conference-solid: "\f524";
+$sym-var-conference: "\f525";
+$sym-var-crown-2-solid: "\f526";
+$sym-var-crown-2: "\f527";
+$sym-var-crown-solid: "\f528";
+$sym-var-crown: "\f529";
+$sym-var-interactive-solid: "\f52a";
+$sym-var-interactive: "\f52b";
+$sym-var-quiz-solid: "\f52c";
+$sym-var-quiz: "\f52d";
+$sym-var-scheduled-solid: "\f52e";
+$sym-var-scheduled: "\f52f";
+$sym-var-star-solid: "\f530";
+$sym-var-star: "\f531";
+$sym-var-user-edit-solid: "\f532";
+$sym-var-user-edit: "\f533";
+
+$sym-map: (
+  "activity-solid": $sym-var-activity-solid,
+  "activity": $sym-var-activity,
+  "airplay-solid": $sym-var-airplay-solid,
+  "airplay": $sym-var-airplay,
+  "alarm-clock-plus-solid": $sym-var-alarm-clock-plus-solid,
+  "alarm-clock-plus": $sym-var-alarm-clock-plus,
+  "alarm-clock-solid": $sym-var-alarm-clock-solid,
+  "alarm-clock": $sym-var-alarm-clock,
+  "alert-circle-solid": $sym-var-alert-circle-solid,
+  "alert-circle": $sym-var-alert-circle,
+  "alert-octagon-solid": $sym-var-alert-octagon-solid,
+  "alert-octagon": $sym-var-alert-octagon,
+  "alert-triangle-solid": $sym-var-alert-triangle-solid,
+  "alert-triangle": $sym-var-alert-triangle,
+  "align-bottom-solid": $sym-var-align-bottom-solid,
+  "align-bottom": $sym-var-align-bottom,
+  "align-center-solid": $sym-var-align-center-solid,
+  "align-center": $sym-var-align-center,
+  "align-horizontal-center-solid": $sym-var-align-horizontal-center-solid,
+  "align-horizontal-center": $sym-var-align-horizontal-center,
+  "align-justify-solid": $sym-var-align-justify-solid,
+  "align-justify": $sym-var-align-justify,
+  "align-left-02-solid": $sym-var-align-left-02-solid,
+  "align-left-02": $sym-var-align-left-02,
+  "align-left-solid": $sym-var-align-left-solid,
+  "align-left": $sym-var-align-left,
+  "align-right-02-solid": $sym-var-align-right-02-solid,
+  "align-right-02": $sym-var-align-right-02,
+  "align-right-solid": $sym-var-align-right-solid,
+  "align-right": $sym-var-align-right,
+  "align-top-arrow-solid": $sym-var-align-top-arrow-solid,
+  "align-top-arrow": $sym-var-align-top-arrow,
+  "align-vertical-center-solid": $sym-var-align-vertical-center-solid,
+  "align-vertical-center": $sym-var-align-vertical-center,
+  "annotation-alert-solid": $sym-var-annotation-alert-solid,
+  "annotation-alert": $sym-var-annotation-alert,
+  "annotation-check-solid": $sym-var-annotation-check-solid,
+  "annotation-check": $sym-var-annotation-check,
+  "annotation-info-solid": $sym-var-annotation-info-solid,
+  "annotation-info": $sym-var-annotation-info,
+  "annotation-solid": $sym-var-annotation-solid,
+  "annotation": $sym-var-annotation,
+  "announcement-02-solid": $sym-var-announcement-02-solid,
+  "announcement-02": $sym-var-announcement-02,
+  "announcement-solid": $sym-var-announcement-solid,
+  "announcement": $sym-var-announcement,
+  "archive-solid": $sym-var-archive-solid,
+  "archive": $sym-var-archive,
+  "arrow-circle-down-left-solid": $sym-var-arrow-circle-down-left-solid,
+  "arrow-circle-down-left": $sym-var-arrow-circle-down-left,
+  "arrow-circle-down-right-solid": $sym-var-arrow-circle-down-right-solid,
+  "arrow-circle-down-right": $sym-var-arrow-circle-down-right,
+  "arrow-circle-down-solid": $sym-var-arrow-circle-down-solid,
+  "arrow-circle-down": $sym-var-arrow-circle-down,
+  "arrow-circle-left-solid": $sym-var-arrow-circle-left-solid,
+  "arrow-circle-left": $sym-var-arrow-circle-left,
+  "arrow-circle-right-solid": $sym-var-arrow-circle-right-solid,
+  "arrow-circle-right": $sym-var-arrow-circle-right,
+  "arrow-circle-up-left-solid": $sym-var-arrow-circle-up-left-solid,
+  "arrow-circle-up-left": $sym-var-arrow-circle-up-left,
+  "arrow-circle-up-right-solid": $sym-var-arrow-circle-up-right-solid,
+  "arrow-circle-up-right": $sym-var-arrow-circle-up-right,
+  "arrow-circle-up-solid": $sym-var-arrow-circle-up-solid,
+  "arrow-circle-up": $sym-var-arrow-circle-up,
+  "arrow-down-02-solid": $sym-var-arrow-down-02-solid,
+  "arrow-down-02": $sym-var-arrow-down-02,
+  "arrow-down-left-solid": $sym-var-arrow-down-left-solid,
+  "arrow-down-left": $sym-var-arrow-down-left,
+  "arrow-down-right-solid": $sym-var-arrow-down-right-solid,
+  "arrow-down-right": $sym-var-arrow-down-right,
+  "arrow-down-solid": $sym-var-arrow-down-solid,
+  "arrow-down": $sym-var-arrow-down,
+  "arrow-left-02-solid": $sym-var-arrow-left-02-solid,
+  "arrow-left-02": $sym-var-arrow-left-02,
+  "arrow-left-solid": $sym-var-arrow-left-solid,
+  "arrow-left": $sym-var-arrow-left,
+  "arrow-narrow-down-left-solid": $sym-var-arrow-narrow-down-left-solid,
+  "arrow-narrow-down-left": $sym-var-arrow-narrow-down-left,
+  "arrow-narrow-down-right-solid": $sym-var-arrow-narrow-down-right-solid,
+  "arrow-narrow-down-right": $sym-var-arrow-narrow-down-right,
+  "arrow-narrow-down-solid": $sym-var-arrow-narrow-down-solid,
+  "arrow-narrow-down": $sym-var-arrow-narrow-down,
+  "arrow-narrow-left-solid": $sym-var-arrow-narrow-left-solid,
+  "arrow-narrow-left": $sym-var-arrow-narrow-left,
+  "arrow-narrow-right-solid": $sym-var-arrow-narrow-right-solid,
+  "arrow-narrow-right": $sym-var-arrow-narrow-right,
+  "arrow-narrow-up-left-solid": $sym-var-arrow-narrow-up-left-solid,
+  "arrow-narrow-up-left": $sym-var-arrow-narrow-up-left,
+  "arrow-narrow-up-right-solid": $sym-var-arrow-narrow-up-right-solid,
+  "arrow-narrow-up-right": $sym-var-arrow-narrow-up-right,
+  "arrow-narrow-up-solid": $sym-var-arrow-narrow-up-solid,
+  "arrow-narrow-up": $sym-var-arrow-narrow-up,
+  "arrow-right-02-solid": $sym-var-arrow-right-02-solid,
+  "arrow-right-02": $sym-var-arrow-right-02,
+  "arrow-right-solid": $sym-var-arrow-right-solid,
+  "arrow-right": $sym-var-arrow-right,
+  "arrow-up-02-solid": $sym-var-arrow-up-02-solid,
+  "arrow-up-02": $sym-var-arrow-up-02,
+  "arrow-up-left-solid": $sym-var-arrow-up-left-solid,
+  "arrow-up-left": $sym-var-arrow-up-left,
+  "arrow-up-right-solid": $sym-var-arrow-up-right-solid,
+  "arrow-up-right": $sym-var-arrow-up-right,
+  "arrow-up-solid": $sym-var-arrow-up-solid,
+  "arrow-up": $sym-var-arrow-up,
+  "asterisk-solid": $sym-var-asterisk-solid,
+  "asterisk": $sym-var-asterisk,
+  "at-sign-solid": $sym-var-at-sign-solid,
+  "at-sign": $sym-var-at-sign,
+  "atom-solid": $sym-var-atom-solid,
+  "atom": $sym-var-atom,
+  "attachment-02-solid": $sym-var-attachment-02-solid,
+  "attachment-02": $sym-var-attachment-02,
+  "attachment-solid": $sym-var-attachment-solid,
+  "attachment": $sym-var-attachment,
+  "award-02-solid": $sym-var-award-02-solid,
+  "award-02": $sym-var-award-02,
+  "award-03-solid": $sym-var-award-03-solid,
+  "award-03": $sym-var-award-03,
+  "award-04-solid": $sym-var-award-04-solid,
+  "award-04": $sym-var-award-04,
+  "award-solid": $sym-var-award-solid,
+  "award": $sym-var-award,
+  "backpack-solid": $sym-var-backpack-solid,
+  "backpack": $sym-var-backpack,
+  "bank-note-02-solid": $sym-var-bank-note-02-solid,
+  "bank-note-02": $sym-var-bank-note-02,
+  "bank-note-03-solid": $sym-var-bank-note-03-solid,
+  "bank-note-03": $sym-var-bank-note-03,
+  "bank-note-solid": $sym-var-bank-note-solid,
+  "bank-note": $sym-var-bank-note,
+  "bank-solid": $sym-var-bank-solid,
+  "bank": $sym-var-bank,
+  "battery-charging-solid": $sym-var-battery-charging-solid,
+  "battery-charging": $sym-var-battery-charging,
+  "battery-empty-solid": $sym-var-battery-empty-solid,
+  "battery-empty": $sym-var-battery-empty,
+  "battery-full-solid": $sym-var-battery-full-solid,
+  "battery-full": $sym-var-battery-full,
+  "battery-low-solid": $sym-var-battery-low-solid,
+  "battery-low": $sym-var-battery-low,
+  "battery-mid-solid": $sym-var-battery-mid-solid,
+  "battery-mid": $sym-var-battery-mid,
+  "beaker-solid": $sym-var-beaker-solid,
+  "beaker": $sym-var-beaker,
+  "bell-02-solid": $sym-var-bell-02-solid,
+  "bell-02": $sym-var-bell-02,
+  "bell-off-02-solid": $sym-var-bell-off-02-solid,
+  "bell-off-02": $sym-var-bell-off-02,
+  "bell-off-solid": $sym-var-bell-off-solid,
+  "bell-off": $sym-var-bell-off,
+  "bell-plus-solid": $sym-var-bell-plus-solid,
+  "bell-plus": $sym-var-bell-plus,
+  "bell-ringing-solid": $sym-var-bell-ringing-solid,
+  "bell-ringing": $sym-var-bell-ringing,
+  "bell-solid": $sym-var-bell-solid,
+  "bell": $sym-var-bell,
+  "bluetooth-off-solid": $sym-var-bluetooth-off-solid,
+  "bluetooth-off": $sym-var-bluetooth-off,
+  "bluetooth-on-solid": $sym-var-bluetooth-on-solid,
+  "bluetooth-on": $sym-var-bluetooth-on,
+  "bold-solid": $sym-var-bold-solid,
+  "bold": $sym-var-bold,
+  "book-closed-solid": $sym-var-book-closed-solid,
+  "book-closed": $sym-var-book-closed,
+  "book-open-solid": $sym-var-book-open-solid,
+  "book-open": $sym-var-book-open,
+  "bookmark-add-solid": $sym-var-bookmark-add-solid,
+  "bookmark-add": $sym-var-bookmark-add,
+  "bookmark-check-solid": $sym-var-bookmark-check-solid,
+  "bookmark-check": $sym-var-bookmark-check,
+  "bookmark-minus-solid": $sym-var-bookmark-minus-solid,
+  "bookmark-minus": $sym-var-bookmark-minus,
+  "bookmark-solid": $sym-var-bookmark-solid,
+  "bookmark": $sym-var-bookmark,
+  "box-solid": $sym-var-box-solid,
+  "box": $sym-var-box,
+  "brackets-solid": $sym-var-brackets-solid,
+  "brackets": $sym-var-brackets,
+  "briefcase-solid": $sym-var-briefcase-solid,
+  "briefcase": $sym-var-briefcase,
+  "browser-solid": $sym-var-browser-solid,
+  "browser": $sym-var-browser,
+  "brush-solid": $sym-var-brush-solid,
+  "brush": $sym-var-brush,
+  "building-02-solid": $sym-var-building-02-solid,
+  "building-02": $sym-var-building-02,
+  "building-03-solid": $sym-var-building-03-solid,
+  "building-03": $sym-var-building-03,
+  "building-04-solid": $sym-var-building-04-solid,
+  "building-04": $sym-var-building-04,
+  "building-05-solid": $sym-var-building-05-solid,
+  "building-05": $sym-var-building-05,
+  "building-06-solid": $sym-var-building-06-solid,
+  "building-06": $sym-var-building-06,
+  "building-07-solid": $sym-var-building-07-solid,
+  "building-07": $sym-var-building-07,
+  "building-08-solid": $sym-var-building-08-solid,
+  "building-08": $sym-var-building-08,
+  "building-solid": $sym-var-building-solid,
+  "building": $sym-var-building,
+  "calculator-solid": $sym-var-calculator-solid,
+  "calculator": $sym-var-calculator,
+  "calendar-check-solid": $sym-var-calendar-check-solid,
+  "calendar-check": $sym-var-calendar-check,
+  "calendar-date-solid": $sym-var-calendar-date-solid,
+  "calendar-date": $sym-var-calendar-date,
+  "camera-lens-solid": $sym-var-camera-lens-solid,
+  "camera-lens": $sym-var-camera-lens,
+  "camera-off-solid": $sym-var-camera-off-solid,
+  "camera-off": $sym-var-camera-off,
+  "camera-plus-solid": $sym-var-camera-plus-solid,
+  "camera-plus": $sym-var-camera-plus,
+  "camera-solid": $sym-var-camera-solid,
+  "camera": $sym-var-camera,
+  "certificate-solid": $sym-var-certificate-solid,
+  "certificate": $sym-var-certificate,
+  "check-circle-broken-solid": $sym-var-check-circle-broken-solid,
+  "check-circle-broken": $sym-var-check-circle-broken,
+  "check-circle-solid": $sym-var-check-circle-solid,
+  "check-circle": $sym-var-check-circle,
+  "check-solid": $sym-var-check-solid,
+  "check-square-broken-solid": $sym-var-check-square-broken-solid,
+  "check-square-broken": $sym-var-check-square-broken,
+  "check-square-empty-solid": $sym-var-check-square-empty-solid,
+  "check-square-empty": $sym-var-check-square-empty,
+  "check-square-solid": $sym-var-check-square-solid,
+  "check-square": $sym-var-check-square,
+  "check-verified-02-solid": $sym-var-check-verified-02-solid,
+  "check-verified-02": $sym-var-check-verified-02,
+  "check-verified-solid": $sym-var-check-verified-solid,
+  "check-verified": $sym-var-check-verified,
+  "check": $sym-var-check,
+  "chevron-down-double-solid": $sym-var-chevron-down-double-solid,
+  "chevron-down-double": $sym-var-chevron-down-double,
+  "chevron-down-solid": $sym-var-chevron-down-solid,
+  "chevron-down": $sym-var-chevron-down,
+  "chevron-left-double-solid": $sym-var-chevron-left-double-solid,
+  "chevron-left-double": $sym-var-chevron-left-double,
+  "chevron-left-solid": $sym-var-chevron-left-solid,
+  "chevron-left": $sym-var-chevron-left,
+  "chevron-right-double-solid": $sym-var-chevron-right-double-solid,
+  "chevron-right-double": $sym-var-chevron-right-double,
+  "chevron-right-solid": $sym-var-chevron-right-solid,
+  "chevron-right": $sym-var-chevron-right,
+  "chevron-selector-horizontal-solid": $sym-var-chevron-selector-horizontal-solid,
+  "chevron-selector-horizontal": $sym-var-chevron-selector-horizontal,
+  "chevron-selector-vertical-solid": $sym-var-chevron-selector-vertical-solid,
+  "chevron-selector-vertical": $sym-var-chevron-selector-vertical,
+  "chevron-up-double-solid": $sym-var-chevron-up-double-solid,
+  "chevron-up-double": $sym-var-chevron-up-double,
+  "chevron-up-solid": $sym-var-chevron-up-solid,
+  "chevron-up": $sym-var-chevron-up,
+  "chrome-cast-solid": $sym-var-chrome-cast-solid,
+  "chrome-cast": $sym-var-chrome-cast,
+  "circle-cut-solid": $sym-var-circle-cut-solid,
+  "circle-cut": $sym-var-circle-cut,
+  "clipboard-check-solid": $sym-var-clipboard-check-solid,
+  "clipboard-check": $sym-var-clipboard-check,
+  "clipboard-download-solid": $sym-var-clipboard-download-solid,
+  "clipboard-download": $sym-var-clipboard-download,
+  "clipboard-solid": $sym-var-clipboard-solid,
+  "clipboard": $sym-var-clipboard,
+  "clock-check-solid": $sym-var-clock-check-solid,
+  "clock-check": $sym-var-clock-check,
+  "clock-fast-forward-solid": $sym-var-clock-fast-forward-solid,
+  "clock-fast-forward": $sym-var-clock-fast-forward,
+  "clock-plus-solid": $sym-var-clock-plus-solid,
+  "clock-plus": $sym-var-clock-plus,
+  "clock-refresh-solid": $sym-var-clock-refresh-solid,
+  "clock-refresh": $sym-var-clock-refresh,
+  "clock-rewind-solid": $sym-var-clock-rewind-solid,
+  "clock-rewind": $sym-var-clock-rewind,
+  "clock-solid": $sym-var-clock-solid,
+  "clock-stopwatch-solid": $sym-var-clock-stopwatch-solid,
+  "clock-stopwatch": $sym-var-clock-stopwatch,
+  "clock": $sym-var-clock,
+  "cloud-blank-solid": $sym-var-cloud-blank-solid,
+  "cloud-blank": $sym-var-cloud-blank,
+  "code-02-solid": $sym-var-code-02-solid,
+  "code-02": $sym-var-code-02,
+  "code-browser-solid": $sym-var-code-browser-solid,
+  "code-browser": $sym-var-code-browser,
+  "code-solid": $sym-var-code-solid,
+  "code": $sym-var-code,
+  "coins-solid": $sym-var-coins-solid,
+  "coins": $sym-var-coins,
+  "colors-solid": $sym-var-colors-solid,
+  "colors": $sym-var-colors,
+  "columns-02-solid": $sym-var-columns-02-solid,
+  "columns-02": $sym-var-columns-02,
+  "columns-03-solid": $sym-var-columns-03-solid,
+  "columns-03": $sym-var-columns-03,
+  "columns-solid": $sym-var-columns-solid,
+  "columns": $sym-var-columns,
+  "command-solid": $sym-var-command-solid,
+  "command": $sym-var-command,
+  "compass-02-solid": $sym-var-compass-02-solid,
+  "compass-02": $sym-var-compass-02,
+  "compass-solid": $sym-var-compass-solid,
+  "compass": $sym-var-compass,
+  "copy-solid": $sym-var-copy-solid,
+  "copy": $sym-var-copy,
+  "credit-card-solid": $sym-var-credit-card-solid,
+  "credit-card": $sym-var-credit-card,
+  "crop-solid": $sym-var-crop-solid,
+  "crop": $sym-var-crop,
+  "cryptocurrency-solid": $sym-var-cryptocurrency-solid,
+  "cryptocurrency": $sym-var-cryptocurrency,
+  "currency-bitcoin-solid": $sym-var-currency-bitcoin-solid,
+  "currency-bitcoin": $sym-var-currency-bitcoin,
+  "currency-dollar-solid": $sym-var-currency-dollar-solid,
+  "currency-dollar": $sym-var-currency-dollar,
+  "currency-euro-solid": $sym-var-currency-euro-solid,
+  "currency-euro": $sym-var-currency-euro,
+  "currency-pound-solid": $sym-var-currency-pound-solid,
+  "currency-pound": $sym-var-currency-pound,
+  "currency-ruble-solid": $sym-var-currency-ruble-solid,
+  "currency-ruble": $sym-var-currency-ruble,
+  "currency-rupee-solid": $sym-var-currency-rupee-solid,
+  "currency-rupee": $sym-var-currency-rupee,
+  "currency-rupiah-solid": $sym-var-currency-rupiah-solid,
+  "currency-rupiah": $sym-var-currency-rupiah,
+  "currency-yen-solid": $sym-var-currency-yen-solid,
+  "currency-yen": $sym-var-currency-yen,
+  "cursor-box-solid": $sym-var-cursor-box-solid,
+  "cursor-box": $sym-var-cursor-box,
+  "cursor-click-solid": $sym-var-cursor-click-solid,
+  "cursor-click": $sym-var-cursor-click,
+  "cursor-solid": $sym-var-cursor-solid,
+  "cursor": $sym-var-cursor,
+  "database-solid": $sym-var-database-solid,
+  "database": $sym-var-database,
+  "delete-solid": $sym-var-delete-solid,
+  "delete": $sym-var-delete,
+  "diamond-02-solid": $sym-var-diamond-02-solid,
+  "diamond-02": $sym-var-diamond-02,
+  "diamond-solid": $sym-var-diamond-solid,
+  "diamond": $sym-var-diamond,
+  "distribute-spacing-horizontal-solid": $sym-var-distribute-spacing-horizontal-solid,
+  "distribute-spacing-horizontal": $sym-var-distribute-spacing-horizontal,
+  "distribute-spacing-vertical-solid": $sym-var-distribute-spacing-vertical-solid,
+  "distribute-spacing-vertical": $sym-var-distribute-spacing-vertical,
+  "divide-solid": $sym-var-divide-solid,
+  "divide": $sym-var-divide,
+  "divider-solid": $sym-var-divider-solid,
+  "divider": $sym-var-divider,
+  "dotpoints-solid": $sym-var-dotpoints-solid,
+  "dotpoints": $sym-var-dotpoints,
+  "dots-grid-02-solid": $sym-var-dots-grid-02-solid,
+  "dots-grid-02": $sym-var-dots-grid-02,
+  "dots-grid-solid": $sym-var-dots-grid-solid,
+  "dots-grid": $sym-var-dots-grid,
+  "dots-horizontal-solid": $sym-var-dots-horizontal-solid,
+  "dots-horizontal": $sym-var-dots-horizontal,
+  "dots-vertical-solid": $sym-var-dots-vertical-solid,
+  "dots-vertical": $sym-var-dots-vertical,
+  "download-02-solid": $sym-var-download-02-solid,
+  "download-02": $sym-var-download-02,
+  "download-cloud-02-solid": $sym-var-download-cloud-02-solid,
+  "download-cloud-02": $sym-var-download-cloud-02,
+  "download-cloud-solid": $sym-var-download-cloud-solid,
+  "download-cloud": $sym-var-download-cloud,
+  "download-solid": $sym-var-download-solid,
+  "download": $sym-var-download,
+  "drop-solid": $sym-var-drop-solid,
+  "drop": $sym-var-drop,
+  "dropper-solid": $sym-var-dropper-solid,
+  "dropper": $sym-var-dropper,
+  "edit-02-solid": $sym-var-edit-02-solid,
+  "edit-02": $sym-var-edit-02,
+  "edit-solid": $sym-var-edit-solid,
+  "edit": $sym-var-edit,
+  "equal-not-solid": $sym-var-equal-not-solid,
+  "equal-not": $sym-var-equal-not,
+  "equal-solid": $sym-var-equal-solid,
+  "equal": $sym-var-equal,
+  "eraser-solid": $sym-var-eraser-solid,
+  "eraser": $sym-var-eraser,
+  "expand-02-solid": $sym-var-expand-02-solid,
+  "expand-02": $sym-var-expand-02,
+  "expand-03-solid": $sym-var-expand-03-solid,
+  "expand-03": $sym-var-expand-03,
+  "expand-solid": $sym-var-expand-solid,
+  "expand": $sym-var-expand,
+  "eye-off-solid": $sym-var-eye-off-solid,
+  "eye-off": $sym-var-eye-off,
+  "eye-solid": $sym-var-eye-solid,
+  "eye": $sym-var-eye,
+  "face-content-solid": $sym-var-face-content-solid,
+  "face-content": $sym-var-face-content,
+  "face-frown-solid": $sym-var-face-frown-solid,
+  "face-frown": $sym-var-face-frown,
+  "face-happy-solid": $sym-var-face-happy-solid,
+  "face-happy": $sym-var-face-happy,
+  "face-id-solid": $sym-var-face-id-solid,
+  "face-id": $sym-var-face-id,
+  "face-neutral-solid": $sym-var-face-neutral-solid,
+  "face-neutral": $sym-var-face-neutral,
+  "face-sad-solid": $sym-var-face-sad-solid,
+  "face-sad": $sym-var-face-sad,
+  "face-smile-solid": $sym-var-face-smile-solid,
+  "face-smile": $sym-var-face-smile,
+  "face-wink-solid": $sym-var-face-wink-solid,
+  "face-wink": $sym-var-face-wink,
+  "fast-backward-solid": $sym-var-fast-backward-solid,
+  "fast-backward": $sym-var-fast-backward,
+  "fast-forward-solid": $sym-var-fast-forward-solid,
+  "fast-forward": $sym-var-fast-forward,
+  "figma-solid": $sym-var-figma-solid,
+  "figma": $sym-var-figma,
+  "file-02-solid": $sym-var-file-02-solid,
+  "file-02": $sym-var-file-02,
+  "file-03-solid": $sym-var-file-03-solid,
+  "file-03": $sym-var-file-03,
+  "file-attachment-solid": $sym-var-file-attachment-solid,
+  "file-attachment": $sym-var-file-attachment,
+  "file-check-02-solid": $sym-var-file-check-02-solid,
+  "file-check-02": $sym-var-file-check-02,
+  "file-check-solid": $sym-var-file-check-solid,
+  "file-check": $sym-var-file-check,
+  "file-download-02-solid": $sym-var-file-download-02-solid,
+  "file-download-02": $sym-var-file-download-02,
+  "file-download-solid": $sym-var-file-download-solid,
+  "file-download": $sym-var-file-download,
+  "file-lock-solid": $sym-var-file-lock-solid,
+  "file-lock": $sym-var-file-lock,
+  "file-minus-solid": $sym-var-file-minus-solid,
+  "file-minus": $sym-var-file-minus,
+  "file-plus-solid": $sym-var-file-plus-solid,
+  "file-plus": $sym-var-file-plus,
+  "file-shield-solid": $sym-var-file-shield-solid,
+  "file-shield": $sym-var-file-shield,
+  "file-solid": $sym-var-file-solid,
+  "file": $sym-var-file,
+  "film-solid": $sym-var-film-solid,
+  "film": $sym-var-film,
+  "filter-funnel-solid": $sym-var-filter-funnel-solid,
+  "filter-funnel": $sym-var-filter-funnel,
+  "filter-lines-solid": $sym-var-filter-lines-solid,
+  "filter-lines": $sym-var-filter-lines,
+  "fingerprint-02-solid": $sym-var-fingerprint-02-solid,
+  "fingerprint-02": $sym-var-fingerprint-02,
+  "fingerprint-solid": $sym-var-fingerprint-solid,
+  "fingerprint": $sym-var-fingerprint,
+  "flag-solid": $sym-var-flag-solid,
+  "flag": $sym-var-flag,
+  "flex-align-bottom-solid": $sym-var-flex-align-bottom-solid,
+  "flex-align-bottom": $sym-var-flex-align-bottom,
+  "flex-align-left-solid": $sym-var-flex-align-left-solid,
+  "flex-align-left": $sym-var-flex-align-left,
+  "flex-align-right-solid": $sym-var-flex-align-right-solid,
+  "flex-align-right": $sym-var-flex-align-right,
+  "flex-align-top-solid": $sym-var-flex-align-top-solid,
+  "flex-align-top": $sym-var-flex-align-top,
+  "flip-backward-solid": $sym-var-flip-backward-solid,
+  "flip-backward": $sym-var-flip-backward,
+  "flip-forward-solid": $sym-var-flip-forward-solid,
+  "flip-forward": $sym-var-flip-forward,
+  "folder-check-solid": $sym-var-folder-check-solid,
+  "folder-check": $sym-var-folder-check,
+  "folder-closed-solid": $sym-var-folder-closed-solid,
+  "folder-closed": $sym-var-folder-closed,
+  "folder-download-solid": $sym-var-folder-download-solid,
+  "folder-download": $sym-var-folder-download,
+  "folder-lock-solid": $sym-var-folder-lock-solid,
+  "folder-lock": $sym-var-folder-lock,
+  "folder-minus-solid": $sym-var-folder-minus-solid,
+  "folder-minus": $sym-var-folder-minus,
+  "folder-plus-solid": $sym-var-folder-plus-solid,
+  "folder-plus": $sym-var-folder-plus,
+  "folder-solid": $sym-var-folder-solid,
+  "folder": $sym-var-folder,
+  "git-branch-solid": $sym-var-git-branch-solid,
+  "git-branch": $sym-var-git-branch,
+  "git-commit-solid": $sym-var-git-commit-solid,
+  "git-commit": $sym-var-git-commit,
+  "git-merge-solid": $sym-var-git-merge-solid,
+  "git-merge": $sym-var-git-merge,
+  "git-pull-request-solid": $sym-var-git-pull-request-solid,
+  "git-pull-request": $sym-var-git-pull-request,
+  "glasses-solid": $sym-var-glasses-solid,
+  "glasses": $sym-var-glasses,
+  "globe-02-solid": $sym-var-globe-02-solid,
+  "globe-02": $sym-var-globe-02,
+  "globe-03-solid": $sym-var-globe-03-solid,
+  "globe-03": $sym-var-globe-03,
+  "globe-slated-02-solid": $sym-var-globe-slated-02-solid,
+  "globe-slated-02": $sym-var-globe-slated-02,
+  "globe-slated-solid": $sym-var-globe-slated-solid,
+  "globe-slated": $sym-var-globe-slated,
+  "globe-solid": $sym-var-globe-solid,
+  "globe": $sym-var-globe,
+  "graduation-hat-02-solid": $sym-var-graduation-hat-02-solid,
+  "graduation-hat-02": $sym-var-graduation-hat-02,
+  "graduation-hat-solid": $sym-var-graduation-hat-solid,
+  "graduation-hat": $sym-var-graduation-hat,
+  "grid-02-solid": $sym-var-grid-02-solid,
+  "grid-02": $sym-var-grid-02,
+  "grid-03-solid": $sym-var-grid-03-solid,
+  "grid-03": $sym-var-grid-03,
+  "grid-dots-blank-solid": $sym-var-grid-dots-blank-solid,
+  "grid-dots-blank": $sym-var-grid-dots-blank,
+  "grid-dots-bottom-solid": $sym-var-grid-dots-bottom-solid,
+  "grid-dots-bottom": $sym-var-grid-dots-bottom,
+  "grid-dots-horizontal-center-solid": $sym-var-grid-dots-horizontal-center-solid,
+  "grid-dots-horizontal-center": $sym-var-grid-dots-horizontal-center,
+  "grid-dots-left-solid": $sym-var-grid-dots-left-solid,
+  "grid-dots-left": $sym-var-grid-dots-left,
+  "grid-dots-outer-solid": $sym-var-grid-dots-outer-solid,
+  "grid-dots-outer": $sym-var-grid-dots-outer,
+  "grid-dots-right-solid": $sym-var-grid-dots-right-solid,
+  "grid-dots-right": $sym-var-grid-dots-right,
+  "grid-dots-top-solid": $sym-var-grid-dots-top-solid,
+  "grid-dots-top": $sym-var-grid-dots-top,
+  "grid-dots-vertical-center-solid": $sym-var-grid-dots-vertical-center-solid,
+  "grid-dots-vertical-center": $sym-var-grid-dots-vertical-center,
+  "grid-solid": $sym-var-grid-solid,
+  "grid": $sym-var-grid,
+  "hand-solid": $sym-var-hand-solid,
+  "hand": $sym-var-hand,
+  "hard-drive-solid": $sym-var-hard-drive-solid,
+  "hard-drive": $sym-var-hard-drive,
+  "hash-solid": $sym-var-hash-solid,
+  "hash": $sym-var-hash,
+  "heading-solid": $sym-var-heading-solid,
+  "heading": $sym-var-heading,
+  "headphones-solid": $sym-var-headphones-solid,
+  "headphones": $sym-var-headphones,
+  "heart-solid": $sym-var-heart-solid,
+  "heart": $sym-var-heart,
+  "hearts-solid": $sym-var-hearts-solid,
+  "hearts": $sym-var-hearts,
+  "help-circle-solid": $sym-var-help-circle-solid,
+  "help-circle": $sym-var-help-circle,
+  "home-line-solid": $sym-var-home-line-solid,
+  "home-line": $sym-var-home-line,
+  "home-smile-solid": $sym-var-home-smile-solid,
+  "home-smile": $sym-var-home-smile,
+  "home-solid": $sym-var-home-solid,
+  "home": $sym-var-home,
+  "hourglass-02-solid": $sym-var-hourglass-02-solid,
+  "hourglass-02": $sym-var-hourglass-02,
+  "hourglass-solid": $sym-var-hourglass-solid,
+  "hourglass": $sym-var-hourglass,
+  "image-02-solid": $sym-var-image-02-solid,
+  "image-02": $sym-var-image-02,
+  "image-check-solid": $sym-var-image-check-solid,
+  "image-check": $sym-var-image-check,
+  "image-down-solid": $sym-var-image-down-solid,
+  "image-down": $sym-var-image-down,
+  "image-indent-left-solid": $sym-var-image-indent-left-solid,
+  "image-indent-left": $sym-var-image-indent-left,
+  "image-indent-right-solid": $sym-var-image-indent-right-solid,
+  "image-indent-right": $sym-var-image-indent-right,
+  "image-left-solid": $sym-var-image-left-solid,
+  "image-left": $sym-var-image-left,
+  "image-plus-solid": $sym-var-image-plus-solid,
+  "image-plus": $sym-var-image-plus,
+  "image-right-solid": $sym-var-image-right-solid,
+  "image-right": $sym-var-image-right,
+  "image-solid": $sym-var-image-solid,
+  "image-up-solid": $sym-var-image-up-solid,
+  "image-up": $sym-var-image-up,
+  "image-x-solid": $sym-var-image-x-solid,
+  "image-x": $sym-var-image-x,
+  "image": $sym-var-image,
+  "inbox-02-solid": $sym-var-inbox-02-solid,
+  "inbox-02": $sym-var-inbox-02,
+  "inbox-solid": $sym-var-inbox-solid,
+  "inbox": $sym-var-inbox,
+  "infinity-solid": $sym-var-infinity-solid,
+  "infinity": $sym-var-infinity,
+  "info-circle-solid": $sym-var-info-circle-solid,
+  "info-circle": $sym-var-info-circle,
+  "info-default-solid": $sym-var-info-default-solid,
+  "info-default": $sym-var-info-default,
+  "info-octagon-solid": $sym-var-info-octagon-solid,
+  "info-octagon": $sym-var-info-octagon,
+  "info-square-solid": $sym-var-info-square-solid,
+  "info-square": $sym-var-info-square,
+  "italic-solid": $sym-var-italic-solid,
+  "italic": $sym-var-italic,
+  "key-solid": $sym-var-key-solid,
+  "key": $sym-var-key,
+  "keyboard-solid": $sym-var-keyboard-solid,
+  "keyboard": $sym-var-keyboard,
+  "laptop-solid": $sym-var-laptop-solid,
+  "laptop": $sym-var-laptop,
+  "layers-three-solid": $sym-var-layers-three-solid,
+  "layers-three": $sym-var-layers-three,
+  "layers-two-solid": $sym-var-layers-two-solid,
+  "layers-two": $sym-var-layers-two,
+  "layout-alt-02-solid": $sym-var-layout-alt-02-solid,
+  "layout-alt-02": $sym-var-layout-alt-02,
+  "layout-alt-03-solid": $sym-var-layout-alt-03-solid,
+  "layout-alt-03": $sym-var-layout-alt-03,
+  "layout-alt-04-solid": $sym-var-layout-alt-04-solid,
+  "layout-alt-04": $sym-var-layout-alt-04,
+  "layout-alt-solid": $sym-var-layout-alt-solid,
+  "layout-alt": $sym-var-layout-alt,
+  "layout-bottom-solid": $sym-var-layout-bottom-solid,
+  "layout-bottom": $sym-var-layout-bottom,
+  "layout-grid-02-solid": $sym-var-layout-grid-02-solid,
+  "layout-grid-02": $sym-var-layout-grid-02,
+  "layout-grid-solid": $sym-var-layout-grid-solid,
+  "layout-grid": $sym-var-layout-grid,
+  "layout-left-solid": $sym-var-layout-left-solid,
+  "layout-left": $sym-var-layout-left,
+  "layout-right-solid": $sym-var-layout-right-solid,
+  "layout-right": $sym-var-layout-right,
+  "layout-top-solid": $sym-var-layout-top-solid,
+  "layout-top": $sym-var-layout-top,
+  "left-indent-solid": $sym-var-left-indent-solid,
+  "left-indent": $sym-var-left-indent,
+  "letter-spacing-solid": $sym-var-letter-spacing-solid,
+  "letter-spacing": $sym-var-letter-spacing,
+  "lightbulb-solid": $sym-var-lightbulb-solid,
+  "lightbulb": $sym-var-lightbulb,
+  "line-height-solid": $sym-var-line-height-solid,
+  "line-height": $sym-var-line-height,
+  "link-02-solid": $sym-var-link-02-solid,
+  "link-02": $sym-var-link-02,
+  "link-broken-02-solid": $sym-var-link-broken-02-solid,
+  "link-broken-02": $sym-var-link-broken-02,
+  "link-broken-solid": $sym-var-link-broken-solid,
+  "link-broken": $sym-var-link-broken,
+  "link-external-solid": $sym-var-link-external-solid,
+  "link-external": $sym-var-link-external,
+  "link-solid": $sym-var-link-solid,
+  "link": $sym-var-link,
+  "list-solid": $sym-var-list-solid,
+  "list": $sym-var-list,
+  "loading-02-solid": $sym-var-loading-02-solid,
+  "loading-02": $sym-var-loading-02,
+  "loading-solid": $sym-var-loading-solid,
+  "loading": $sym-var-loading,
+  "lock-02-solid": $sym-var-lock-02-solid,
+  "lock-02": $sym-var-lock-02,
+  "lock-solid": $sym-var-lock-solid,
+  "lock-unlocked-02-solid": $sym-var-lock-unlocked-02-solid,
+  "lock-unlocked-02": $sym-var-lock-unlocked-02,
+  "lock-unlocked-solid": $sym-var-lock-unlocked-solid,
+  "lock-unlocked": $sym-var-lock-unlocked,
+  "lock": $sym-var-lock,
+  "log-in-02-solid": $sym-var-log-in-02-solid,
+  "log-in-02": $sym-var-log-in-02,
+  "log-in-solid": $sym-var-log-in-solid,
+  "log-in": $sym-var-log-in,
+  "log-out-02-solid": $sym-var-log-out-02-solid,
+  "log-out-02": $sym-var-log-out-02,
+  "log-out-solid": $sym-var-log-out-solid,
+  "log-out": $sym-var-log-out,
+  "mail-02-solid": $sym-var-mail-02-solid,
+  "mail-02": $sym-var-mail-02,
+  "mail-solid": $sym-var-mail-solid,
+  "mail": $sym-var-mail,
+  "map-solid": $sym-var-map-solid,
+  "map": $sym-var-map,
+  "mark-solid": $sym-var-mark-solid,
+  "mark": $sym-var-mark,
+  "marker-pin-02-solid": $sym-var-marker-pin-02-solid,
+  "marker-pin-02": $sym-var-marker-pin-02,
+  "marker-pin-solid": $sym-var-marker-pin-solid,
+  "marker-pin": $sym-var-marker-pin,
+  "maximize-02-solid": $sym-var-maximize-02-solid,
+  "maximize-02": $sym-var-maximize-02,
+  "maximize-solid": $sym-var-maximize-solid,
+  "maximize": $sym-var-maximize,
+  "menu-02-solid": $sym-var-menu-02-solid,
+  "menu-02": $sym-var-menu-02,
+  "menu-03-solid": $sym-var-menu-03-solid,
+  "menu-03": $sym-var-menu-03,
+  "menu-04-solid": $sym-var-menu-04-solid,
+  "menu-04": $sym-var-menu-04,
+  "menu-05-solid": $sym-var-menu-05-solid,
+  "menu-05": $sym-var-menu-05,
+  "menu-solid": $sym-var-menu-solid,
+  "menu": $sym-var-menu,
+  "message-alert-circle-solid": $sym-var-message-alert-circle-solid,
+  "message-alert-circle": $sym-var-message-alert-circle,
+  "message-chat-circle-solid": $sym-var-message-chat-circle-solid,
+  "message-chat-circle": $sym-var-message-chat-circle,
+  "message-circle-solid": $sym-var-message-circle-solid,
+  "message-circle": $sym-var-message-circle,
+  "message-dots-circle-solid": $sym-var-message-dots-circle-solid,
+  "message-dots-circle": $sym-var-message-dots-circle,
+  "message-notification-circle-solid": $sym-var-message-notification-circle-solid,
+  "message-notification-circle": $sym-var-message-notification-circle,
+  "message-notification-square-solid": $sym-var-message-notification-square-solid,
+  "message-notification-square": $sym-var-message-notification-square,
+  "microphone-off-solid": $sym-var-microphone-off-solid,
+  "microphone-off": $sym-var-microphone-off,
+  "microphone-solid": $sym-var-microphone-solid,
+  "microphone": $sym-var-microphone,
+  "microscope-solid": $sym-var-microscope-solid,
+  "microscope": $sym-var-microscope,
+  "minimize-02-solid": $sym-var-minimize-02-solid,
+  "minimize-02": $sym-var-minimize-02,
+  "minimize-solid": $sym-var-minimize-solid,
+  "minimize": $sym-var-minimize,
+  "minus-circle-solid": $sym-var-minus-circle-solid,
+  "minus-circle": $sym-var-minus-circle,
+  "minus-solid": $sym-var-minus-solid,
+  "minus-square-solid": $sym-var-minus-square-solid,
+  "minus-square": $sym-var-minus-square,
+  "minus": $sym-var-minus,
+  "modem-solid": $sym-var-modem-solid,
+  "modem": $sym-var-modem,
+  "monitor-solid": $sym-var-monitor-solid,
+  "monitor": $sym-var-monitor,
+  "mouse-solid": $sym-var-mouse-solid,
+  "mouse": $sym-var-mouse,
+  "move-solid": $sym-var-move-solid,
+  "move": $sym-var-move,
+  "navigation-pointer-02-solid": $sym-var-navigation-pointer-02-solid,
+  "navigation-pointer-02": $sym-var-navigation-pointer-02,
+  "navigation-pointer-off-02-solid": $sym-var-navigation-pointer-off-02-solid,
+  "navigation-pointer-off-02": $sym-var-navigation-pointer-off-02,
+  "navigation-pointer-off-solid": $sym-var-navigation-pointer-off-solid,
+  "navigation-pointer-off": $sym-var-navigation-pointer-off,
+  "navigation-pointer-solid": $sym-var-navigation-pointer-solid,
+  "navigation-pointer": $sym-var-navigation-pointer,
+  "notification-box-solid": $sym-var-notification-box-solid,
+  "notification-box": $sym-var-notification-box,
+  "paint-pour-solid": $sym-var-paint-pour-solid,
+  "paint-pour": $sym-var-paint-pour,
+  "paint-solid": $sym-var-paint-solid,
+  "paint": $sym-var-paint,
+  "palette-solid": $sym-var-palette-solid,
+  "palette": $sym-var-palette,
+  "paperclip-solid": $sym-var-paperclip-solid,
+  "paperclip": $sym-var-paperclip,
+  "paragraph-spacing-solid": $sym-var-paragraph-spacing-solid,
+  "paragraph-spacing": $sym-var-paragraph-spacing,
+  "paragraph-wrap-solid": $sym-var-paragraph-wrap-solid,
+  "paragraph-wrap": $sym-var-paragraph-wrap,
+  "passcode-lock-solid": $sym-var-passcode-lock-solid,
+  "passcode-lock": $sym-var-passcode-lock,
+  "passcode-solid": $sym-var-passcode-solid,
+  "passcode": $sym-var-passcode,
+  "pencil-02-solid": $sym-var-pencil-02-solid,
+  "pencil-02": $sym-var-pencil-02,
+  "pencil-line-solid": $sym-var-pencil-line-solid,
+  "pencil-line": $sym-var-pencil-line,
+  "pencil-solid": $sym-var-pencil-solid,
+  "pencil": $sym-var-pencil,
+  "perspective-solid": $sym-var-perspective-solid,
+  "perspective": $sym-var-perspective,
+  "phone-02-solid": $sym-var-phone-02-solid,
+  "phone-02": $sym-var-phone-02,
+  "phone-call-solid": $sym-var-phone-call-solid,
+  "phone-call": $sym-var-phone-call,
+  "phone-hang-up-solid": $sym-var-phone-hang-up-solid,
+  "phone-hang-up": $sym-var-phone-hang-up,
+  "phone-incoming-02-solid": $sym-var-phone-incoming-02-solid,
+  "phone-incoming-02": $sym-var-phone-incoming-02,
+  "phone-incoming-solid": $sym-var-phone-incoming-solid,
+  "phone-incoming": $sym-var-phone-incoming,
+  "phone-outgoing-02-solid": $sym-var-phone-outgoing-02-solid,
+  "phone-outgoing-02": $sym-var-phone-outgoing-02,
+  "phone-outgoing-solid": $sym-var-phone-outgoing-solid,
+  "phone-outgoing": $sym-var-phone-outgoing,
+  "phone-solid": $sym-var-phone-solid,
+  "phone": $sym-var-phone,
+  "pin-02-solid": $sym-var-pin-02-solid,
+  "pin-02": $sym-var-pin-02,
+  "pin-solid": $sym-var-pin-solid,
+  "pin": $sym-var-pin,
+  "placeholder-solid": $sym-var-placeholder-solid,
+  "placeholder": $sym-var-placeholder,
+  "plane-solid": $sym-var-plane-solid,
+  "plane": $sym-var-plane,
+  "play-solid": $sym-var-play-solid,
+  "play": $sym-var-play,
+  "plus-circle-solid": $sym-var-plus-circle-solid,
+  "plus-circle": $sym-var-plus-circle,
+  "plus-solid": $sym-var-plus-solid,
+  "plus-square-solid": $sym-var-plus-square-solid,
+  "plus-square": $sym-var-plus-square,
+  "plus": $sym-var-plus,
+  "podcast-solid": $sym-var-podcast-solid,
+  "podcast": $sym-var-podcast,
+  "printer-solid": $sym-var-printer-solid,
+  "printer": $sym-var-printer,
+  "puzzle-piece-solid": $sym-var-puzzle-piece-solid,
+  "puzzle-piece": $sym-var-puzzle-piece,
+  "qr-code-solid": $sym-var-qr-code-solid,
+  "qr-code": $sym-var-qr-code,
+  "recording-solid": $sym-var-recording-solid,
+  "recording": $sym-var-recording,
+  "reflect-solid": $sym-var-reflect-solid,
+  "reflect": $sym-var-reflect,
+  "refresh-ccw-02-solid": $sym-var-refresh-ccw-02-solid,
+  "refresh-ccw-02": $sym-var-refresh-ccw-02,
+  "refresh-ccw-solid": $sym-var-refresh-ccw-solid,
+  "refresh-ccw": $sym-var-refresh-ccw,
+  "repeat-solid": $sym-var-repeat-solid,
+  "repeat": $sym-var-repeat,
+  "reverse-left-solid": $sym-var-reverse-left-solid,
+  "reverse-left": $sym-var-reverse-left,
+  "reverse-right-solid": $sym-var-reverse-right-solid,
+  "reverse-right": $sym-var-reverse-right,
+  "right-indent-solid": $sym-var-right-indent-solid,
+  "right-indent": $sym-var-right-indent,
+  "route-solid": $sym-var-route-solid,
+  "route": $sym-var-route,
+  "rows-02-solid": $sym-var-rows-02-solid,
+  "rows-02": $sym-var-rows-02,
+  "rows-03-solid": $sym-var-rows-03-solid,
+  "rows-03": $sym-var-rows-03,
+  "rows-solid": $sym-var-rows-solid,
+  "rows": $sym-var-rows,
+  "ruler-solid": $sym-var-ruler-solid,
+  "ruler": $sym-var-ruler,
+  "sale-solid": $sym-var-sale-solid,
+  "sale": $sym-var-sale,
+  "save-solid": $sym-var-save-solid,
+  "save": $sym-var-save,
+  "scale-02-solid": $sym-var-scale-02-solid,
+  "scale-02": $sym-var-scale-02,
+  "scale-03-solid": $sym-var-scale-03-solid,
+  "scale-03": $sym-var-scale-03,
+  "scale-solid": $sym-var-scale-solid,
+  "scale": $sym-var-scale,
+  "scan-solid": $sym-var-scan-solid,
+  "scan": $sym-var-scan,
+  "scissors-cut-solid": $sym-var-scissors-cut-solid,
+  "scissors-cut": $sym-var-scissors-cut,
+  "scissors-solid": $sym-var-scissors-solid,
+  "scissors": $sym-var-scissors,
+  "search-default-solid": $sym-var-search-default-solid,
+  "search-default": $sym-var-search-default,
+  "send-02-solid": $sym-var-send-02-solid,
+  "send-02": $sym-var-send-02,
+  "send-03-solid": $sym-var-send-03-solid,
+  "send-03": $sym-var-send-03,
+  "send-solid": $sym-var-send-solid,
+  "send": $sym-var-send,
+  "server-solid": $sym-var-server-solid,
+  "server": $sym-var-server,
+  "settings-02-solid": $sym-var-settings-02-solid,
+  "settings-02": $sym-var-settings-02,
+  "settings-solid": $sym-var-settings-solid,
+  "settings": $sym-var-settings,
+  "share-02-solid": $sym-var-share-02-solid,
+  "share-02": $sym-var-share-02,
+  "share-03-solid": $sym-var-share-03-solid,
+  "share-03": $sym-var-share-03,
+  "share-04-solid": $sym-var-share-04-solid,
+  "share-04": $sym-var-share-04,
+  "share-05-solid": $sym-var-share-05-solid,
+  "share-05": $sym-var-share-05,
+  "share-solid": $sym-var-share-solid,
+  "share": $sym-var-share,
+  "shield-off-solid": $sym-var-shield-off-solid,
+  "shield-off": $sym-var-shield-off,
+  "shield-solid": $sym-var-shield-solid,
+  "shield-tick-solid": $sym-var-shield-tick-solid,
+  "shield-tick": $sym-var-shield-tick,
+  "shield": $sym-var-shield,
+  "shopping-bag-solid": $sym-var-shopping-bag-solid,
+  "shopping-bag": $sym-var-shopping-bag,
+  "shuffle-solid": $sym-var-shuffle-solid,
+  "shuffle": $sym-var-shuffle,
+  "signal-solid": $sym-var-signal-solid,
+  "signal": $sym-var-signal,
+  "skew-solid": $sym-var-skew-solid,
+  "skew": $sym-var-skew,
+  "skip-back-solid": $sym-var-skip-back-solid,
+  "skip-back": $sym-var-skip-back,
+  "skip-forward-solid": $sym-var-skip-forward-solid,
+  "skip-forward": $sym-var-skip-forward,
+  "slash-circle-solid": $sym-var-slash-circle-solid,
+  "slash-circle": $sym-var-slash-circle,
+  "slash-divider-solid": $sym-var-slash-divider-solid,
+  "slash-divider": $sym-var-slash-divider,
+  "slash-octagon-solid": $sym-var-slash-octagon-solid,
+  "slash-octagon": $sym-var-slash-octagon,
+  "sliders-02-solid": $sym-var-sliders-02-solid,
+  "sliders-02": $sym-var-sliders-02,
+  "sliders-03-solid": $sym-var-sliders-03-solid,
+  "sliders-03": $sym-var-sliders-03,
+  "sliders-solid": $sym-var-sliders-solid,
+  "sliders": $sym-var-sliders,
+  "spacing-height-solid": $sym-var-spacing-height-solid,
+  "spacing-height": $sym-var-spacing-height,
+  "spacing-width-solid": $sym-var-spacing-width-solid,
+  "spacing-width": $sym-var-spacing-width,
+  "stand-solid": $sym-var-stand-solid,
+  "stand": $sym-var-stand,
+  "sticker-square-solid": $sym-var-sticker-square-solid,
+  "sticker-square": $sym-var-sticker-square,
+  "stop-solid": $sym-var-stop-solid,
+  "stop": $sym-var-stop,
+  "strikethrough-solid": $sym-var-strikethrough-solid,
+  "strikethrough": $sym-var-strikethrough,
+  "subscript-solid": $sym-var-subscript-solid,
+  "subscript": $sym-var-subscript,
+  "switch-horizontal-solid": $sym-var-switch-horizontal-solid,
+  "switch-horizontal": $sym-var-switch-horizontal,
+  "switch-vertical-solid": $sym-var-switch-vertical-solid,
+  "switch-vertical": $sym-var-switch-vertical,
+  "table-solid": $sym-var-table-solid,
+  "table": $sym-var-table,
+  "tablet-solid": $sym-var-tablet-solid,
+  "tablet": $sym-var-tablet,
+  "tag-solid": $sym-var-tag-solid,
+  "tag": $sym-var-tag,
+  "telescope-solid": $sym-var-telescope-solid,
+  "telescope": $sym-var-telescope,
+  "terminal-solid": $sym-var-terminal-solid,
+  "terminal-square-solid": $sym-var-terminal-square-solid,
+  "terminal-square": $sym-var-terminal-square,
+  "terminal": $sym-var-terminal,
+  "text-input-solid": $sym-var-text-input-solid,
+  "text-input": $sym-var-text-input,
+  "thumbs-down-solid": $sym-var-thumbs-down-solid,
+  "thumbs-down": $sym-var-thumbs-down,
+  "thumbs-up-solid": $sym-var-thumbs-up-solid,
+  "thumbs-up": $sym-var-thumbs-up,
+  "ticket-solid": $sym-var-ticket-solid,
+  "ticket": $sym-var-ticket,
+  "transform-solid": $sym-var-transform-solid,
+  "transform": $sym-var-transform,
+  "translate-solid": $sym-var-translate-solid,
+  "translate": $sym-var-translate,
+  "trash-solid": $sym-var-trash-solid,
+  "trash": $sym-var-trash,
+  "trophy-solid": $sym-var-trophy-solid,
+  "trophy": $sym-var-trophy,
+  "type-solid": $sym-var-type-solid,
+  "type-strikethrough-solid": $sym-var-type-strikethrough-solid,
+  "type-strikethrough": $sym-var-type-strikethrough,
+  "type": $sym-var-type,
+  "underline-solid": $sym-var-underline-solid,
+  "underline": $sym-var-underline,
+  "upload-02-solid": $sym-var-upload-02-solid,
+  "upload-02": $sym-var-upload-02,
+  "upload-cloud-02-solid": $sym-var-upload-cloud-02-solid,
+  "upload-cloud-02": $sym-var-upload-cloud-02,
+  "upload-cloud-solid": $sym-var-upload-cloud-solid,
+  "upload-cloud": $sym-var-upload-cloud,
+  "upload-solid": $sym-var-upload-solid,
+  "upload": $sym-var-upload,
+  "user-check-solid": $sym-var-user-check-solid,
+  "user-check": $sym-var-user-check,
+  "user-circle-solid": $sym-var-user-circle-solid,
+  "user-circle": $sym-var-user-circle,
+  "user-down-solid": $sym-var-user-down-solid,
+  "user-down": $sym-var-user-down,
+  "user-left-solid": $sym-var-user-left-solid,
+  "user-left": $sym-var-user-left,
+  "user-right-solid": $sym-var-user-right-solid,
+  "user-right": $sym-var-user-right,
+  "user-solid": $sym-var-user-solid,
+  "user-up-solid": $sym-var-user-up-solid,
+  "user-up": $sym-var-user-up,
+  "user-x-solid": $sym-var-user-x-solid,
+  "user-x": $sym-var-user-x,
+  "user": $sym-var-user,
+  "users-check-solid": $sym-var-users-check-solid,
+  "users-check": $sym-var-users-check,
+  "users-down-solid": $sym-var-users-down-solid,
+  "users-down": $sym-var-users-down,
+  "users-left-solid": $sym-var-users-left-solid,
+  "users-left": $sym-var-users-left,
+  "users-minus-solid": $sym-var-users-minus-solid,
+  "users-minus": $sym-var-users-minus,
+  "users-plus-solid": $sym-var-users-plus-solid,
+  "users-plus": $sym-var-users-plus,
+  "users-right-solid": $sym-var-users-right-solid,
+  "users-right": $sym-var-users-right,
+  "users-solid": $sym-var-users-solid,
+  "users-up-solid": $sym-var-users-up-solid,
+  "users-up": $sym-var-users-up,
+  "users-x-solid": $sym-var-users-x-solid,
+  "users-x": $sym-var-users-x,
+  "users": $sym-var-users,
+  "variable-solid": $sym-var-variable-solid,
+  "variable": $sym-var-variable,
+  "video-recorder-off-solid": $sym-var-video-recorder-off-solid,
+  "video-recorder-off": $sym-var-video-recorder-off,
+  "video-recorder-solid": $sym-var-video-recorder-solid,
+  "video-recorder": $sym-var-video-recorder,
+  "voicemail-solid": $sym-var-voicemail-solid,
+  "voicemail": $sym-var-voicemail,
+  "volume-max-solid": $sym-var-volume-max-solid,
+  "volume-max": $sym-var-volume-max,
+  "volume-min-solid": $sym-var-volume-min-solid,
+  "volume-min": $sym-var-volume-min,
+  "volume-minus-solid": $sym-var-volume-minus-solid,
+  "volume-minus": $sym-var-volume-minus,
+  "volume-plus-solid": $sym-var-volume-plus-solid,
+  "volume-plus": $sym-var-volume-plus,
+  "volume-x-solid": $sym-var-volume-x-solid,
+  "volume-x": $sym-var-volume-x,
+  "wallet-02-solid": $sym-var-wallet-02-solid,
+  "wallet-02": $sym-var-wallet-02,
+  "wallet-03-solid": $sym-var-wallet-03-solid,
+  "wallet-03": $sym-var-wallet-03,
+  "wallet-solid": $sym-var-wallet-solid,
+  "wallet": $sym-var-wallet,
+  "webcam-solid": $sym-var-webcam-solid,
+  "webcam": $sym-var-webcam,
+  "wifi-off-solid": $sym-var-wifi-off-solid,
+  "wifi-off": $sym-var-wifi-off,
+  "wifi-solid": $sym-var-wifi-solid,
+  "wifi": $sym-var-wifi,
+  "x-circle-solid": $sym-var-x-circle-solid,
+  "x-circle": $sym-var-x-circle,
+  "x-close-solid": $sym-var-x-close-solid,
+  "x-close": $sym-var-x-close,
+  "zap-solid": $sym-var-zap-solid,
+  "zap": $sym-var-zap,
+  "zoom-in-solid": $sym-var-zoom-in-solid,
+  "zoom-in": $sym-var-zoom-in,
+  "zoom-out-solid": $sym-var-zoom-out-solid,
+  "zoom-out": $sym-var-zoom-out,
+  "calendar-date-number-solid": $sym-var-calendar-date-number-solid,
+  "calendar-date-number": $sym-var-calendar-date-number,
+  "check-list-solid": $sym-var-check-list-solid,
+  "check-list": $sym-var-check-list,
+  "clean-solid": $sym-var-clean-solid,
+  "clean": $sym-var-clean,
+  "dot-list-solid": $sym-var-dot-list-solid,
+  "dot-list": $sym-var-dot-list,
+  "dot-solid": $sym-var-dot-solid,
+  "dot": $sym-var-dot,
+  "function-solid": $sym-var-function-solid,
+  "function": $sym-var-function,
+  "heading-1-solid": $sym-var-heading-1-solid,
+  "heading-1": $sym-var-heading-1,
+  "heading-2-solid": $sym-var-heading-2-solid,
+  "heading-2": $sym-var-heading-2,
+  "heading-3-solid": $sym-var-heading-3-solid,
+  "heading-3": $sym-var-heading-3,
+  "heading-4-solid": $sym-var-heading-4-solid,
+  "heading-4": $sym-var-heading-4,
+  "heading-5-solid": $sym-var-heading-5-solid,
+  "heading-5": $sym-var-heading-5,
+  "heading-6-solid": $sym-var-heading-6-solid,
+  "heading-6": $sym-var-heading-6,
+  "number-list-solid": $sym-var-number-list-solid,
+  "number-list": $sym-var-number-list,
+  "paragraph-solid": $sym-var-paragraph-solid,
+  "paragraph": $sym-var-paragraph,
+  "quote-solid": $sym-var-quote-solid,
+  "quote": $sym-var-quote,
+  "resize-handle-solid": $sym-var-resize-handle-solid,
+  "resize-handle": $sym-var-resize-handle,
+  "solid-solid": $sym-var-solid-solid,
+  "solid-strikethrough-solid": $sym-var-solid-strikethrough-solid,
+  "solid-strikethrough": $sym-var-solid-strikethrough,
+  "solid": $sym-var-solid,
+  "superscript-solid": $sym-var-superscript-solid,
+  "superscript": $sym-var-superscript,
+  "text-color-solid": $sym-var-text-color-solid,
+  "text-color": $sym-var-text-color,
+  "Superscript": $sym-var-Superscript,
+  "conference-solid": $sym-var-conference-solid,
+  "conference": $sym-var-conference,
+  "crown-2-solid": $sym-var-crown-2-solid,
+  "crown-2": $sym-var-crown-2,
+  "crown-solid": $sym-var-crown-solid,
+  "crown": $sym-var-crown,
+  "interactive-solid": $sym-var-interactive-solid,
+  "interactive": $sym-var-interactive,
+  "quiz-solid": $sym-var-quiz-solid,
+  "quiz": $sym-var-quiz,
+  "scheduled-solid": $sym-var-scheduled-solid,
+  "scheduled": $sym-var-scheduled,
+  "star-solid": $sym-var-star-solid,
+  "star": $sym-var-star,
+  "user-edit-solid": $sym-var-user-edit-solid,
+  "user-edit": $sym-var-user-edit,
+);
+
+@mixin sym-generate-style(){
+    @font-face {
+        font-display: block;
+        font-family: $sym-font-name;
+        src: url("#{$sym-assets-path}#{$sym-font-name}.woff2?#{$sym-font-hash}") format("woff2"),
+                           url("#{$sym-assets-path}#{$sym-font-name}.woff?#{$sym-font-hash}") format("woff");
+
+    }
+
+    .sym::before,
+    [class^="sym-"]::before,
+    [class*=" sym-"]::before {
+        display: inline-block;
+        font-family: $sym-font-name !important;
+        font-style: normal;
+        font-weight: normal !important;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        vertical-align: -.15em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    @each $icon, $codepoint in $sym-map {
+        .sym-#{$icon}::before { content: $codepoint; }
+    }
+}
+

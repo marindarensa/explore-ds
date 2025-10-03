@@ -1,0 +1,93 @@
+@import "pkg:bootstrap/scss/nav";
+
+.nav {
+
+    &-tab{
+        // scss-docs-start nav-css-vars
+        --#{$prefix}nav-link-padding-x: #{$qn-utilities-spacing-none};
+        --#{$prefix}nav-link-padding-y: 0.875rem;
+        --#{$prefix}nav-link-font-size: var(--#{$qn-prefix}font-size-label-sm);
+        --#{$prefix}nav-link-font-weight: 500;
+        --#{$prefix}nav-link-color: var(--#{$qn-prefix}colors-semantic-text-dark-secondary);
+        --#{$prefix}nav-link-hover-color: var(--#{$qn-prefix}colors-semantic-text-dark-default);
+        --#{$prefix}nav-link-disabled-color: var(--#{$qn-prefix}colors-semantic-text-disabled-default);
+        --#{$prefix}nav-tabs-link-active-color: var(--#{$qn-prefix}colors-semantic-text-brand-secondary);
+        --#{$prefix}nav-tabs-link-active-bg: transparent;
+        --#{$prefix}nav-tabs-link-active-border-color: var(--#{$qn-prefix}colors-semantic-border-brand-default);
+
+        // scss-docs-end nav-css-vars
+
+        border-top: 1px solid var(--#{$qn-prefix}colors-semantic-border-light-secondary);
+        border-bottom: 1px solid var(--#{$qn-prefix}colors-semantic-border-light-secondary);
+        gap: #{$qn-utilities-spacing-4xl};
+        display: flex;
+        align-items: center;
+        background: transparent;
+    }
+
+    &-link {
+        gap: #{$qn-utilities-spacing-xs};
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+
+        &:hover {
+            text-decoration: none;
+            color: var(--#{$qn-prefix}colors-semantic-text-dark-default);
+        }
+
+        &:focus {
+            color: var(--#{$qn-prefix}colors-semantic-text-brand-secondary);
+        }
+
+        &:disabled {
+            color: var(--#{$qn-prefix}colors-semantic-text-disabled-default);
+
+            .sym {
+                color: var(--#{$qn-prefix}colors-semantic-symbol-disabled-default);
+            }
+
+            .badge {
+                color: var(--#{$qn-prefix}colors-semantic-text-disabled-secondary);
+                background: var(--#{$qn-prefix}colors-semantic-disabled-secondary);
+            }
+        }
+
+        .active {
+            color: var(--#{$prefix}nav-tabs-link-active-color);
+            border-bottom-color: var(--#{$prefix}nav-tabs-link-active-border-color);
+            font-weight: 500;
+        }
+
+        .sym {
+            font-size: 20px;
+        }
+
+        .badge{
+            width: 20px;
+            height: 20px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &-underline {
+        --#{$prefix}nav-underline-link-active-color:var(--#{$qn-prefix}colors-semantic-text-brand-secondary);
+        --#{$prefix}nav-underline-gap: #{$qn-utilities-spacing-xs};
+        --#{$prefix}nav-underline-border-width: 2px;
+
+        .nav-link {
+
+            &:hover:not(.active) {
+                border-color: transparent;
+                color: var(--#{$qn-prefix}colors-semantic-text-dark-default);
+            }
+            &:hover,
+            &:focus {
+                text-decoration: none;
+            }
+        }
+    }
+}

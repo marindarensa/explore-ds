@@ -1,0 +1,57 @@
+@use "sass:map";
+@import "pkg:bootstrap/scss/forms/form-select";
+
+@function form-select-bg-img($color) {
+    $color: str-slice(#{$color}, 2);
+    @return url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='%23#{$color}' class='sym sym-chevron-down' viewBox='0 0 26 26'%3E%3Cpath d='M13.01 17.396c-.23 0-.46-.09-.64-.26l-7-7a.9.9 0 0 1 0-1.27.9.9 0 0 1 1.27 0l6.36 6.36 6.36-6.36a.9.9 0 0 1 1.27 0 .9.9 0 0 1 0 1.27l-7 7c-.18.18-.41.26-.64.26z'/%3E%3C/svg%3E");
+}
+
+.form-select {
+    // scss-docs-start select-css-vars
+    --#{$prefix}form-select-bg-img: #{form-select-bg-img($qn-colors-semantic-symbol-dark-tertiary)};
+    --#{$prefix}body-color: var(--#{$qn-prefix}colors-semantic-text-dark-secondary);
+    --#{$prefix}border-color: var(--#{$qn-prefix}colors-semantic-border-light-default);
+    --#{$prefix}body-bg: var(--#{$qn-prefix}colors-component-bg-light-default);
+    --#{$prefix}border-radius: #{$qn-utilities-radius-sm};
+
+    --#{$qn-prefix}form-select-height: 36px;
+    --#{$qn-prefix}form-select-border-width: #{$qn-utilities-border-sm};
+    --#{$qn-prefix}form-select-border-color: var(--#{$qn-prefix}colors-semantic-border-light-default);
+    --#{$qn-prefix}form-select-focus-border-color: #{$qn-brands-alpha-500};
+    --#{$qn-prefix}form-select-focus-outline-color: #{$qn-brands-alpha-300};
+    --#{$qn-prefix}form-select-disabled-border-color: var(--#{$qn-prefix}colors-semantic-border-disabled-default);
+    // scss-docs-end select-css-vars
+
+    padding: #{$qn-utilities-spacing-md} 2.125rem #{$qn-utilities-spacing-md} #{$qn-utilities-spacing-xl};
+    background-size: #{$qn-utilities-spacing-2xl} #{$qn-utilities-spacing-2xl};
+    background-position: right #{$qn-utilities-spacing-md} center;
+    border: unset; // border: #{$qn-utilities-border-sm} solid var(--#{$qn-prefix}semantic-color-border-neutral-subtle);
+    font-size: var(--#{$qn-prefix}font-size-label-sm);
+    line-height: var(--#{$qn-prefix}line-height-label-sm);
+    letter-spacing: #{$qn-primitive-typography-letter-spacing-sm};
+    color: var(--#{$qn-prefix}scolors-semantic-text-dark-default);
+    cursor: pointer;
+    height: var(--#{$qn-prefix}form-select-height);
+    // outline: 0 solid var(--#{$qn-prefix}form-select-focus-outline-color);
+    box-shadow: 0 0 0 var(--#{$qn-prefix}form-select-border-width) var(--#{$qn-prefix}form-select-border-color);
+
+    transition: outline 150ms ease-in 100ms, border-width 150ms ease-in 0ms, background-color 250ms ease-in-out, box-shadow 100ms ease-in-out; // relate to ./form-check.scss
+
+
+    &:focus {
+        --#{$qn-prefix}form-select-border-color: var(--#{$qn-prefix}form-select-focus-border-color);
+        color: var(--#{$qn-prefix}colors-semantic-text-dark-default);
+        background-color: var(--#{$qn-prefix}colors-component-bg-light-default);
+        border-width: 0;
+        // outline: 3px solid var(--#{$qn-prefix}form-select-focus-outline-color);
+        box-shadow: 0px 1px 2px 0px var(--#{$qn-prefix}component-form-effect-brand-1, rgba(10, 13, 20, 0.03)), 0px 0px 0.8px 1px var(--#{$qn-prefix}component-form-effect-brand-2, rgba(5, 134, 255, 0.16)) inset, 0px 1px 2px 0px var(--#{$qn-prefix}component-form-effect-brand-3, rgba(5, 134, 255, 0.16)), 0px 0px 0px 1px var(--#{$qn-prefix}component-form-effect-brand-4, rgba(0, 62, 219, 0.84)), 0px 0px 0px 3px var(--#{$qn-prefix}component-form-effect-brand-5, rgba(5, 134, 255, 0.16)), 0 0 0 var(--#{$qn-prefix}form-select-border-width) var(--#{$qn-prefix}form-select-border-color);
+    }
+
+    &:disabled {
+        --#{$prefix}form-select-bg-img: #{form-select-bg-img($qn-colors-semantic-symbol-disabled-default)};
+        background-color: var(--#{$qn-prefix}colors-component-form-bg-disabled-default);
+        border-color: var(--#{$qn-prefix}colors-semantic-border-disabled-default);
+        // color: var(--#{$qn-prefix}semantic-color-text-disabled);
+    }
+
+}

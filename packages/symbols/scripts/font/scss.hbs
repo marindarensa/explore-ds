@@ -1,0 +1,43 @@
+${{ prefix }}-font-name: "{{ name }}" !default;
+${{ prefix }}-assets-path: "{{ fontsUrl }}/" !default;
+${{ prefix }}-font-hash: "24e3eb84d0bcaf83d77f904c78ac1f47" !default;
+
+{{# each codepoints }}
+${{ ../prefix }}-var-{{ @key }}: "\\{{ codepoint this }}";
+{{/ each }}
+
+${{ prefix }}-map: (
+{{# each codepoints }}
+  "{{ @key }}": ${{ ../prefix }}-var-{{ @key }},
+{{/ each }}
+);
+
+@mixin sym-generate-style(){
+    @font-face {
+        font-display: block;
+        font-family: ${{ prefix }}-font-name;
+        src: url("#{${{ prefix }}-assets-path}#{${{ prefix }}-font-name}.woff2?#{${{ prefix }}-font-hash}") format("woff2"),
+                           url("#{${{ prefix }}-assets-path}#{${{ prefix }}-font-name}.woff?#{${{ prefix }}-font-hash}") format("woff");
+
+    }
+
+    {{ selector }}::before,
+    [class^="{{ prefix }}-"]::before,
+    [class*=" {{ prefix }}-"]::before {
+        display: inline-block;
+        font-family: ${{ prefix }}-font-name !important;
+        font-style: normal;
+        font-weight: normal !important;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        vertical-align: -.15em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    @each $icon, $codepoint in ${{ prefix }}-map {
+        {{ selector }}-#{$icon}::before { content: $codepoint; }
+    }
+}
+

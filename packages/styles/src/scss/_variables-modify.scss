@@ -1,0 +1,16 @@
+/* stylelint-disable scss/dollar-variable-default */
+@use "sass:map";
+
+$font-sizes: map.merge(
+  $font-sizes,
+  (
+    7: .75rem
+  )
+);
+
+$container-max-widths: map.merge(
+  $container-max-widths,
+  (
+    xxl: 1224px
+  )
+);

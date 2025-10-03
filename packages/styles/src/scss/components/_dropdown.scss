@@ -1,0 +1,6 @@
+/* stylelint-disable declaration-no-important */
+@import "pkg:bootstrap/scss/dropdown";
+
+.dropdown-toggle.dropdown-toggle-iconless::after {
+  content: unset !important;
+}

@@ -1,0 +1,9 @@
+@import "./forms/labels";                               // BEFORE: @import "pkg:bootstrap/scss/forms/labels";
+@import "./forms/form-text";                            // BEFORE: @import "pkg:bootstrap/scss/forms/form-text";
+@import "./forms/form-control";                         // BEFORE: @import "pkg:bootstrap/scss/forms/form-control";
+@import "./forms/form-select";                          // BEFORE: @import "pkg:bootstrap/scss/forms/form-select";
+@import "./forms/form-check";                           // BEFORE: @import "pkg:bootstrap/scss/forms/form-check";
+@import "pkg:bootstrap/scss/forms/form-range";
+@import "pkg:bootstrap/scss/forms/floating-labels";
+@import "./forms/input-group";                          //BEFORE: @import "pkg:bootstrap/scss/forms/input-group";
+@import "./forms/validation";                           // BEFORE: @import "pkg:bootstrap/scss/forms/validation";

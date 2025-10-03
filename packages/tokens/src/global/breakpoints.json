@@ -1,0 +1,1210 @@
+{
+    "breakpoints": {
+        "desktop": {
+            "font": {
+                "size": {
+                    "heading": {
+                        "h2": {
+                            "type": "dimension",
+                            "value": 48,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:111",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h3": {
+                            "type": "dimension",
+                            "value": 40,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:112",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h4": {
+                            "type": "dimension",
+                            "value": 32,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:113",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h5": {
+                            "type": "dimension",
+                            "value": 28,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:114",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h6": {
+                            "type": "dimension",
+                            "value": 24,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:115",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h1": {
+                            "type": "dimension",
+                            "value": 56,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:900:2",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "label": {
+                        "md": {
+                            "type": "dimension",
+                            "value": 16,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:163",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "sm": {
+                            "type": "dimension",
+                            "value": 14,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:164",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "xs": {
+                            "type": "dimension",
+                            "value": 12,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:165",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "paragraph": {
+                        "md": {
+                            "type": "dimension",
+                            "value": 16,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:168",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "sm": {
+                            "type": "dimension",
+                            "value": 14,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:169",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "xs": {
+                            "type": "dimension",
+                            "value": 12,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:170",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "subheading": {
+                        "sm": {
+                            "type": "dimension",
+                            "value": 20,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:171",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "xs": {
+                            "type": "dimension",
+                            "value": 18,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:172",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "caption": {
+                        "sm": {
+                            "type": "dimension",
+                            "value": 11,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:175",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    }
+                },
+                "line height": {
+                    "heading": {
+                        "h1": {
+                            "type": "dimension",
+                            "value": 64,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:177",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h2": {
+                            "type": "dimension",
+                            "value": 56,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:178",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h3": {
+                            "type": "dimension",
+                            "value": 48,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:179",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h4": {
+                            "type": "dimension",
+                            "value": 40,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:180",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h5": {
+                            "type": "dimension",
+                            "value": 36,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:181",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h6": {
+                            "type": "dimension",
+                            "value": 32,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:182",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "label": {
+                        "md": {
+                            "type": "dimension",
+                            "value": 20,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:185",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "sm": {
+                            "type": "dimension",
+                            "value": 18,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:186",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "xs": {
+                            "type": "dimension",
+                            "value": 14,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:187",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "paragraph": {
+                        "md": {
+                            "type": "dimension",
+                            "value": 24,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:190",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "sm": {
+                            "type": "dimension",
+                            "value": 20,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:191",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "xs": {
+                            "type": "dimension",
+                            "value": 16,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:192",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "subheading": {
+                        "sm": {
+                            "type": "dimension",
+                            "value": 34,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:194",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "xs": {
+                            "type": "dimension",
+                            "value": 30,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:195",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "caption": {
+                        "sm": {
+                            "type": "dimension",
+                            "value": 18,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:197",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "screen": {
+                "default": {
+                    "type": "dimension",
+                    "value": 1440,
+                    "extensions": {
+                        "org.lukasoppermann.figmaDesignTokens": {
+                            "collection": "Breakpoints",
+                            "scopes": ["WIDTH_HEIGHT"],
+                            "variableId": "VariableID:346:2",
+                            "exportKey": "variables"
+                        }
+                    }
+                }
+            }
+        },
+        "tablet": {
+            "font": {
+                "size": {
+                    "heading": {
+                        "h2": {
+                            "type": "dimension",
+                            "value": 40,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:111",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h3": {
+                            "type": "dimension",
+                            "value": 32,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:112",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h4": {
+                            "type": "dimension",
+                            "value": 28,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:113",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h5": {
+                            "type": "dimension",
+                            "value": 24,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:114",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h6": {
+                            "type": "dimension",
+                            "value": 20,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:115",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h1": {
+                            "type": "dimension",
+                            "value": 48,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:900:2",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "label": {
+                        "md": {
+                            "type": "dimension",
+                            "value": 16,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:163",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "sm": {
+                            "type": "dimension",
+                            "value": 14,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:164",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "xs": {
+                            "type": "dimension",
+                            "value": 12,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:165",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "paragraph": {
+                        "md": {
+                            "type": "dimension",
+                            "value": 16,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:168",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "sm": {
+                            "type": "dimension",
+                            "value": 14,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:169",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "xs": {
+                            "type": "dimension",
+                            "value": 12,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:170",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "subheading": {
+                        "sm": {
+                            "type": "dimension",
+                            "value": 18,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:171",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "xs": {
+                            "type": "dimension",
+                            "value": 16,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:172",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "caption": {
+                        "sm": {
+                            "type": "dimension",
+                            "value": 11,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:175",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    }
+                },
+                "line height": {
+                    "heading": {
+                        "h1": {
+                            "type": "dimension",
+                            "value": 56,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:177",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h2": {
+                            "type": "dimension",
+                            "value": 48,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:178",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h3": {
+                            "type": "dimension",
+                            "value": 40,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:179",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h4": {
+                            "type": "dimension",
+                            "value": 36,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:180",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h5": {
+                            "type": "dimension",
+                            "value": 32,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:181",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h6": {
+                            "type": "dimension",
+                            "value": 28,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:182",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "label": {
+                        "md": {
+                            "type": "dimension",
+                            "value": 20,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:185",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "sm": {
+                            "type": "dimension",
+                            "value": 16,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:186",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "xs": {
+                            "type": "dimension",
+                            "value": 14,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:187",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "paragraph": {
+                        "md": {
+                            "type": "dimension",
+                            "value": 24,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:190",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "sm": {
+                            "type": "dimension",
+                            "value": 20,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:191",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "xs": {
+                            "type": "dimension",
+                            "value": 16,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:192",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "subheading": {
+                        "sm": {
+                            "type": "dimension",
+                            "value": 32,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:194",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "xs": {
+                            "type": "dimension",
+                            "value": 28,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:195",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "caption": {
+                        "sm": {
+                            "type": "dimension",
+                            "value": 16,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:197",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "screen": {
+                "default": {
+                    "type": "dimension",
+                    "value": 768,
+                    "extensions": {
+                        "org.lukasoppermann.figmaDesignTokens": {
+                            "collection": "Breakpoints",
+                            "scopes": ["WIDTH_HEIGHT"],
+                            "variableId": "VariableID:346:2",
+                            "exportKey": "variables"
+                        }
+                    }
+                }
+            }
+        },
+        "mobile": {
+            "font": {
+                "size": {
+                    "heading": {
+                        "h2": {
+                            "type": "dimension",
+                            "value": 32,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:111",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h3": {
+                            "type": "dimension",
+                            "value": 28,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:112",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h4": {
+                            "type": "dimension",
+                            "value": 24,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:113",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h5": {
+                            "type": "dimension",
+                            "value": 20,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:114",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h6": {
+                            "type": "dimension",
+                            "value": 18,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:115",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h1": {
+                            "type": "dimension",
+                            "value": 40,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:900:2",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "label": {
+                        "md": {
+                            "type": "dimension",
+                            "value": 14,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:163",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "sm": {
+                            "type": "dimension",
+                            "value": 14,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:164",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "xs": {
+                            "type": "dimension",
+                            "value": 12,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:165",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "paragraph": {
+                        "md": {
+                            "type": "dimension",
+                            "value": 14,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:168",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "sm": {
+                            "type": "dimension",
+                            "value": 14,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:169",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "xs": {
+                            "type": "dimension",
+                            "value": 12,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:170",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "subheading": {
+                        "sm": {
+                            "type": "dimension",
+                            "value": 18,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:171",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "xs": {
+                            "type": "dimension",
+                            "value": 16,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:172",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "caption": {
+                        "sm": {
+                            "type": "dimension",
+                            "value": 12,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["FONT_SIZE"],
+                                    "variableId": "VariableID:43:175",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    }
+                },
+                "line height": {
+                    "heading": {
+                        "h1": {
+                            "type": "dimension",
+                            "value": 48,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:177",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h2": {
+                            "type": "dimension",
+                            "value": 40,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:178",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h3": {
+                            "type": "dimension",
+                            "value": 36,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:179",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h4": {
+                            "type": "dimension",
+                            "value": 32,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:180",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h5": {
+                            "type": "dimension",
+                            "value": 28,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:181",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "h6": {
+                            "type": "dimension",
+                            "value": 24,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:182",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "label": {
+                        "md": {
+                            "type": "dimension",
+                            "value": 16,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:185",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "sm": {
+                            "type": "dimension",
+                            "value": 16,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:186",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "xs": {
+                            "type": "dimension",
+                            "value": 14,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:187",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "paragraph": {
+                        "md": {
+                            "type": "dimension",
+                            "value": 20,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:190",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "sm": {
+                            "type": "dimension",
+                            "value": 20,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:191",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "xs": {
+                            "type": "dimension",
+                            "value": 16,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:192",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "subheading": {
+                        "sm": {
+                            "type": "dimension",
+                            "value": 30,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:194",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        },
+                        "xs": {
+                            "type": "dimension",
+                            "value": 28,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:195",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    },
+                    "caption": {
+                        "sm": {
+                            "type": "dimension",
+                            "value": 16,
+                            "extensions": {
+                                "org.lukasoppermann.figmaDesignTokens": {
+                                    "collection": "Breakpoints",
+                                    "scopes": ["LINE_HEIGHT"],
+                                    "variableId": "VariableID:43:197",
+                                    "exportKey": "variables"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "screen": {
+                "default": {
+                    "type": "dimension",
+                    "value": 390,
+                    "extensions": {
+                        "org.lukasoppermann.figmaDesignTokens": {
+                            "collection": "Breakpoints",
+                            "scopes": ["WIDTH_HEIGHT"],
+                            "variableId": "VariableID:346:2",
+                            "exportKey": "variables"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+@import "pkg:bootstrap/scss/alert";
+
+// [START] Maps
+$alert-theme-colors: (
+    "primary"   : map-get($theme-colors, primary),
+    // "secondary" : map-get($theme-colors, secondary),
+    "success"   : map-get($theme-colors, success),
+    "info"      : map-get($theme-colors, info),
+    "warning"   : map-get($theme-colors, warning),
+    "danger"    : map-get($theme-colors, danger),
+    // "light"     : map-get($theme-colors, light),
+    // "dark"      : map-get($theme-colors, dark),
+    // "attention" : map-get($theme-colors, attention),
+    // "decor"     : map-get($theme-colors, decor),
+    // "mystic"    : map-get($theme-colors, mystic),
+    // "assistive" : map-get($theme-colors, assistive)
+);
+// [END] Maps
+
+// [START] Override .alert
+.alert {
+    // scss-docs-start alert-css-vars
+    --#{$prefix}alert-padding-x: #{$qn-utilities-spacing-2xl};
+    --#{$prefix}alert-padding-y: #{$qn-utilities-spacing-2xl};
+    --#{$prefix}alert-margin-bottom: #{$qn-utilities-spacing-2xl};
+    --#{$prefix}border-width: #{$qn-utilities-border-sm};
+    --#{$prefix}border-radius: #{$qn-utilities-radius-md};
+    --#{$qn-prefix}alert-sym-size: var(--#{$qn-prefix}line-height-paragraph-sm); // NOTE: following line height
+    // scss-docs-end alert-css-vars
+
+    font-size: var(--#{$qn-prefix}font-size-paragraph-sm);
+    line-height: var(--#{$qn-prefix}line-height-paragraph-sm);
+    letter-spacing: var(--#{$qn-prefix}letter-spacing-xs);
+
+    .sym {
+        color: var(--#{$qn-prefix}alert-sym-color);
+        font-size: var(--#{$qn-prefix}alert-sym-size);
+        line-height: var(--#{$qn-prefix}alert-sym-size);
+    }
+
+    a { // FIXME: hapus jika token color link sudah di-update
+        color: var(--#{$prefix}alert-link-color);
+    }
+}
+
+.alert-heading {
+    // Specified to prevent conflicts of changing $headings-color
+    color: var(--#{$qn-prefix}alert-heading-color);
+    font-weight: #{$font-weight-semibold};
+    font-size: var(--#{$qn-prefix}font-size-label-sm);
+    line-height: var(--#{$qn-prefix}line-height-label-sm);
+    letter-spacing: var(--#{$qn-prefix}letter-spacing-xs);
+    &:not(span) {
+        margin-bottom: #{$qn-utilities-spacing-xs};
+    }
+}
+
+.alert-dismissible {
+    padding-right: calc(var(--#{$prefix}alert-padding-x) * 2 + 20px); // NOTE: 20px is the width of the .btn-close.btn-close-sm
+    .btn-close {
+        top: var(--#{$prefix}alert-padding-y);
+        right: var(--#{$prefix}alert-padding-x);
+        padding: var(--#{$qn-prefix}btn-close-padding-x, 0) var(--#{$qn-prefix}btn-close-padding-y, 0);
+    }
+}
+
+// scss-docs-start alert-modifiers
+@each $state in map-keys($alert-theme-colors) {
+    .alert-#{$state} {
+        --#{$prefix}alert-color: var(--#{$qn-prefix}colors-semantic-text-dark-secondary);
+        --#{$prefix}alert-bg: var(--#{$qn-prefix}colors-component-badges-bg-#{ map-get($theme-alias-names, $state) }-default);
+        --#{$prefix}alert-border-color: var(--#{$prefix}alert-bg);
+        --#{$prefix}alert-link-color: var(--#{$qn-prefix}colors-semantic-link-default);
+        --#{$qn-prefix}alert-heading-color: var(--#{$prefix}alert-color);
+        --#{$qn-prefix}alert-sym-color: var(--#{$qn-prefix}colors-component-alert-symbol-#{ map-get($theme-alias-names, $state) });
+    }
+    .alert-outline-#{$state} {
+        --#{$prefix}alert-color: var(--#{$qn-prefix}colors-semantic-text-dark-secondary);
+        --#{$prefix}alert-bg: transparent;
+        --#{$prefix}alert-border-color: var(--#{$qn-prefix}colors-semantic-border-light-default);
+        --#{$prefix}alert-link-color: var(--#{$qn-prefix}colors-semantic-link-default);
+        --#{$qn-prefix}alert-heading-color: var(--#{$prefix}alert-color);
+        --#{$qn-prefix}alert-sym-color: var(--#{$qn-prefix}colors-component-alert-symbol-#{ map-get($theme-alias-names, $state) });
+    }
+}
+// scss-docs-end alert-modifiers
+// [START] Override .alert

@@ -1,0 +1,101 @@
+@use "sass:map";
+@import "pkg:bootstrap/scss/badge";
+
+// [START] Maps
+$badge-theme-colors: (
+    "primary" : map-get($theme-colors, primary),
+    // "secondary" : map-get($theme-colors, secondary),
+    "success" : map-get($theme-colors, success),
+    "info" : map-get($theme-colors, info),
+    "warning" : map-get($theme-colors, warning),
+    "danger" : map-get($theme-colors, danger),
+    // "light"     : map-get($theme-colors, light),
+    "dark" : map-get($theme-colors, dark),
+    "attention" : map-get($theme-colors, attention),
+    "decor" : map-get($theme-colors, decor),
+    "mystic" : map-get($theme-colors, mystic),
+    "assistive" : map-get($theme-colors, assistive)
+);
+
+$badge-sizes: (
+    "xs": ("--#{$prefix}badge-padding-x": #{$qn-utilities-spacing-xxs},
+        "--#{$prefix}badge-padding-y": #{$qn-utilities-spacing-none},
+        "--#{$prefix}badge-font-size": var(--#{$qn-prefix}font-size-caption-xs),
+        "--#{$prefix}badge-border-radius": #{$qn-utilities-radius-xs},
+        "--#{$qn-prefix}badge-line-height": var(--#{$qn-prefix}line-height-caption-sm),
+        "--#{$qn-prefix}-badge-height": #{$qn-utilities-spacing-2xl},
+        "--#{$qn-prefix}badge-letter-spacing": 0.165px),
+    "sm": ("--#{$prefix}badge-padding-x": #{$qn-utilities-spacing-md},
+        "--#{$prefix}badge-padding-y": #{$qn-utilities-spacing-none},
+        "--#{$prefix}badge-font-size": var(--#{$qn-prefix}font-size-label-xs),
+        "--#{$prefix}badge-border-radius": #{$qn-utilities-radius-sm},
+        "--#{$qn-prefix}badge-line-height": var(--#{$qn-prefix}line-height-label-xs),
+        "--#{$qn-prefix}-badge-height": #{$qn-utilities-spacing-4xl},
+        "--#{$qn-prefix}badge-letter-spacing": var(--#{$qn-prefix}primitive-typography-letter-spacing-sm))
+);
+// [END] Maps
+
+
+
+.badge {
+    --#{$prefix}badge-font-weight: 500;
+    line-height: var(--#{$qn-prefix}badge-line-height);
+    letter-spacing: var(--#{$qn-prefix}badge-letter-spacing);
+    gap: #{$qn-utilities-spacing-xxs};
+    height: var(--#{$qn-prefix}-badge-height);
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+
+    &-dot {
+        width: #{$qn-utilities-spacing-sm};
+        height: #{$qn-utilities-spacing-sm};
+        margin-right: #{$qn-utilities-spacing-xs};
+        border-radius: #{$qn-utilities-radius-xs};
+        background: var(--#{$qn-prefix}badge-dot-color);
+    }
+
+    // scss-docs-start badge-modifiers
+    @each $state in map-keys($badge-theme-colors) {
+
+        //dot stroke
+        &-stroke-#{$state} {
+            --#{$prefix}badge-color: var(--#{$qn-prefix}colors-component-badges-text-dark);
+            --#{$qn-prefix}badge-dot-color: var(--#{$qn-prefix}colors-semantic-symbol-#{ map-get($theme-alias-names, $state) }-default);
+            background-color: var(--#{$qn-prefix}colors-component-bg-light-default);
+            border: #{$qn-utilities-border-sm} solid var(--#{$qn-prefix}colors-semantic-border-light-default);
+        }
+
+        //solid
+        &-#{$state} {
+            @if $state =="warning" or $state =="attention" {
+                --#{$prefix}badge-color: var(--#{$qn-prefix}colors-semantic-text-#{ map-get($theme-alias-names, $state) }-default);
+            }
+
+            @else {
+                --#{$prefix}badge-color: var(--#{$qn-prefix}colors-semantic-text-light-default);
+            }
+
+            background-color: var(--#{$qn-prefix}colors-component-badges-bg-#{ map-get($theme-alias-names, $state) }-secondary);
+        }
+
+        //outline
+        &-outline-#{$state} {
+            --#{$prefix}badge-border-color: var(--#{$prefix}colors-semantic-border-#{ map-get($theme-alias-names, $state) }-secondary);
+            --#{$prefix}badge-color: var(--#{$qn-prefix}colors-component-badges-text-#{ map-get($theme-alias-names, $state) });
+            --#{$qn-prefix}badge-dot-color: var(--#{$qn-prefix}colors-semantic-symbol-#{ map-get($theme-alias-names, $state) }-default);
+            background-color: var(--#{$qn-prefix}colors-component-badges-bg-#{ map-get($theme-alias-names, $state) }-default);
+        }
+    }
+
+    @each $state, $properties in $badge-sizes {
+        &-#{$state} {
+            @each $property, $value in $properties {
+                #{$property}: $value;
+            }
+        }
+    }
+
+    // scss-docs-end badge-modifiers
+
+}

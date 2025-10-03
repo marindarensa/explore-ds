@@ -1,0 +1,1810 @@
+
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+$qn-colors-semantic-fill-success-secondary: #d3f8df;
+$qn-colors-semantic-fill-warning-secondary: #fdf7c4;
+$qn-colors-semantic-fill-attention-secondary: #feeee1;
+$qn-colors-semantic-border-warning-secondary: #fbf197;
+$qn-colors-component-badges-text-decor: #901ca4;
+$qn-colors-component-badges-text-mystic: #5822b4;
+$qn-colors-component-badges-text-info: #195d72;
+$qn-colors-component-badges-text-danger: #b00310;
+$qn-colors-component-badges-text-attention: #a84c00;
+$qn-colors-component-badges-text-warning: #705303;
+$qn-colors-component-badges-text-success: #0d683c;
+$qn-colors-component-badges-bg-decor-default: #fee4fd;
+$qn-colors-component-badges-bg-mystic-default: #edeaff;
+$qn-colors-component-badges-bg-danger-secondary: #d00222;
+$qn-colors-component-badges-bg-danger-default: #fee4e5;
+$qn-colors-component-badges-bg-info-secondary: #72d1fe;
+$qn-colors-component-badges-bg-info-default: #cefbf6;
+$qn-colors-component-badges-bg-success-default: #cfffe7;
+$qn-colors-component-badges-bg-success-secondary: #007f5c;
+$qn-colors-component-badges-bg-attention-secondary: #ffb02f;
+$qn-colors-component-badges-bg-attention-default: #ffeed0;
+$qn-colors-component-badges-bg-warning-default: #fff7c9;
+$qn-colors-component-badges-bg-warning-secondary: #ffd200;
+$qn-colors-component-badges-bg-brand-default: #deeefe;
+$qn-colors-component-badges-bg-dark-default: #f8f8f8;
+$qn-colors-component-button-border-default: rgba(255, 255, 255, 0.16);
+$qn-breakpoints-desktop-font-size-heading-h2: 3rem;
+$qn-breakpoints-desktop-font-size-heading-h3: 2.5rem;
+$qn-breakpoints-desktop-font-size-heading-h4: 2rem;
+$qn-breakpoints-desktop-font-size-heading-h5: 1.75rem;
+$qn-breakpoints-desktop-font-size-heading-h6: 1.5rem;
+$qn-breakpoints-desktop-font-size-heading-h1: 3.5rem;
+$qn-breakpoints-desktop-font-size-label-md: 1rem;
+$qn-breakpoints-desktop-font-size-label-sm: 0.875rem;
+$qn-breakpoints-desktop-font-size-label-xs: 0.75rem;
+$qn-breakpoints-desktop-font-size-paragraph-md: 1rem;
+$qn-breakpoints-desktop-font-size-paragraph-sm: 0.875rem;
+$qn-breakpoints-desktop-font-size-paragraph-xs: 0.75rem;
+$qn-breakpoints-desktop-font-size-subheading-sm: 1.25rem;
+$qn-breakpoints-desktop-font-size-subheading-xs: 1.125rem;
+$qn-breakpoints-desktop-font-size-caption-sm: 0.6875rem;
+$qn-breakpoints-desktop-font-line-height-heading-h1: 4rem;
+$qn-breakpoints-desktop-font-line-height-heading-h2: 3.5rem;
+$qn-breakpoints-desktop-font-line-height-heading-h3: 3rem;
+$qn-breakpoints-desktop-font-line-height-heading-h4: 2.5rem;
+$qn-breakpoints-desktop-font-line-height-heading-h5: 2.25rem;
+$qn-breakpoints-desktop-font-line-height-heading-h6: 2rem;
+$qn-breakpoints-desktop-font-line-height-label-md: 1.25rem;
+$qn-breakpoints-desktop-font-line-height-label-sm: 1.125rem;
+$qn-breakpoints-desktop-font-line-height-label-xs: 0.875rem;
+$qn-breakpoints-desktop-font-line-height-paragraph-md: 1.5rem;
+$qn-breakpoints-desktop-font-line-height-paragraph-sm: 1.25rem;
+$qn-breakpoints-desktop-font-line-height-paragraph-xs: 1rem;
+$qn-breakpoints-desktop-font-line-height-subheading-sm: 2.125rem;
+$qn-breakpoints-desktop-font-line-height-subheading-xs: 1.875rem;
+$qn-breakpoints-desktop-font-line-height-caption-sm: 1.125rem;
+$qn-breakpoints-desktop-screen-default: 90rem;
+$qn-breakpoints-tablet-font-size-heading-h2: 2.5rem;
+$qn-breakpoints-tablet-font-size-heading-h3: 2rem;
+$qn-breakpoints-tablet-font-size-heading-h4: 1.75rem;
+$qn-breakpoints-tablet-font-size-heading-h5: 1.5rem;
+$qn-breakpoints-tablet-font-size-heading-h6: 1.25rem;
+$qn-breakpoints-tablet-font-size-heading-h1: 3rem;
+$qn-breakpoints-tablet-font-size-label-md: 1rem;
+$qn-breakpoints-tablet-font-size-label-sm: 0.875rem;
+$qn-breakpoints-tablet-font-size-label-xs: 0.75rem;
+$qn-breakpoints-tablet-font-size-paragraph-md: 1rem;
+$qn-breakpoints-tablet-font-size-paragraph-sm: 0.875rem;
+$qn-breakpoints-tablet-font-size-paragraph-xs: 0.75rem;
+$qn-breakpoints-tablet-font-size-subheading-sm: 1.125rem;
+$qn-breakpoints-tablet-font-size-subheading-xs: 1rem;
+$qn-breakpoints-tablet-font-size-caption-sm: 0.6875rem;
+$qn-breakpoints-tablet-font-line-height-heading-h1: 3.5rem;
+$qn-breakpoints-tablet-font-line-height-heading-h2: 3rem;
+$qn-breakpoints-tablet-font-line-height-heading-h3: 2.5rem;
+$qn-breakpoints-tablet-font-line-height-heading-h4: 2.25rem;
+$qn-breakpoints-tablet-font-line-height-heading-h5: 2rem;
+$qn-breakpoints-tablet-font-line-height-heading-h6: 1.75rem;
+$qn-breakpoints-tablet-font-line-height-label-md: 1.25rem;
+$qn-breakpoints-tablet-font-line-height-label-sm: 1rem;
+$qn-breakpoints-tablet-font-line-height-label-xs: 0.875rem;
+$qn-breakpoints-tablet-font-line-height-paragraph-md: 1.5rem;
+$qn-breakpoints-tablet-font-line-height-paragraph-sm: 1.25rem;
+$qn-breakpoints-tablet-font-line-height-paragraph-xs: 1rem;
+$qn-breakpoints-tablet-font-line-height-subheading-sm: 2rem;
+$qn-breakpoints-tablet-font-line-height-subheading-xs: 1.75rem;
+$qn-breakpoints-tablet-font-line-height-caption-sm: 1rem;
+$qn-breakpoints-tablet-screen-default: 48rem;
+$qn-breakpoints-mobile-font-size-heading-h2: 2rem;
+$qn-breakpoints-mobile-font-size-heading-h3: 1.75rem;
+$qn-breakpoints-mobile-font-size-heading-h4: 1.5rem;
+$qn-breakpoints-mobile-font-size-heading-h5: 1.25rem;
+$qn-breakpoints-mobile-font-size-heading-h6: 1.125rem;
+$qn-breakpoints-mobile-font-size-heading-h1: 2.5rem;
+$qn-breakpoints-mobile-font-size-label-md: 0.875rem;
+$qn-breakpoints-mobile-font-size-label-sm: 0.875rem;
+$qn-breakpoints-mobile-font-size-label-xs: 0.75rem;
+$qn-breakpoints-mobile-font-size-paragraph-md: 0.875rem;
+$qn-breakpoints-mobile-font-size-paragraph-sm: 0.875rem;
+$qn-breakpoints-mobile-font-size-paragraph-xs: 0.75rem;
+$qn-breakpoints-mobile-font-size-subheading-sm: 1.125rem;
+$qn-breakpoints-mobile-font-size-subheading-xs: 1rem;
+$qn-breakpoints-mobile-font-size-caption-sm: 0.75rem;
+$qn-breakpoints-mobile-font-line-height-heading-h1: 3rem;
+$qn-breakpoints-mobile-font-line-height-heading-h2: 2.5rem;
+$qn-breakpoints-mobile-font-line-height-heading-h3: 2.25rem;
+$qn-breakpoints-mobile-font-line-height-heading-h4: 2rem;
+$qn-breakpoints-mobile-font-line-height-heading-h5: 1.75rem;
+$qn-breakpoints-mobile-font-line-height-heading-h6: 1.5rem;
+$qn-breakpoints-mobile-font-line-height-label-md: 1rem;
+$qn-breakpoints-mobile-font-line-height-label-sm: 1rem;
+$qn-breakpoints-mobile-font-line-height-label-xs: 0.875rem;
+$qn-breakpoints-mobile-font-line-height-paragraph-md: 1.25rem;
+$qn-breakpoints-mobile-font-line-height-paragraph-sm: 1.25rem;
+$qn-breakpoints-mobile-font-line-height-paragraph-xs: 1rem;
+$qn-breakpoints-mobile-font-line-height-subheading-sm: 1.875rem;
+$qn-breakpoints-mobile-font-line-height-subheading-xs: 1.75rem;
+$qn-breakpoints-mobile-font-line-height-caption-sm: 1rem;
+$qn-breakpoints-mobile-screen-default: 24.375rem;
+$qn-component-button-height-xs: 1.75rem;
+$qn-component-button-height-sm: 2rem;
+$qn-component-button-height-md: 2.25rem;
+$qn-component-button-height-lg: 2.5rem;
+$qn-component-button-height-xl: 2.75rem;
+$qn-component-button-symbol-sm: 1.125rem;
+$qn-component-button-symbol-md: 1.125rem;
+$qn-component-button-symbol-lg: 1.25rem;
+$qn-component-button-symbol-xl: 1.5rem;
+$qn-component-button-symbol-xs: 1rem;
+$qn-primitive-color-blue-light-100: #e5f4ff;
+$qn-primitive-color-blue-light-200: #bde3ff;
+$qn-primitive-color-blue-light-300: #80caff;
+$qn-primitive-color-blue-light-400: #0d99ff;
+$qn-primitive-color-blue-light-500: #007be5;
+$qn-primitive-color-blue-light-600: #0768cf;
+$qn-primitive-color-blue-light-700: #034ac1;
+$qn-primitive-color-blue-light-800: #093077;
+$qn-primitive-color-blue-light-900: #0d193f;
+$qn-primitive-color-blue-alpha-100: rgba(26, 156, 255, 0.07);
+$qn-primitive-color-blue-alpha-200: rgba(5, 134, 255, 0.16);
+$qn-primitive-color-blue-alpha-300: rgba(5, 118, 255, 0.43);
+$qn-primitive-color-blue-alpha-400: rgba(2, 94, 242, 0.76);
+$qn-primitive-color-blue-alpha-500: rgba(0, 62, 219, 0.84);
+$qn-primitive-color-blue-alpha-600: rgba(1, 55, 183, 0.89);
+$qn-primitive-color-blue-alpha-700: rgba(1, 49, 152, 0.92);
+$qn-primitive-color-blue-alpha-800: rgba(1, 26, 101, 0.91);
+$qn-primitive-color-blue-alpha-900: rgba(1, 15, 65, 0.91);
+$qn-primitive-color-blue-dark-100: #e2f1fd;
+$qn-primitive-color-blue-dark-200: #cfe9fc;
+$qn-primitive-color-blue-dark-300: #7cc4f8;
+$qn-primitive-color-blue-dark-400: #a8d7fa;
+$qn-primitive-color-blue-dark-500: #0c8ce9;
+$qn-primitive-color-blue-dark-600: #0a6dc2;
+$qn-primitive-color-blue-dark-700: #105cad;
+$qn-primitive-color-blue-dark-800: #184591;
+$qn-primitive-color-blue-dark-900: #1b335f;
+$qn-primitive-color-indigo-light-100: #f7e6f9;
+$qn-primitive-color-indigo-light-200: #f5daf9;
+$qn-primitive-color-indigo-light-300: #f09cfe;
+$qn-primitive-color-indigo-light-400: #ca3be2;
+$qn-primitive-color-indigo-light-500: #a804be;
+$qn-primitive-color-indigo-light-600: #8a079d;
+$qn-primitive-color-indigo-light-700: #681b74;
+$qn-primitive-color-indigo-light-800: #570363;
+$qn-primitive-color-indigo-light-900: #381c3d;
+$qn-primitive-color-indigo-dark-100: #ead5f0;
+$qn-primitive-color-indigo-dark-200: #d8beeb;
+$qn-primitive-color-indigo-dark-300: #c67ce9;
+$qn-primitive-color-indigo-dark-400: #a445c7;
+$qn-primitive-color-indigo-dark-500: #8f32ad;
+$qn-primitive-color-indigo-dark-600: #742990;
+$qn-primitive-color-indigo-dark-700: #5c2475;
+$qn-primitive-color-indigo-dark-800: #491b63;
+$qn-primitive-color-indigo-dark-900: #2d1c35;
+$qn-primitive-color-purple-light-100: #f4effe;
+$qn-primitive-color-purple-light-200: #e2d7f8;
+$qn-primitive-color-purple-light-300: #c9b2ff;
+$qn-primitive-color-purple-light-400: #a573fe;
+$qn-primitive-color-purple-light-500: #8e52ea;
+$qn-primitive-color-purple-light-600: #8034e1;
+$qn-primitive-color-purple-light-700: #6828b8;
+$qn-primitive-color-purple-light-800: #42157a;
+$qn-primitive-color-purple-light-900: #211339;
+$qn-primitive-color-purple-dark-100: #f1e7fe;
+$qn-primitive-color-purple-dark-200: #e3cffc;
+$qn-primitive-color-purple-dark-300: #d6b6fb;
+$qn-primitive-color-purple-dark-400: #d1a8ff;
+$qn-primitive-color-purple-dark-500: #8a38f5;
+$qn-primitive-color-purple-dark-600: #7a2ed6;
+$qn-primitive-color-purple-dark-700: #652ca8;
+$qn-primitive-color-purple-dark-800: #50297a;
+$qn-primitive-color-purple-dark-900: #3e2654;
+$qn-primitive-color-pink-light-100: #fbecfa;
+$qn-primitive-color-pink-light-200: #f1d2ee;
+$qn-primitive-color-pink-light-300: #e9a9dd;
+$qn-primitive-color-pink-light-400: #cf6db3;
+$qn-primitive-color-pink-light-500: #d7009d;
+$qn-primitive-color-pink-light-600: #bc0089;
+$qn-primitive-color-pink-light-700: #990070;
+$qn-primitive-color-pink-light-800: #620049;
+$qn-primitive-color-pink-light-900: #38002b;
+$qn-primitive-color-pink-dark-100: #fde2fb;
+$qn-primitive-color-pink-dark-200: #fccaf8;
+$qn-primitive-color-pink-dark-300: #fbb1ed;
+$qn-primitive-color-pink-dark-400: #fc9ce0;
+$qn-primitive-color-pink-dark-500: #f316b0;
+$qn-primitive-color-pink-dark-600: #d01b9c;
+$qn-primitive-color-pink-dark-700: #96207a;
+$qn-primitive-color-pink-dark-800: #68275e;
+$qn-primitive-color-pink-dark-900: #46253e;
+$qn-primitive-color-red-light-100: #ffedeb;
+$qn-primitive-color-red-light-200: #ffd0cc;
+$qn-primitive-color-red-light-300: #f9aa9e;
+$qn-primitive-color-red-light-400: #fc522d;
+$qn-primitive-color-red-light-500: #dc3412;
+$qn-primitive-color-red-light-600: #c02c18;
+$qn-primitive-color-red-light-700: #9e1e17;
+$qn-primitive-color-red-light-800: #6a0500;
+$qn-primitive-color-red-light-900: #380908;
+$qn-primitive-color-red-alpha-100: rgba(215, 35, 35, 0.05);
+$qn-primitive-color-red-alpha-200: rgba(240, 13, 5, 0.12);
+$qn-primitive-color-red-alpha-300: rgba(255, 5, 30, 0.37);
+$qn-primitive-color-red-alpha-400: rgba(247, 2, 31, 0.8);
+$qn-primitive-color-red-alpha-500: rgba(197, 2, 21, 0.84);
+$qn-primitive-color-red-alpha-600: rgba(167, 1, 23, 0.88);
+$qn-primitive-color-red-alpha-700: rgba(141, 2, 21, 0.9);
+$qn-primitive-color-red-alpha-800: rgba(105, 2, 14, 0.92);
+$qn-primitive-color-red-alpha-900: rgba(54, 2, 6, 0.94);
+$qn-primitive-color-red-dark-100: #fccdca;
+$qn-primitive-color-red-dark-200: #fbbcb6;
+$qn-primitive-color-red-dark-300: #fca397;
+$qn-primitive-color-red-dark-400: #e03e1a;
+$qn-primitive-color-red-dark-500: #c4381c;
+$qn-primitive-color-red-dark-600: #963323;
+$qn-primitive-color-red-dark-700: #7c2622;
+$qn-primitive-color-red-dark-800: #54211c;
+$qn-primitive-color-red-dark-900: #311817;
+$qn-primitive-color-orange-light-100: #fdf1cb;
+$qn-primitive-color-orange-light-200: #f1dbaa;
+$qn-primitive-color-orange-light-300: #e2bb6d;
+$qn-primitive-color-orange-light-400: #c48800;
+$qn-primitive-color-orange-light-500: #a76f00;
+$qn-primitive-color-orange-light-600: #ab4b00;
+$qn-primitive-color-orange-light-700: #8d3a00;
+$qn-primitive-color-orange-light-800: #5a2400;
+$qn-primitive-color-orange-light-900: #311300;
+$qn-primitive-color-orange-dark-100: #ffedd7;
+$qn-primitive-color-orange-dark-200: #fdd9b4;
+$qn-primitive-color-orange-dark-300: #fcc67f;
+$qn-primitive-color-orange-dark-400: #fcb34a;
+$qn-primitive-color-orange-dark-500: #de7d02;
+$qn-primitive-color-orange-dark-600: #c86f04;
+$qn-primitive-color-orange-dark-700: #ad5f05;
+$qn-primitive-color-orange-dark-800: #985306;
+$qn-primitive-color-orange-dark-900: #673806;
+$qn-primitive-color-yellow-light-100: #fffbeb;
+$qn-primitive-color-yellow-light-200: #fff1c2;
+$qn-primitive-color-yellow-light-300: #ffe8a3;
+$qn-primitive-color-yellow-light-400: #ffd966;
+$qn-primitive-color-yellow-light-500: #ffcd29;
+$qn-primitive-color-yellow-light-600: #ffc21a;
+$qn-primitive-color-yellow-light-700: #fab815;
+$qn-primitive-color-yellow-light-800: #dd940e;
+$qn-primitive-color-yellow-light-900: #b86200;
+$qn-primitive-color-yellow-dark-100: #fdf7dd;
+$qn-primitive-color-yellow-dark-200: #fbe8ad;
+$qn-primitive-color-yellow-dark-300: #f9df90;
+$qn-primitive-color-yellow-dark-400: #f7d15f;
+$qn-primitive-color-yellow-dark-500: #f3c11b;
+$qn-primitive-color-yellow-dark-600: #f2b50d;
+$qn-primitive-color-yellow-dark-700: #e4a711;
+$qn-primitive-color-yellow-dark-800: #c58011;
+$qn-primitive-color-yellow-dark-900: #925711;
+$qn-primitive-color-teal-light-100: #d3f8df;
+$qn-primitive-color-teal-light-200: #aaf0c4;
+$qn-primitive-color-teal-light-300: #73e2a3;
+$qn-primitive-color-teal-light-400: #3ccb7f;
+$qn-primitive-color-teal-light-500: #16b364;
+$qn-primitive-color-teal-light-600: #099250;
+$qn-primitive-color-teal-light-700: #087443;
+$qn-primitive-color-teal-light-800: #095c37;
+$qn-primitive-color-teal-light-900: #084c2e;
+$qn-primitive-color-teal-dark-100: #d2f4ee;
+$qn-primitive-color-teal-dark-200: #ade7db;
+$qn-primitive-color-teal-dark-300: #7fcfbe;
+$qn-primitive-color-teal-dark-400: #4daa96;
+$qn-primitive-color-teal-dark-500: #1b8570;
+$qn-primitive-color-teal-dark-600: #14695a;
+$qn-primitive-color-teal-dark-700: #14574d;
+$qn-primitive-color-teal-dark-800: #153f39;
+$qn-primitive-color-teal-dark-900: #132e2a;
+$qn-primitive-color-teal-alpha-100: rgba(13, 156, 106, 0.1);
+$qn-primitive-color-teal-alpha-200: rgba(13, 156, 106, 0.2);
+$qn-primitive-color-teal-alpha-300: rgba(13, 156, 106, 0.3);
+$qn-primitive-color-teal-alpha-400: rgba(13, 156, 106, 0.4);
+$qn-primitive-color-teal-alpha-500: rgba(13, 156, 106, 0.5);
+$qn-primitive-color-teal-alpha-600: rgba(13, 156, 106, 0.6);
+$qn-primitive-color-teal-alpha-700: rgba(13, 156, 106, 0.7);
+$qn-primitive-color-teal-alpha-800: rgba(13, 156, 106, 0.8);
+$qn-primitive-color-teal-alpha-900: rgba(13, 156, 106, 0.9);
+$qn-primitive-color-cyan-light-100: #e5f5f9;
+$qn-primitive-color-cyan-light-200: #c3e4ec;
+$qn-primitive-color-cyan-light-300: #97ccd6;
+$qn-primitive-color-cyan-light-400: #3ea4bc;
+$qn-primitive-color-cyan-light-500: #008aa6;
+$qn-primitive-color-cyan-light-600: #007795;
+$qn-primitive-color-cyan-light-700: #005f7e;
+$qn-primitive-color-cyan-light-800: #003c52;
+$qn-primitive-color-cyan-light-900: #00202f;
+$qn-primitive-color-cyan-dark-100: #ddf7fd;
+$qn-primitive-color-cyan-dark-200: #bce6f1;
+$qn-primitive-color-cyan-dark-300: #a4e2ef;
+$qn-primitive-color-cyan-dark-400: #67cbe4;
+$qn-primitive-color-cyan-dark-500: #0887a0;
+$qn-primitive-color-cyan-dark-600: #087691;
+$qn-primitive-color-cyan-dark-700: #0a5b76;
+$qn-primitive-color-cyan-dark-800: #0c455a;
+$qn-primitive-color-cyan-dark-900: #0c2937;
+$qn-primitive-color-gray-light-0: #fdfdfd;
+$qn-primitive-color-gray-light-25: #fafafa;
+$qn-primitive-color-gray-light-50: #f5f5f5;
+$qn-primitive-color-gray-light-100: #e6e6e6;
+$qn-primitive-color-gray-light-200: #d9d9d9;
+$qn-primitive-color-gray-light-300: #b3b3b3;
+$qn-primitive-color-gray-light-400: #757575;
+$qn-primitive-color-gray-light-500: #444444;
+$qn-primitive-color-gray-light-600: #383838;
+$qn-primitive-color-gray-light-700: #2c2c2c;
+$qn-primitive-color-gray-light-800: #1e1e1e;
+$qn-primitive-color-gray-light-900: #0a0d12;
+$qn-primitive-color-gray-dark-0: #ededed;
+$qn-primitive-color-gray-dark-25: #dfe1e3;
+$qn-primitive-color-gray-dark-50: #d4d7dc;
+$qn-primitive-color-gray-dark-100: #b9bdc4;
+$qn-primitive-color-gray-dark-200: #a4aab3;
+$qn-primitive-color-gray-dark-300: #828c9c;
+$qn-primitive-color-gray-dark-400: #586072;
+$qn-primitive-color-gray-dark-500: #3d4451;
+$qn-primitive-color-gray-dark-600: #2e343f;
+$qn-primitive-color-gray-dark-700: #1b1f28;
+$qn-primitive-color-gray-dark-800: #12161f;
+$qn-primitive-color-gray-dark-900: #0c1118;
+$qn-primitive-color-base-black: #000000;
+$qn-primitive-color-base-white: #ffffff;
+$qn-primitive-color-base-transparent: rgba(255, 255, 255, 0);
+$qn-primitive-color-green-light-100: #e1f8df;
+$qn-primitive-color-green-light-200: #ccf0c9;
+$qn-primitive-color-green-light-300: #93d48f;
+$qn-primitive-color-green-light-400: #2ca42e;
+$qn-primitive-color-green-light-500: #03830e;
+$qn-primitive-color-green-light-600: #086c0e;
+$qn-primitive-color-green-light-700: #175a17;
+$qn-primitive-color-green-light-800: #0b420c;
+$qn-primitive-color-green-light-900: #0e320d;
+$qn-primitive-color-green-alpha-100: rgba(38, 246, 19, 0.11);
+$qn-primitive-color-green-alpha-200: rgba(26, 205, 10, 0.2);
+$qn-primitive-color-green-alpha-300: rgba(11, 158, 0, 0.44);
+$qn-primitive-color-green-alpha-400: rgba(1, 147, 3, 0.83);
+$qn-primitive-color-green-alpha-500: rgba(0, 133, 13, 0.9);
+$qn-primitive-color-green-alpha-600: rgba(2, 105, 9, 0.98);
+$qn-primitive-color-green-alpha-700: rgba(0, 77, 0, 0.91);
+$qn-primitive-color-green-alpha-800: rgba(1, 60, 2, 0.96);
+$qn-primitive-color-green-alpha-900: rgba(1, 41, 0, 0.95);
+$qn-primitive-color-green-dark-100: #ddfde2;
+$qn-primitive-color-green-dark-200: #beefc2;
+$qn-primitive-color-green-dark-300: #a1e8b9;
+$qn-primitive-color-green-dark-400: #79d297;
+$qn-primitive-color-green-dark-500: #198f51;
+$qn-primitive-color-green-dark-600: #078348;
+$qn-primitive-color-green-dark-700: #0a5c35;
+$qn-primitive-color-green-dark-800: #0a4c2d;
+$qn-primitive-color-green-dark-900: #082618;
+$qn-primitive-color-alpha-black-0: rgba(10, 13, 20, 0.02);
+$qn-primitive-color-alpha-black-25: rgba(10, 13, 20, 0.03);
+$qn-primitive-color-alpha-black-50: rgba(10, 13, 20, 0.06);
+$qn-primitive-color-alpha-black-100: rgba(10, 13, 20, 0.12);
+$qn-primitive-color-alpha-black-200: rgba(10, 13, 20, 0.16);
+$qn-primitive-color-alpha-black-300: rgba(10, 13, 20, 0.4);
+$qn-primitive-color-alpha-black-400: rgba(10, 13, 20, 0.5);
+$qn-primitive-color-alpha-black-500: rgba(10, 13, 20, 0.6);
+$qn-primitive-color-alpha-black-600: rgba(10, 13, 20, 0.7);
+$qn-primitive-color-alpha-black-700: rgba(10, 13, 20, 0.8);
+$qn-primitive-color-alpha-black-800: rgba(10, 13, 20, 0.84);
+$qn-primitive-color-alpha-black-900: rgba(10, 13, 20, 0.9);
+$qn-primitive-color-alpha-white-100: rgba(255, 255, 255, 0.94);
+$qn-primitive-color-alpha-white-200: rgba(255, 255, 255, 0.92);
+$qn-primitive-color-alpha-white-300: rgba(255, 255, 255, 0.8);
+$qn-primitive-color-alpha-white-400: rgba(255, 255, 255, 0.56);
+$qn-primitive-color-alpha-white-500: rgba(255, 255, 255, 0.5);
+$qn-primitive-color-alpha-white-600: rgba(255, 255, 255, 0.35);
+$qn-primitive-color-alpha-white-700: rgba(255, 255, 255, 0.16);
+$qn-primitive-color-alpha-white-800: rgba(255, 255, 255, 0.08);
+$qn-primitive-color-alpha-white-900: rgba(255, 255, 255, 0.04);
+$qn-primitive-color-azure-light-100: #ecf2ff;
+$qn-primitive-color-azure-light-200: #d3ddf5;
+$qn-primitive-color-azure-light-300: #a9c0f8;
+$qn-primitive-color-azure-light-400: #7993d4;
+$qn-primitive-color-azure-light-500: #5977cb;
+$qn-primitive-color-azure-light-600: #4b67b2;
+$qn-primitive-color-azure-light-700: #3d538e;
+$qn-primitive-color-azure-light-800: #233360;
+$qn-primitive-color-azure-light-900: #0e1a3b;
+$qn-primitive-color-azure-alpha-100: rgba(36, 75, 235, 0.05);
+$qn-primitive-color-azure-alpha-200: rgba(5, 61, 245, 0.12);
+$qn-primitive-color-azure-alpha-300: rgba(0, 57, 229, 0.33);
+$qn-primitive-color-azure-alpha-400: rgba(4, 43, 159, 0.57);
+$qn-primitive-color-azure-alpha-500: rgba(2, 46, 167, 0.68);
+$qn-primitive-color-azure-alpha-600: rgba(1, 35, 137, 0.78);
+$qn-primitive-color-azure-alpha-700: rgba(1, 33, 126, 0.84);
+$qn-primitive-color-azure-alpha-800: rgba(1, 33, 126, 0.87);
+$qn-primitive-color-azure-alpha-900: rgba(1, 13, 50, 0.91);
+$qn-primitive-color-azure-dark-100: #d5e4f8;
+$qn-primitive-color-azure-dark-200: #b7d4f7;
+$qn-primitive-color-azure-dark-300: #8daaf0;
+$qn-primitive-color-azure-dark-400: #6289d2;
+$qn-primitive-color-azure-dark-500: #3f66c2;
+$qn-primitive-color-azure-dark-600: #2e4f9e;
+$qn-primitive-color-azure-dark-700: #2a447e;
+$qn-primitive-color-azure-dark-800: #202f57;
+$qn-primitive-color-azure-dark-900: #181e38;
+$qn-primitive-typography-family-sans-serif: Inter Tight;
+$qn-primitive-typography-family-monospace: Roboto Mono;
+$qn-primitive-typography-family-serif: Playfair Display;
+$qn-primitive-typography-weight-reguler: Regular;
+$qn-primitive-typography-weight-medium: Medium;
+$qn-primitive-typography-weight-semibold: Semibold;
+$qn-primitive-typography-weight-bold: Bold;
+$qn-primitive-typography-weight-italic: Italic;
+$qn-primitive-typography-weight-medium-italic: Medium Italic;
+$qn-primitive-typography-weight-medium-underline: Medium Underline;
+$qn-primitive-typography-letter-spacing-xs: 0.015625rem;
+$qn-primitive-typography-letter-spacing-sm: 0.03125rem;
+$qn-primitive-typography-letter-spacing-none: 0;
+$qn-primitive-typography-letter-spacing-md: 0.046875rem;
+$qn-utilities-spacing-none: 0;
+$qn-utilities-spacing-xxs: 0.125rem;
+$qn-utilities-spacing-xs: 0.25rem;
+$qn-utilities-spacing-sm: 0.375rem;
+$qn-utilities-spacing-md: 0.5rem;
+$qn-utilities-spacing-lg: 0.625rem;
+$qn-utilities-spacing-xl: 0.75rem;
+$qn-utilities-spacing-2xl: 1rem;
+$qn-utilities-spacing-3xl: 1.25rem;
+$qn-utilities-spacing-4xl: 1.5rem;
+$qn-utilities-spacing-5xl: 1.75rem;
+$qn-utilities-spacing-6xl: 2rem;
+$qn-utilities-spacing-7xl: 2.25rem;
+$qn-utilities-spacing-8xl: 2.5rem;
+$qn-utilities-spacing-9xl: 2.75rem;
+$qn-utilities-spacing-10xl: 3rem;
+$qn-utilities-spacing-11xl: 3.5rem;
+$qn-utilities-spacing-12xl: 4rem;
+$qn-utilities-spacing-13xl: 7.5rem;
+$qn-utilities-radius-none: 0;
+$qn-utilities-radius-xxs: 0.25rem;
+$qn-utilities-radius-xs: 0.375rem;
+$qn-utilities-radius-sm: 0.5rem;
+$qn-utilities-radius-md: 0.625rem;
+$qn-utilities-radius-lg: 0.75rem;
+$qn-utilities-radius-xl: 1rem;
+$qn-utilities-radius-2xl: 1.125rem;
+$qn-utilities-radius-3xl: 1.5rem;
+$qn-utilities-radius-full: 62.4375rem;
+$qn-utilities-radius-4xl: 2rem;
+$qn-utilities-border-xs: 0.0375rem;
+$qn-utilities-border-sm: 0.0625rem;
+$qn-utilities-border-md: 0.125rem;
+$qn-utilities-border-lg: 0.1875rem;
+$qn-brands-100: $qn-primitive-color-blue-light-100;
+$qn-brands-200: $qn-primitive-color-blue-light-200;
+$qn-brands-300: $qn-primitive-color-blue-light-300;
+$qn-brands-400: $qn-primitive-color-blue-light-400;
+$qn-brands-500: $qn-primitive-color-blue-light-500;
+$qn-brands-600: $qn-primitive-color-blue-light-600;
+$qn-brands-700: $qn-primitive-color-blue-light-700;
+$qn-brands-800: $qn-primitive-color-blue-light-800;
+$qn-brands-900: $qn-primitive-color-blue-light-900;
+$qn-brands-alpha-100: $qn-primitive-color-blue-alpha-100;
+$qn-brands-alpha-200: $qn-primitive-color-blue-alpha-200;
+$qn-brands-alpha-300: $qn-primitive-color-blue-alpha-300;
+$qn-brands-alpha-400: $qn-primitive-color-blue-alpha-400;
+$qn-brands-alpha-500: $qn-primitive-color-blue-alpha-500;
+$qn-brands-alpha-600: $qn-primitive-color-blue-alpha-600;
+$qn-brands-alpha-700: $qn-primitive-color-blue-alpha-700;
+$qn-brands-alpha-800: $qn-primitive-color-blue-alpha-800;
+$qn-brands-alpha-900: $qn-primitive-color-blue-alpha-900;
+$qn-colors-semantic-fill-success-default: $qn-primitive-color-teal-light-500;
+$qn-colors-semantic-fill-danger-secondary: $qn-primitive-color-red-light-100;
+$qn-colors-semantic-fill-danger-default: $qn-primitive-color-red-light-500;
+$qn-colors-semantic-fill-warning-default: $qn-primitive-color-yellow-light-500;
+$qn-colors-semantic-fill-info-secondary: $qn-primitive-color-cyan-light-200;
+$qn-colors-semantic-fill-info-default: $qn-primitive-color-cyan-light-500;
+$qn-colors-semantic-fill-mystic-secondary: $qn-primitive-color-purple-light-100;
+$qn-colors-semantic-fill-mystic-default: $qn-primitive-color-purple-light-500;
+$qn-colors-semantic-fill-decor-secondary: $qn-primitive-color-indigo-light-100;
+$qn-colors-semantic-fill-decor-default: $qn-primitive-color-indigo-light-500;
+$qn-colors-semantic-fill-assistive-secondary: $qn-primitive-color-pink-light-100;
+$qn-colors-semantic-fill-assistive-default: $qn-primitive-color-pink-light-500;
+$qn-colors-semantic-fill-attention-default: $qn-primitive-color-orange-light-500;
+$qn-colors-semantic-fill-dark-secondary: $qn-primitive-color-gray-light-100;
+$qn-colors-semantic-fill-dark-default: $qn-primitive-color-gray-light-500;
+$qn-colors-semantic-fill-light-default: $qn-primitive-color-base-white;
+$qn-colors-semantic-fill-light-secondary: $qn-primitive-color-gray-light-50;
+$qn-colors-semantic-fill-light-tertiary: $qn-primitive-color-gray-light-50;
+$qn-colors-semantic-link-default: $qn-primitive-color-blue-light-500;
+$qn-colors-semantic-link-hovered: $qn-primitive-color-blue-light-600;
+$qn-colors-semantic-link-pressed: $qn-primitive-color-blue-light-700;
+$qn-colors-semantic-link-light-default: $qn-primitive-color-base-white;
+$qn-colors-semantic-link-light-hovered: $qn-primitive-color-alpha-white-500;
+$qn-colors-semantic-link-light-pressed: $qn-primitive-color-base-white;
+$qn-colors-semantic-text-success-default: $qn-primitive-color-teal-light-800;
+$qn-colors-semantic-text-success-secondary: $qn-primitive-color-teal-light-600;
+$qn-colors-semantic-text-success-tertiary: $qn-primitive-color-teal-light-500;
+$qn-colors-semantic-text-danger-default: $qn-primitive-color-red-light-800;
+$qn-colors-semantic-text-danger-secondary: $qn-primitive-color-red-light-600;
+$qn-colors-semantic-text-danger-tertiary: $qn-primitive-color-red-light-400;
+$qn-colors-semantic-text-warning-default: $qn-primitive-color-yellow-light-800;
+$qn-colors-semantic-text-warning-secondary: $qn-primitive-color-yellow-light-600;
+$qn-colors-semantic-text-warning-tertiary: $qn-primitive-color-yellow-light-400;
+$qn-colors-semantic-text-info-default: $qn-primitive-color-cyan-light-800;
+$qn-colors-semantic-text-info-secondary: $qn-primitive-color-cyan-light-600;
+$qn-colors-semantic-text-info-tertiary: $qn-primitive-color-cyan-light-400;
+$qn-colors-semantic-text-light-default: $qn-primitive-color-base-white;
+$qn-colors-semantic-text-light-secondary: $qn-primitive-color-alpha-white-300;
+$qn-colors-semantic-text-light-tertiary: $qn-primitive-color-alpha-white-600;
+$qn-colors-semantic-text-disabled-default: $qn-primitive-color-alpha-black-400;
+$qn-colors-semantic-text-disabled-secondary: $qn-primitive-color-base-white;
+$qn-colors-semantic-text-disabled-tertiary: $qn-primitive-color-alpha-white-500;
+$qn-colors-semantic-text-dark-secondary: $qn-primitive-color-gray-light-500;
+$qn-colors-semantic-text-dark-default: $qn-primitive-color-alpha-black-900;
+$qn-colors-semantic-text-dark-tertiary: $qn-primitive-color-gray-light-400;
+$qn-colors-semantic-text-mystic-default: $qn-primitive-color-purple-light-800;
+$qn-colors-semantic-text-mystic-secondary: $qn-primitive-color-purple-light-600;
+$qn-colors-semantic-text-mystic-tertiary: $qn-primitive-color-purple-light-400;
+$qn-colors-semantic-text-decor-default: $qn-primitive-color-indigo-light-800;
+$qn-colors-semantic-text-decor-secondary: $qn-primitive-color-indigo-light-600;
+$qn-colors-semantic-text-decor-tertiary: $qn-primitive-color-indigo-light-400;
+$qn-colors-semantic-text-assistive-default: $qn-primitive-color-pink-light-800;
+$qn-colors-semantic-text-assistive-secondary: $qn-primitive-color-pink-light-600;
+$qn-colors-semantic-text-assistive-tertiary: $qn-primitive-color-pink-light-400;
+$qn-colors-semantic-text-attention-default: $qn-primitive-color-orange-light-800;
+$qn-colors-semantic-text-attention-secondary: $qn-primitive-color-orange-light-600;
+$qn-colors-semantic-text-attention-tertiary: $qn-primitive-color-orange-light-400;
+$qn-colors-semantic-border-disabled-default: $qn-primitive-color-gray-light-200;
+$qn-colors-semantic-border-disabled-secondary: $qn-primitive-color-alpha-white-500;
+$qn-colors-semantic-border-danger-secondary: $qn-primitive-color-red-light-200;
+$qn-colors-semantic-border-danger-default: $qn-primitive-color-red-alpha-500;
+$qn-colors-semantic-border-attention-secondary: $qn-primitive-color-orange-light-200;
+$qn-colors-semantic-border-attention-default: $qn-primitive-color-orange-light-600;
+$qn-colors-semantic-border-success-secondary: $qn-primitive-color-teal-light-200;
+$qn-colors-semantic-border-success-default: $qn-primitive-color-teal-light-600;
+$qn-colors-semantic-border-info-secondary: $qn-primitive-color-cyan-light-200;
+$qn-colors-semantic-border-info-default: $qn-primitive-color-cyan-light-500;
+$qn-colors-semantic-border-warning-default: $qn-primitive-color-yellow-light-600;
+$qn-colors-semantic-border-assistive-secondary: $qn-primitive-color-pink-light-200;
+$qn-colors-semantic-border-assistive-default: $qn-primitive-color-pink-light-600;
+$qn-colors-semantic-border-decor-secondary: $qn-primitive-color-indigo-light-200;
+$qn-colors-semantic-border-decor-default: $qn-primitive-color-indigo-light-600;
+$qn-colors-semantic-border-mystic-secondary: $qn-primitive-color-purple-light-200;
+$qn-colors-semantic-border-mystic-default: $qn-primitive-color-purple-light-600;
+$qn-colors-semantic-border-light-default: $qn-primitive-color-gray-light-200;
+$qn-colors-semantic-border-light-secondary: $qn-primitive-color-gray-light-100;
+$qn-colors-semantic-border-dark-default: $qn-primitive-color-gray-light-300;
+$qn-colors-semantic-border-dark-secondary: $qn-primitive-color-alpha-white-500;
+$qn-colors-semantic-symbol-light-default: $qn-primitive-color-base-white;
+$qn-colors-semantic-symbol-disabled-default: $qn-primitive-color-alpha-black-400;
+$qn-colors-semantic-symbol-disabled-secondary: $qn-primitive-color-base-white;
+$qn-colors-semantic-symbol-disabled-tertiary: $qn-primitive-color-alpha-white-500;
+$qn-colors-semantic-symbol-dark-secondary: $qn-primitive-color-gray-light-600;
+$qn-colors-semantic-symbol-dark-default: $qn-primitive-color-gray-light-700;
+$qn-colors-semantic-symbol-dark-tertiary: $qn-primitive-color-gray-light-400;
+$qn-colors-semantic-symbol-danger-default: $qn-primitive-color-red-light-700;
+$qn-colors-semantic-symbol-info-default: $qn-primitive-color-cyan-light-600;
+$qn-colors-semantic-symbol-warning-default: $qn-primitive-color-yellow-light-400;
+$qn-colors-semantic-symbol-success-default: $qn-primitive-color-teal-light-600;
+$qn-colors-semantic-symbol-mystic-default: $qn-primitive-color-purple-light-700;
+$qn-colors-semantic-symbol-decor-default: $qn-primitive-color-indigo-light-600;
+$qn-colors-semantic-symbol-assistive-default: $qn-primitive-color-pink-light-600;
+$qn-colors-semantic-symbol-attention-default: $qn-primitive-color-orange-light-600;
+$qn-colors-semantic-elevation-base-default: $qn-primitive-color-gray-light-25;
+$qn-colors-semantic-elevation-base-secondary: $qn-primitive-color-gray-light-50;
+$qn-colors-semantic-disabled-default: $qn-primitive-color-gray-light-200;
+$qn-colors-semantic-disabled-secondary: $qn-primitive-color-gray-light-400;
+$qn-colors-semantic-selected-base: $qn-primitive-color-gray-light-50;
+$qn-colors-semantic-overlay-dark: $qn-primitive-color-alpha-black-100;
+$qn-colors-semantic-overlay-light: $qn-primitive-color-alpha-white-700;
+$qn-colors-semantic-effect-medium-1: $qn-primitive-color-alpha-black-100;
+$qn-colors-semantic-effect-medium-2: $qn-primitive-color-alpha-black-200;
+$qn-colors-semantic-effect-medium-3: $qn-primitive-color-alpha-black-25;
+$qn-colors-semantic-effect-extra-small-1: $qn-primitive-color-alpha-black-25;
+$qn-colors-component-badges-text-dark: $qn-primitive-color-gray-light-600;
+$qn-colors-component-badges-text-assistive: $qn-primitive-color-pink-light-700;
+$qn-colors-component-badges-bg-assistive-secondary: $qn-primitive-color-pink-light-500;
+$qn-colors-component-badges-bg-assistive-default: $qn-primitive-color-pink-light-100;
+$qn-colors-component-badges-bg-decor-secondary: $qn-primitive-color-indigo-light-500;
+$qn-colors-component-badges-bg-mystic-secondary: $qn-primitive-color-purple-light-500;
+$qn-colors-component-badges-bg-dark-secondary: $qn-primitive-color-gray-light-600;
+$qn-colors-component-form-effect-danger-1: $qn-primitive-color-red-alpha-200;
+$qn-colors-component-form-effect-danger-2: $qn-primitive-color-red-alpha-200;
+$qn-colors-component-form-effect-danger-3: $qn-primitive-color-red-alpha-500;
+$qn-colors-component-form-effect-danger-4: $qn-primitive-color-red-alpha-200;
+$qn-colors-component-form-effect-brand-1: $qn-primitive-color-alpha-black-25;
+$qn-colors-component-form-effect-success-1: $qn-primitive-color-teal-light-200;
+$qn-colors-component-form-effect-success-2: $qn-primitive-color-teal-alpha-200;
+$qn-colors-component-form-effect-success-3: $qn-primitive-color-teal-alpha-500;
+$qn-colors-component-form-effect-success-4: $qn-primitive-color-teal-alpha-200;
+$qn-colors-component-form-bg-disabled-default: $qn-primitive-color-gray-light-50;
+$qn-colors-component-button-effect-dark-default-1: $qn-primitive-color-alpha-black-500;
+$qn-colors-component-button-effect-dark-default-2: $qn-primitive-color-alpha-black-300;
+$qn-colors-component-button-effect-dark-hovered-1: $qn-primitive-color-alpha-black-500;
+$qn-colors-component-button-effect-dark-hovered-2: $qn-primitive-color-alpha-black-300;
+$qn-colors-component-button-effect-danger-hovered-1: $qn-primitive-color-red-alpha-500;
+$qn-colors-component-button-effect-danger-hovered-2: $qn-primitive-color-red-alpha-300;
+$qn-colors-component-button-effect-danger-default-1: $qn-primitive-color-red-alpha-500;
+$qn-colors-component-button-effect-danger-default-2: $qn-primitive-color-red-alpha-300;
+$qn-colors-component-radio-border-dark: $qn-primitive-color-gray-light-600;
+$qn-colors-component-bg-dark-pressed: $qn-primitive-color-gray-light-800;
+$qn-colors-component-bg-dark-hovered-secondary: $qn-primitive-color-alpha-black-50;
+$qn-colors-component-bg-dark-default: $qn-primitive-color-gray-light-800;
+$qn-colors-component-bg-dark-hovered: $qn-primitive-color-gray-light-900;
+$qn-colors-component-bg-danger-hovered-secondary: $qn-primitive-color-red-light-100;
+$qn-colors-component-bg-danger-hovered: $qn-primitive-color-red-light-600;
+$qn-colors-component-bg-danger-default: $qn-primitive-color-red-light-500;
+$qn-colors-component-bg-danger-pressed: $qn-primitive-color-red-light-500;
+$qn-colors-component-bg-info-default: $qn-primitive-color-cyan-light-500;
+$qn-colors-component-bg-info-pressed: $qn-primitive-color-cyan-light-700;
+$qn-colors-component-bg-info-hovered: $qn-primitive-color-cyan-light-600;
+$qn-colors-component-bg-success-pressed: $qn-primitive-color-teal-light-700;
+$qn-colors-component-bg-success-hovered: $qn-primitive-color-teal-light-600;
+$qn-colors-component-bg-success-default: $qn-primitive-color-teal-light-500;
+$qn-colors-component-bg-warning-hovered: $qn-primitive-color-yellow-light-600;
+$qn-colors-component-bg-warning-default: $qn-primitive-color-yellow-light-500;
+$qn-colors-component-bg-warning-pressed: $qn-primitive-color-yellow-light-700;
+$qn-colors-component-bg-light-default: $qn-primitive-color-base-white;
+$qn-colors-component-bg-light-hovered: $qn-primitive-color-gray-light-50;
+$qn-colors-component-bg-light-hovered-secondary: $qn-primitive-color-alpha-white-700;
+$qn-colors-component-bg-light-pressed: $qn-primitive-color-base-white;
+$qn-colors-component-alert-symbol-info: $qn-primitive-color-cyan-light-600;
+$qn-colors-component-alert-symbol-danger: $qn-primitive-color-red-light-600;
+$qn-colors-component-alert-symbol-warning: $qn-primitive-color-yellow-light-800;
+$qn-colors-component-alert-symbol-success: $qn-primitive-color-green-dark-500;
+$qn-component-button-radius-xs: $qn-utilities-radius-xs;
+$qn-component-button-radius-sm: $qn-utilities-radius-sm;
+$qn-component-button-radius-md: $qn-utilities-radius-sm;
+$qn-component-button-radius-lg: $qn-utilities-radius-sm;
+$qn-component-button-radius-xl: $qn-utilities-radius-md;
+$qn-component-button-spacing-xs: $qn-utilities-spacing-sm;
+$qn-component-button-spacing-sm: $qn-utilities-spacing-sm;
+$qn-component-button-spacing-md: $qn-utilities-spacing-md;
+$qn-component-button-spacing-lg: $qn-utilities-spacing-lg;
+$qn-component-button-spacing-xl: $qn-utilities-spacing-xl;
+$qn-component-form-height-md: $qn-component-button-height-md;
+$qn-colors-semantic-fill-brand-tertiary: $qn-brands-100;
+$qn-colors-semantic-fill-brand-default: $qn-brands-500;
+$qn-colors-semantic-fill-brand-secondary: $qn-brands-400;
+$qn-colors-semantic-text-brand-default: $qn-brands-800;
+$qn-colors-semantic-text-brand-secondary: $qn-brands-600;
+$qn-colors-semantic-text-brand-tertiary: $qn-brands-400;
+$qn-colors-semantic-border-brand-secondary: $qn-brands-200;
+$qn-colors-semantic-border-brand-default: $qn-brands-600;
+$qn-colors-semantic-border-selected-brand: $qn-brands-400;
+$qn-colors-semantic-symbol-brand-default: $qn-brands-600;
+$qn-colors-semantic-selected-brand: $qn-brands-100;
+$qn-colors-component-badges-text-brand: $qn-brands-800;
+$qn-colors-component-badges-bg-brand-secondary: $qn-brands-600;
+$qn-colors-component-form-effect-brand-2: $qn-brands-alpha-200;
+$qn-colors-component-form-effect-brand-3: $qn-brands-alpha-200;
+$qn-colors-component-form-effect-brand-4: $qn-brands-alpha-500;
+$qn-colors-component-form-effect-brand-5: $qn-brands-alpha-200;
+$qn-colors-component-button-effect-brand-default-1: $qn-brands-alpha-500;
+$qn-colors-component-button-effect-brand-default-2: $qn-brands-alpha-100;
+$qn-colors-component-button-effect-brand-hovered-1: $qn-brands-alpha-500;
+$qn-colors-component-button-effect-brand-hovered-2: $qn-brands-alpha-100;
+$qn-colors-component-bg-brand-default: $qn-brands-500;
+$qn-colors-component-bg-brand-hovered-secondary: $qn-brands-100;
+$qn-colors-component-bg-brand-pressed: $qn-brands-500;
+$qn-colors-component-bg-brand-hovered: $qn-brands-600;
+$qn-colors-component-alert-symbol-brand: $qn-brands-500;
+$qn-component-form-radius-md: $qn-component-button-radius-md;
+$qn-colors-component-radio-border-brand: $qn-colors-semantic-border-brand-default;
+
+$qn-tokens: (
+  'brands': (
+    '100': $qn-brands-100,
+    '200': $qn-brands-200,
+    '300': $qn-brands-300,
+    '400': $qn-brands-400,
+    '500': $qn-brands-500,
+    '600': $qn-brands-600,
+    '700': $qn-brands-700,
+    '800': $qn-brands-800,
+    '900': $qn-brands-900,
+    'alpha': (
+      '100': $qn-brands-alpha-100,
+      '200': $qn-brands-alpha-200,
+      '300': $qn-brands-alpha-300,
+      '400': $qn-brands-alpha-400,
+      '500': $qn-brands-alpha-500,
+      '600': $qn-brands-alpha-600,
+      '700': $qn-brands-alpha-700,
+      '800': $qn-brands-alpha-800,
+      '900': $qn-brands-alpha-900
+    )
+  ),
+  'colors': (
+    'semantic': (
+      'fill': (
+        'success': (
+          'secondary': $qn-colors-semantic-fill-success-secondary,
+          'default': $qn-colors-semantic-fill-success-default
+        ),
+        'danger': (
+          'secondary': $qn-colors-semantic-fill-danger-secondary,
+          'default': $qn-colors-semantic-fill-danger-default
+        ),
+        'warning': (
+          'secondary': $qn-colors-semantic-fill-warning-secondary,
+          'default': $qn-colors-semantic-fill-warning-default
+        ),
+        'info': (
+          'secondary': $qn-colors-semantic-fill-info-secondary,
+          'default': $qn-colors-semantic-fill-info-default
+        ),
+        'brand': (
+          'tertiary': $qn-colors-semantic-fill-brand-tertiary,
+          'default': $qn-colors-semantic-fill-brand-default,
+          'secondary': $qn-colors-semantic-fill-brand-secondary
+        ),
+        'mystic': (
+          'secondary': $qn-colors-semantic-fill-mystic-secondary,
+          'default': $qn-colors-semantic-fill-mystic-default
+        ),
+        'decor': (
+          'secondary': $qn-colors-semantic-fill-decor-secondary,
+          'default': $qn-colors-semantic-fill-decor-default
+        ),
+        'assistive': (
+          'secondary': $qn-colors-semantic-fill-assistive-secondary,
+          'default': $qn-colors-semantic-fill-assistive-default
+        ),
+        'attention': (
+          'secondary': $qn-colors-semantic-fill-attention-secondary,
+          'default': $qn-colors-semantic-fill-attention-default
+        ),
+        'dark': (
+          'secondary': $qn-colors-semantic-fill-dark-secondary,
+          'default': $qn-colors-semantic-fill-dark-default
+        ),
+        'light': (
+          'default': $qn-colors-semantic-fill-light-default,
+          'secondary': $qn-colors-semantic-fill-light-secondary,
+          'tertiary': $qn-colors-semantic-fill-light-tertiary
+        )
+      ),
+      'link': (
+        'default': $qn-colors-semantic-link-default,
+        'hovered': $qn-colors-semantic-link-hovered,
+        'pressed': $qn-colors-semantic-link-pressed,
+        'light': (
+          'default': $qn-colors-semantic-link-light-default,
+          'hovered': $qn-colors-semantic-link-light-hovered,
+          'pressed': $qn-colors-semantic-link-light-pressed
+        )
+      ),
+      'text': (
+        'brand': (
+          'default': $qn-colors-semantic-text-brand-default,
+          'secondary': $qn-colors-semantic-text-brand-secondary,
+          'tertiary': $qn-colors-semantic-text-brand-tertiary
+        ),
+        'success': (
+          'default': $qn-colors-semantic-text-success-default,
+          'secondary': $qn-colors-semantic-text-success-secondary,
+          'tertiary': $qn-colors-semantic-text-success-tertiary
+        ),
+        'danger': (
+          'default': $qn-colors-semantic-text-danger-default,
+          'secondary': $qn-colors-semantic-text-danger-secondary,
+          'tertiary': $qn-colors-semantic-text-danger-tertiary
+        ),
+        'warning': (
+          'default': $qn-colors-semantic-text-warning-default,
+          'secondary': $qn-colors-semantic-text-warning-secondary,
+          'tertiary': $qn-colors-semantic-text-warning-tertiary
+        ),
+        'info': (
+          'default': $qn-colors-semantic-text-info-default,
+          'secondary': $qn-colors-semantic-text-info-secondary,
+          'tertiary': $qn-colors-semantic-text-info-tertiary
+        ),
+        'light': (
+          'default': $qn-colors-semantic-text-light-default,
+          'secondary': $qn-colors-semantic-text-light-secondary,
+          'tertiary': $qn-colors-semantic-text-light-tertiary
+        ),
+        'disabled': (
+          'default': $qn-colors-semantic-text-disabled-default,
+          'secondary': $qn-colors-semantic-text-disabled-secondary,
+          'tertiary': $qn-colors-semantic-text-disabled-tertiary
+        ),
+        'dark': (
+          'secondary': $qn-colors-semantic-text-dark-secondary,
+          'default': $qn-colors-semantic-text-dark-default,
+          'tertiary': $qn-colors-semantic-text-dark-tertiary
+        ),
+        'mystic': (
+          'default': $qn-colors-semantic-text-mystic-default,
+          'secondary': $qn-colors-semantic-text-mystic-secondary,
+          'tertiary': $qn-colors-semantic-text-mystic-tertiary
+        ),
+        'decor': (
+          'default': $qn-colors-semantic-text-decor-default,
+          'secondary': $qn-colors-semantic-text-decor-secondary,
+          'tertiary': $qn-colors-semantic-text-decor-tertiary
+        ),
+        'assistive': (
+          'default': $qn-colors-semantic-text-assistive-default,
+          'secondary': $qn-colors-semantic-text-assistive-secondary,
+          'tertiary': $qn-colors-semantic-text-assistive-tertiary
+        ),
+        'attention': (
+          'default': $qn-colors-semantic-text-attention-default,
+          'secondary': $qn-colors-semantic-text-attention-secondary,
+          'tertiary': $qn-colors-semantic-text-attention-tertiary
+        )
+      ),
+      'border': (
+        'disabled': (
+          'default': $qn-colors-semantic-border-disabled-default,
+          'secondary': $qn-colors-semantic-border-disabled-secondary
+        ),
+        'danger': (
+          'secondary': $qn-colors-semantic-border-danger-secondary,
+          'default': $qn-colors-semantic-border-danger-default
+        ),
+        'attention': (
+          'secondary': $qn-colors-semantic-border-attention-secondary,
+          'default': $qn-colors-semantic-border-attention-default
+        ),
+        'brand': (
+          'secondary': $qn-colors-semantic-border-brand-secondary,
+          'default': $qn-colors-semantic-border-brand-default
+        ),
+        'success': (
+          'secondary': $qn-colors-semantic-border-success-secondary,
+          'default': $qn-colors-semantic-border-success-default
+        ),
+        'info': (
+          'secondary': $qn-colors-semantic-border-info-secondary,
+          'default': $qn-colors-semantic-border-info-default
+        ),
+        'warning': (
+          'secondary': $qn-colors-semantic-border-warning-secondary,
+          'default': $qn-colors-semantic-border-warning-default
+        ),
+        'assistive': (
+          'secondary': $qn-colors-semantic-border-assistive-secondary,
+          'default': $qn-colors-semantic-border-assistive-default
+        ),
+        'decor': (
+          'secondary': $qn-colors-semantic-border-decor-secondary,
+          'default': $qn-colors-semantic-border-decor-default
+        ),
+        'mystic': (
+          'secondary': $qn-colors-semantic-border-mystic-secondary,
+          'default': $qn-colors-semantic-border-mystic-default
+        ),
+        'light': (
+          'default': $qn-colors-semantic-border-light-default,
+          'secondary': $qn-colors-semantic-border-light-secondary
+        ),
+        'dark': (
+          'default': $qn-colors-semantic-border-dark-default,
+          'secondary': $qn-colors-semantic-border-dark-secondary
+        ),
+        'selected': (
+          'brand': $qn-colors-semantic-border-selected-brand
+        )
+      ),
+      'symbol': (
+        'light': (
+          'default': $qn-colors-semantic-symbol-light-default
+        ),
+        'disabled': (
+          'default': $qn-colors-semantic-symbol-disabled-default,
+          'secondary': $qn-colors-semantic-symbol-disabled-secondary,
+          'tertiary': $qn-colors-semantic-symbol-disabled-tertiary
+        ),
+        'dark': (
+          'secondary': $qn-colors-semantic-symbol-dark-secondary,
+          'default': $qn-colors-semantic-symbol-dark-default,
+          'tertiary': $qn-colors-semantic-symbol-dark-tertiary
+        ),
+        'danger': (
+          'default': $qn-colors-semantic-symbol-danger-default
+        ),
+        'info': (
+          'default': $qn-colors-semantic-symbol-info-default
+        ),
+        'warning': (
+          'default': $qn-colors-semantic-symbol-warning-default
+        ),
+        'success': (
+          'default': $qn-colors-semantic-symbol-success-default
+        ),
+        'brand': (
+          'default': $qn-colors-semantic-symbol-brand-default
+        ),
+        'mystic': (
+          'default': $qn-colors-semantic-symbol-mystic-default
+        ),
+        'decor': (
+          'default': $qn-colors-semantic-symbol-decor-default
+        ),
+        'assistive': (
+          'default': $qn-colors-semantic-symbol-assistive-default
+        ),
+        'attention': (
+          'default': $qn-colors-semantic-symbol-attention-default
+        )
+      ),
+      'elevation': (
+        'base': (
+          'default': $qn-colors-semantic-elevation-base-default,
+          'secondary': $qn-colors-semantic-elevation-base-secondary
+        )
+      ),
+      'disabled': (
+        'default': $qn-colors-semantic-disabled-default,
+        'secondary': $qn-colors-semantic-disabled-secondary
+      ),
+      'selected': (
+        'brand': $qn-colors-semantic-selected-brand,
+        'base': $qn-colors-semantic-selected-base
+      ),
+      'overlay': (
+        'dark': $qn-colors-semantic-overlay-dark,
+        'light': $qn-colors-semantic-overlay-light
+      ),
+      'effect': (
+        'medium': (
+          '1': $qn-colors-semantic-effect-medium-1,
+          '2': $qn-colors-semantic-effect-medium-2,
+          '3': $qn-colors-semantic-effect-medium-3
+        ),
+        'extra-small': (
+          '1': $qn-colors-semantic-effect-extra-small-1
+        )
+      )
+    ),
+    'component': (
+      'badges': (
+        'text': (
+          'decor': $qn-colors-component-badges-text-decor,
+          'mystic': $qn-colors-component-badges-text-mystic,
+          'info': $qn-colors-component-badges-text-info,
+          'danger': $qn-colors-component-badges-text-danger,
+          'attention': $qn-colors-component-badges-text-attention,
+          'warning': $qn-colors-component-badges-text-warning,
+          'success': $qn-colors-component-badges-text-success,
+          'brand': $qn-colors-component-badges-text-brand,
+          'dark': $qn-colors-component-badges-text-dark,
+          'assistive': $qn-colors-component-badges-text-assistive
+        ),
+        'bg': (
+          'assistive': (
+            'secondary': $qn-colors-component-badges-bg-assistive-secondary,
+            'default': $qn-colors-component-badges-bg-assistive-default
+          ),
+          'decor': (
+            'secondary': $qn-colors-component-badges-bg-decor-secondary,
+            'default': $qn-colors-component-badges-bg-decor-default
+          ),
+          'mystic': (
+            'secondary': $qn-colors-component-badges-bg-mystic-secondary,
+            'default': $qn-colors-component-badges-bg-mystic-default
+          ),
+          'danger': (
+            'secondary': $qn-colors-component-badges-bg-danger-secondary,
+            'default': $qn-colors-component-badges-bg-danger-default
+          ),
+          'info': (
+            'secondary': $qn-colors-component-badges-bg-info-secondary,
+            'default': $qn-colors-component-badges-bg-info-default
+          ),
+          'success': (
+            'default': $qn-colors-component-badges-bg-success-default,
+            'secondary': $qn-colors-component-badges-bg-success-secondary
+          ),
+          'attention': (
+            'secondary': $qn-colors-component-badges-bg-attention-secondary,
+            'default': $qn-colors-component-badges-bg-attention-default
+          ),
+          'warning': (
+            'default': $qn-colors-component-badges-bg-warning-default,
+            'secondary': $qn-colors-component-badges-bg-warning-secondary
+          ),
+          'brand': (
+            'secondary': $qn-colors-component-badges-bg-brand-secondary,
+            'default': $qn-colors-component-badges-bg-brand-default
+          ),
+          'dark': (
+            'secondary': $qn-colors-component-badges-bg-dark-secondary,
+            'default': $qn-colors-component-badges-bg-dark-default
+          )
+        )
+      ),
+      'form': (
+        'effect': (
+          'danger': (
+            '1': $qn-colors-component-form-effect-danger-1,
+            '2': $qn-colors-component-form-effect-danger-2,
+            '3': $qn-colors-component-form-effect-danger-3,
+            '4': $qn-colors-component-form-effect-danger-4
+          ),
+          'brand': (
+            '1': $qn-colors-component-form-effect-brand-1,
+            '2': $qn-colors-component-form-effect-brand-2,
+            '3': $qn-colors-component-form-effect-brand-3,
+            '4': $qn-colors-component-form-effect-brand-4,
+            '5': $qn-colors-component-form-effect-brand-5
+          ),
+          'success': (
+            '1': $qn-colors-component-form-effect-success-1,
+            '2': $qn-colors-component-form-effect-success-2,
+            '3': $qn-colors-component-form-effect-success-3,
+            '4': $qn-colors-component-form-effect-success-4
+          )
+        ),
+        'bg': (
+          'disabled': (
+            'default': $qn-colors-component-form-bg-disabled-default
+          )
+        )
+      ),
+      'button': (
+        'effect': (
+          'dark': (
+            'default': (
+              '1': $qn-colors-component-button-effect-dark-default-1,
+              '2': $qn-colors-component-button-effect-dark-default-2
+            ),
+            'hovered': (
+              '1': $qn-colors-component-button-effect-dark-hovered-1,
+              '2': $qn-colors-component-button-effect-dark-hovered-2
+            )
+          ),
+          'brand': (
+            'default': (
+              '1': $qn-colors-component-button-effect-brand-default-1,
+              '2': $qn-colors-component-button-effect-brand-default-2
+            ),
+            'hovered': (
+              '1': $qn-colors-component-button-effect-brand-hovered-1,
+              '2': $qn-colors-component-button-effect-brand-hovered-2
+            )
+          ),
+          'danger': (
+            'hovered': (
+              '1': $qn-colors-component-button-effect-danger-hovered-1,
+              '2': $qn-colors-component-button-effect-danger-hovered-2
+            ),
+            'default': (
+              '1': $qn-colors-component-button-effect-danger-default-1,
+              '2': $qn-colors-component-button-effect-danger-default-2
+            )
+          )
+        ),
+        'border': (
+          'default': $qn-colors-component-button-border-default
+        )
+      ),
+      'radio': (
+        'border': (
+          'dark': $qn-colors-component-radio-border-dark,
+          'brand': $qn-colors-component-radio-border-brand
+        )
+      ),
+      'bg': (
+        'dark': (
+          'pressed': $qn-colors-component-bg-dark-pressed,
+          'hovered-secondary': $qn-colors-component-bg-dark-hovered-secondary,
+          'default': $qn-colors-component-bg-dark-default,
+          'hovered': $qn-colors-component-bg-dark-hovered
+        ),
+        'danger': (
+          'hovered-secondary': $qn-colors-component-bg-danger-hovered-secondary,
+          'hovered': $qn-colors-component-bg-danger-hovered,
+          'default': $qn-colors-component-bg-danger-default,
+          'pressed': $qn-colors-component-bg-danger-pressed
+        ),
+        'info': (
+          'default': $qn-colors-component-bg-info-default,
+          'pressed': $qn-colors-component-bg-info-pressed,
+          'hovered': $qn-colors-component-bg-info-hovered
+        ),
+        'brand': (
+          'default': $qn-colors-component-bg-brand-default,
+          'hovered-secondary': $qn-colors-component-bg-brand-hovered-secondary,
+          'pressed': $qn-colors-component-bg-brand-pressed,
+          'hovered': $qn-colors-component-bg-brand-hovered
+        ),
+        'success': (
+          'pressed': $qn-colors-component-bg-success-pressed,
+          'hovered': $qn-colors-component-bg-success-hovered,
+          'default': $qn-colors-component-bg-success-default
+        ),
+        'warning': (
+          'hovered': $qn-colors-component-bg-warning-hovered,
+          'default': $qn-colors-component-bg-warning-default,
+          'pressed': $qn-colors-component-bg-warning-pressed
+        ),
+        'light': (
+          'default': $qn-colors-component-bg-light-default,
+          'hovered': $qn-colors-component-bg-light-hovered,
+          'hovered-secondary': $qn-colors-component-bg-light-hovered-secondary,
+          'pressed': $qn-colors-component-bg-light-pressed
+        )
+      ),
+      'alert': (
+        'symbol': (
+          'brand': $qn-colors-component-alert-symbol-brand,
+          'info': $qn-colors-component-alert-symbol-info,
+          'danger': $qn-colors-component-alert-symbol-danger,
+          'warning': $qn-colors-component-alert-symbol-warning,
+          'success': $qn-colors-component-alert-symbol-success
+        )
+      )
+    )
+  ),
+  'breakpoints': (
+    'desktop': (
+      'font': (
+        'size': (
+          'heading': (
+            'h2': $qn-breakpoints-desktop-font-size-heading-h2,
+            'h3': $qn-breakpoints-desktop-font-size-heading-h3,
+            'h4': $qn-breakpoints-desktop-font-size-heading-h4,
+            'h5': $qn-breakpoints-desktop-font-size-heading-h5,
+            'h6': $qn-breakpoints-desktop-font-size-heading-h6,
+            'h1': $qn-breakpoints-desktop-font-size-heading-h1
+          ),
+          'label': (
+            'md': $qn-breakpoints-desktop-font-size-label-md,
+            'sm': $qn-breakpoints-desktop-font-size-label-sm,
+            'xs': $qn-breakpoints-desktop-font-size-label-xs
+          ),
+          'paragraph': (
+            'md': $qn-breakpoints-desktop-font-size-paragraph-md,
+            'sm': $qn-breakpoints-desktop-font-size-paragraph-sm,
+            'xs': $qn-breakpoints-desktop-font-size-paragraph-xs
+          ),
+          'subheading': (
+            'sm': $qn-breakpoints-desktop-font-size-subheading-sm,
+            'xs': $qn-breakpoints-desktop-font-size-subheading-xs
+          ),
+          'caption': (
+            'sm': $qn-breakpoints-desktop-font-size-caption-sm
+          )
+        ),
+        'line height': (
+          'heading': (
+            'h1': $qn-breakpoints-desktop-font-line-height-heading-h1,
+            'h2': $qn-breakpoints-desktop-font-line-height-heading-h2,
+            'h3': $qn-breakpoints-desktop-font-line-height-heading-h3,
+            'h4': $qn-breakpoints-desktop-font-line-height-heading-h4,
+            'h5': $qn-breakpoints-desktop-font-line-height-heading-h5,
+            'h6': $qn-breakpoints-desktop-font-line-height-heading-h6
+          ),
+          'label': (
+            'md': $qn-breakpoints-desktop-font-line-height-label-md,
+            'sm': $qn-breakpoints-desktop-font-line-height-label-sm,
+            'xs': $qn-breakpoints-desktop-font-line-height-label-xs
+          ),
+          'paragraph': (
+            'md': $qn-breakpoints-desktop-font-line-height-paragraph-md,
+            'sm': $qn-breakpoints-desktop-font-line-height-paragraph-sm,
+            'xs': $qn-breakpoints-desktop-font-line-height-paragraph-xs
+          ),
+          'subheading': (
+            'sm': $qn-breakpoints-desktop-font-line-height-subheading-sm,
+            'xs': $qn-breakpoints-desktop-font-line-height-subheading-xs
+          ),
+          'caption': (
+            'sm': $qn-breakpoints-desktop-font-line-height-caption-sm
+          )
+        )
+      ),
+      'screen': (
+        'default': $qn-breakpoints-desktop-screen-default
+      )
+    ),
+    'tablet': (
+      'font': (
+        'size': (
+          'heading': (
+            'h2': $qn-breakpoints-tablet-font-size-heading-h2,
+            'h3': $qn-breakpoints-tablet-font-size-heading-h3,
+            'h4': $qn-breakpoints-tablet-font-size-heading-h4,
+            'h5': $qn-breakpoints-tablet-font-size-heading-h5,
+            'h6': $qn-breakpoints-tablet-font-size-heading-h6,
+            'h1': $qn-breakpoints-tablet-font-size-heading-h1
+          ),
+          'label': (
+            'md': $qn-breakpoints-tablet-font-size-label-md,
+            'sm': $qn-breakpoints-tablet-font-size-label-sm,
+            'xs': $qn-breakpoints-tablet-font-size-label-xs
+          ),
+          'paragraph': (
+            'md': $qn-breakpoints-tablet-font-size-paragraph-md,
+            'sm': $qn-breakpoints-tablet-font-size-paragraph-sm,
+            'xs': $qn-breakpoints-tablet-font-size-paragraph-xs
+          ),
+          'subheading': (
+            'sm': $qn-breakpoints-tablet-font-size-subheading-sm,
+            'xs': $qn-breakpoints-tablet-font-size-subheading-xs
+          ),
+          'caption': (
+            'sm': $qn-breakpoints-tablet-font-size-caption-sm
+          )
+        ),
+        'line height': (
+          'heading': (
+            'h1': $qn-breakpoints-tablet-font-line-height-heading-h1,
+            'h2': $qn-breakpoints-tablet-font-line-height-heading-h2,
+            'h3': $qn-breakpoints-tablet-font-line-height-heading-h3,
+            'h4': $qn-breakpoints-tablet-font-line-height-heading-h4,
+            'h5': $qn-breakpoints-tablet-font-line-height-heading-h5,
+            'h6': $qn-breakpoints-tablet-font-line-height-heading-h6
+          ),
+          'label': (
+            'md': $qn-breakpoints-tablet-font-line-height-label-md,
+            'sm': $qn-breakpoints-tablet-font-line-height-label-sm,
+            'xs': $qn-breakpoints-tablet-font-line-height-label-xs
+          ),
+          'paragraph': (
+            'md': $qn-breakpoints-tablet-font-line-height-paragraph-md,
+            'sm': $qn-breakpoints-tablet-font-line-height-paragraph-sm,
+            'xs': $qn-breakpoints-tablet-font-line-height-paragraph-xs
+          ),
+          'subheading': (
+            'sm': $qn-breakpoints-tablet-font-line-height-subheading-sm,
+            'xs': $qn-breakpoints-tablet-font-line-height-subheading-xs
+          ),
+          'caption': (
+            'sm': $qn-breakpoints-tablet-font-line-height-caption-sm
+          )
+        )
+      ),
+      'screen': (
+        'default': $qn-breakpoints-tablet-screen-default
+      )
+    ),
+    'mobile': (
+      'font': (
+        'size': (
+          'heading': (
+            'h2': $qn-breakpoints-mobile-font-size-heading-h2,
+            'h3': $qn-breakpoints-mobile-font-size-heading-h3,
+            'h4': $qn-breakpoints-mobile-font-size-heading-h4,
+            'h5': $qn-breakpoints-mobile-font-size-heading-h5,
+            'h6': $qn-breakpoints-mobile-font-size-heading-h6,
+            'h1': $qn-breakpoints-mobile-font-size-heading-h1
+          ),
+          'label': (
+            'md': $qn-breakpoints-mobile-font-size-label-md,
+            'sm': $qn-breakpoints-mobile-font-size-label-sm,
+            'xs': $qn-breakpoints-mobile-font-size-label-xs
+          ),
+          'paragraph': (
+            'md': $qn-breakpoints-mobile-font-size-paragraph-md,
+            'sm': $qn-breakpoints-mobile-font-size-paragraph-sm,
+            'xs': $qn-breakpoints-mobile-font-size-paragraph-xs
+          ),
+          'subheading': (
+            'sm': $qn-breakpoints-mobile-font-size-subheading-sm,
+            'xs': $qn-breakpoints-mobile-font-size-subheading-xs
+          ),
+          'caption': (
+            'sm': $qn-breakpoints-mobile-font-size-caption-sm
+          )
+        ),
+        'line height': (
+          'heading': (
+            'h1': $qn-breakpoints-mobile-font-line-height-heading-h1,
+            'h2': $qn-breakpoints-mobile-font-line-height-heading-h2,
+            'h3': $qn-breakpoints-mobile-font-line-height-heading-h3,
+            'h4': $qn-breakpoints-mobile-font-line-height-heading-h4,
+            'h5': $qn-breakpoints-mobile-font-line-height-heading-h5,
+            'h6': $qn-breakpoints-mobile-font-line-height-heading-h6
+          ),
+          'label': (
+            'md': $qn-breakpoints-mobile-font-line-height-label-md,
+            'sm': $qn-breakpoints-mobile-font-line-height-label-sm,
+            'xs': $qn-breakpoints-mobile-font-line-height-label-xs
+          ),
+          'paragraph': (
+            'md': $qn-breakpoints-mobile-font-line-height-paragraph-md,
+            'sm': $qn-breakpoints-mobile-font-line-height-paragraph-sm,
+            'xs': $qn-breakpoints-mobile-font-line-height-paragraph-xs
+          ),
+          'subheading': (
+            'sm': $qn-breakpoints-mobile-font-line-height-subheading-sm,
+            'xs': $qn-breakpoints-mobile-font-line-height-subheading-xs
+          ),
+          'caption': (
+            'sm': $qn-breakpoints-mobile-font-line-height-caption-sm
+          )
+        )
+      ),
+      'screen': (
+        'default': $qn-breakpoints-mobile-screen-default
+      )
+    )
+  ),
+  'component': (
+    'button': (
+      'height': (
+        'xs': $qn-component-button-height-xs,
+        'sm': $qn-component-button-height-sm,
+        'md': $qn-component-button-height-md,
+        'lg': $qn-component-button-height-lg,
+        'xl': $qn-component-button-height-xl
+      ),
+      'radius': (
+        'xs': $qn-component-button-radius-xs,
+        'sm': $qn-component-button-radius-sm,
+        'md': $qn-component-button-radius-md,
+        'lg': $qn-component-button-radius-lg,
+        'xl': $qn-component-button-radius-xl
+      ),
+      'spacing': (
+        'xs': $qn-component-button-spacing-xs,
+        'sm': $qn-component-button-spacing-sm,
+        'md': $qn-component-button-spacing-md,
+        'lg': $qn-component-button-spacing-lg,
+        'xl': $qn-component-button-spacing-xl
+      ),
+      'symbol': (
+        'sm': $qn-component-button-symbol-sm,
+        'md': $qn-component-button-symbol-md,
+        'lg': $qn-component-button-symbol-lg,
+        'xl': $qn-component-button-symbol-xl,
+        'xs': $qn-component-button-symbol-xs
+      )
+    ),
+    'form': (
+      'height': (
+        'md': $qn-component-form-height-md
+      ),
+      'radius': (
+        'md': $qn-component-form-radius-md
+      )
+    )
+  ),
+  'primitive': (
+    'color': (
+      'blue': (
+        'light': (
+          '100': $qn-primitive-color-blue-light-100,
+          '200': $qn-primitive-color-blue-light-200,
+          '300': $qn-primitive-color-blue-light-300,
+          '400': $qn-primitive-color-blue-light-400,
+          '500': $qn-primitive-color-blue-light-500,
+          '600': $qn-primitive-color-blue-light-600,
+          '700': $qn-primitive-color-blue-light-700,
+          '800': $qn-primitive-color-blue-light-800,
+          '900': $qn-primitive-color-blue-light-900
+        ),
+        'alpha': (
+          '100': $qn-primitive-color-blue-alpha-100,
+          '200': $qn-primitive-color-blue-alpha-200,
+          '300': $qn-primitive-color-blue-alpha-300,
+          '400': $qn-primitive-color-blue-alpha-400,
+          '500': $qn-primitive-color-blue-alpha-500,
+          '600': $qn-primitive-color-blue-alpha-600,
+          '700': $qn-primitive-color-blue-alpha-700,
+          '800': $qn-primitive-color-blue-alpha-800,
+          '900': $qn-primitive-color-blue-alpha-900
+        ),
+        'dark': (
+          '100': $qn-primitive-color-blue-dark-100,
+          '200': $qn-primitive-color-blue-dark-200,
+          '300': $qn-primitive-color-blue-dark-300,
+          '400': $qn-primitive-color-blue-dark-400,
+          '500': $qn-primitive-color-blue-dark-500,
+          '600': $qn-primitive-color-blue-dark-600,
+          '700': $qn-primitive-color-blue-dark-700,
+          '800': $qn-primitive-color-blue-dark-800,
+          '900': $qn-primitive-color-blue-dark-900
+        )
+      ),
+      'indigo': (
+        'light': (
+          '100': $qn-primitive-color-indigo-light-100,
+          '200': $qn-primitive-color-indigo-light-200,
+          '300': $qn-primitive-color-indigo-light-300,
+          '400': $qn-primitive-color-indigo-light-400,
+          '500': $qn-primitive-color-indigo-light-500,
+          '600': $qn-primitive-color-indigo-light-600,
+          '700': $qn-primitive-color-indigo-light-700,
+          '800': $qn-primitive-color-indigo-light-800,
+          '900': $qn-primitive-color-indigo-light-900
+        ),
+        'dark': (
+          '100': $qn-primitive-color-indigo-dark-100,
+          '200': $qn-primitive-color-indigo-dark-200,
+          '300': $qn-primitive-color-indigo-dark-300,
+          '400': $qn-primitive-color-indigo-dark-400,
+          '500': $qn-primitive-color-indigo-dark-500,
+          '600': $qn-primitive-color-indigo-dark-600,
+          '700': $qn-primitive-color-indigo-dark-700,
+          '800': $qn-primitive-color-indigo-dark-800,
+          '900': $qn-primitive-color-indigo-dark-900
+        )
+      ),
+      'purple': (
+        'light': (
+          '100': $qn-primitive-color-purple-light-100,
+          '200': $qn-primitive-color-purple-light-200,
+          '300': $qn-primitive-color-purple-light-300,
+          '400': $qn-primitive-color-purple-light-400,
+          '500': $qn-primitive-color-purple-light-500,
+          '600': $qn-primitive-color-purple-light-600,
+          '700': $qn-primitive-color-purple-light-700,
+          '800': $qn-primitive-color-purple-light-800,
+          '900': $qn-primitive-color-purple-light-900
+        ),
+        'dark': (
+          '100': $qn-primitive-color-purple-dark-100,
+          '200': $qn-primitive-color-purple-dark-200,
+          '300': $qn-primitive-color-purple-dark-300,
+          '400': $qn-primitive-color-purple-dark-400,
+          '500': $qn-primitive-color-purple-dark-500,
+          '600': $qn-primitive-color-purple-dark-600,
+          '700': $qn-primitive-color-purple-dark-700,
+          '800': $qn-primitive-color-purple-dark-800,
+          '900': $qn-primitive-color-purple-dark-900
+        )
+      ),
+      'pink': (
+        'light': (
+          '100': $qn-primitive-color-pink-light-100,
+          '200': $qn-primitive-color-pink-light-200,
+          '300': $qn-primitive-color-pink-light-300,
+          '400': $qn-primitive-color-pink-light-400,
+          '500': $qn-primitive-color-pink-light-500,
+          '600': $qn-primitive-color-pink-light-600,
+          '700': $qn-primitive-color-pink-light-700,
+          '800': $qn-primitive-color-pink-light-800,
+          '900': $qn-primitive-color-pink-light-900
+        ),
+        'dark': (
+          '100': $qn-primitive-color-pink-dark-100,
+          '200': $qn-primitive-color-pink-dark-200,
+          '300': $qn-primitive-color-pink-dark-300,
+          '400': $qn-primitive-color-pink-dark-400,
+          '500': $qn-primitive-color-pink-dark-500,
+          '600': $qn-primitive-color-pink-dark-600,
+          '700': $qn-primitive-color-pink-dark-700,
+          '800': $qn-primitive-color-pink-dark-800,
+          '900': $qn-primitive-color-pink-dark-900
+        )
+      ),
+      'red': (
+        'light': (
+          '100': $qn-primitive-color-red-light-100,
+          '200': $qn-primitive-color-red-light-200,
+          '300': $qn-primitive-color-red-light-300,
+          '400': $qn-primitive-color-red-light-400,
+          '500': $qn-primitive-color-red-light-500,
+          '600': $qn-primitive-color-red-light-600,
+          '700': $qn-primitive-color-red-light-700,
+          '800': $qn-primitive-color-red-light-800,
+          '900': $qn-primitive-color-red-light-900
+        ),
+        'alpha': (
+          '100': $qn-primitive-color-red-alpha-100,
+          '200': $qn-primitive-color-red-alpha-200,
+          '300': $qn-primitive-color-red-alpha-300,
+          '400': $qn-primitive-color-red-alpha-400,
+          '500': $qn-primitive-color-red-alpha-500,
+          '600': $qn-primitive-color-red-alpha-600,
+          '700': $qn-primitive-color-red-alpha-700,
+          '800': $qn-primitive-color-red-alpha-800,
+          '900': $qn-primitive-color-red-alpha-900
+        ),
+        'dark': (
+          '100': $qn-primitive-color-red-dark-100,
+          '200': $qn-primitive-color-red-dark-200,
+          '300': $qn-primitive-color-red-dark-300,
+          '400': $qn-primitive-color-red-dark-400,
+          '500': $qn-primitive-color-red-dark-500,
+          '600': $qn-primitive-color-red-dark-600,
+          '700': $qn-primitive-color-red-dark-700,
+          '800': $qn-primitive-color-red-dark-800,
+          '900': $qn-primitive-color-red-dark-900
+        )
+      ),
+      'orange': (
+        'light': (
+          '100': $qn-primitive-color-orange-light-100,
+          '200': $qn-primitive-color-orange-light-200,
+          '300': $qn-primitive-color-orange-light-300,
+          '400': $qn-primitive-color-orange-light-400,
+          '500': $qn-primitive-color-orange-light-500,
+          '600': $qn-primitive-color-orange-light-600,
+          '700': $qn-primitive-color-orange-light-700,
+          '800': $qn-primitive-color-orange-light-800,
+          '900': $qn-primitive-color-orange-light-900
+        ),
+        'dark': (
+          '100': $qn-primitive-color-orange-dark-100,
+          '200': $qn-primitive-color-orange-dark-200,
+          '300': $qn-primitive-color-orange-dark-300,
+          '400': $qn-primitive-color-orange-dark-400,
+          '500': $qn-primitive-color-orange-dark-500,
+          '600': $qn-primitive-color-orange-dark-600,
+          '700': $qn-primitive-color-orange-dark-700,
+          '800': $qn-primitive-color-orange-dark-800,
+          '900': $qn-primitive-color-orange-dark-900
+        )
+      ),
+      'yellow': (
+        'light': (
+          '100': $qn-primitive-color-yellow-light-100,
+          '200': $qn-primitive-color-yellow-light-200,
+          '300': $qn-primitive-color-yellow-light-300,
+          '400': $qn-primitive-color-yellow-light-400,
+          '500': $qn-primitive-color-yellow-light-500,
+          '600': $qn-primitive-color-yellow-light-600,
+          '700': $qn-primitive-color-yellow-light-700,
+          '800': $qn-primitive-color-yellow-light-800,
+          '900': $qn-primitive-color-yellow-light-900
+        ),
+        'dark': (
+          '100': $qn-primitive-color-yellow-dark-100,
+          '200': $qn-primitive-color-yellow-dark-200,
+          '300': $qn-primitive-color-yellow-dark-300,
+          '400': $qn-primitive-color-yellow-dark-400,
+          '500': $qn-primitive-color-yellow-dark-500,
+          '600': $qn-primitive-color-yellow-dark-600,
+          '700': $qn-primitive-color-yellow-dark-700,
+          '800': $qn-primitive-color-yellow-dark-800,
+          '900': $qn-primitive-color-yellow-dark-900
+        )
+      ),
+      'teal': (
+        'light': (
+          '100': $qn-primitive-color-teal-light-100,
+          '200': $qn-primitive-color-teal-light-200,
+          '300': $qn-primitive-color-teal-light-300,
+          '400': $qn-primitive-color-teal-light-400,
+          '500': $qn-primitive-color-teal-light-500,
+          '600': $qn-primitive-color-teal-light-600,
+          '700': $qn-primitive-color-teal-light-700,
+          '800': $qn-primitive-color-teal-light-800,
+          '900': $qn-primitive-color-teal-light-900
+        ),
+        'dark': (
+          '100': $qn-primitive-color-teal-dark-100,
+          '200': $qn-primitive-color-teal-dark-200,
+          '300': $qn-primitive-color-teal-dark-300,
+          '400': $qn-primitive-color-teal-dark-400,
+          '500': $qn-primitive-color-teal-dark-500,
+          '600': $qn-primitive-color-teal-dark-600,
+          '700': $qn-primitive-color-teal-dark-700,
+          '800': $qn-primitive-color-teal-dark-800,
+          '900': $qn-primitive-color-teal-dark-900
+        ),
+        'alpha': (
+          '100': $qn-primitive-color-teal-alpha-100,
+          '200': $qn-primitive-color-teal-alpha-200,
+          '300': $qn-primitive-color-teal-alpha-300,
+          '400': $qn-primitive-color-teal-alpha-400,
+          '500': $qn-primitive-color-teal-alpha-500,
+          '600': $qn-primitive-color-teal-alpha-600,
+          '700': $qn-primitive-color-teal-alpha-700,
+          '800': $qn-primitive-color-teal-alpha-800,
+          '900': $qn-primitive-color-teal-alpha-900
+        )
+      ),
+      'cyan': (
+        'light': (
+          '100': $qn-primitive-color-cyan-light-100,
+          '200': $qn-primitive-color-cyan-light-200,
+          '300': $qn-primitive-color-cyan-light-300,
+          '400': $qn-primitive-color-cyan-light-400,
+          '500': $qn-primitive-color-cyan-light-500,
+          '600': $qn-primitive-color-cyan-light-600,
+          '700': $qn-primitive-color-cyan-light-700,
+          '800': $qn-primitive-color-cyan-light-800,
+          '900': $qn-primitive-color-cyan-light-900
+        ),
+        'dark': (
+          '100': $qn-primitive-color-cyan-dark-100,
+          '200': $qn-primitive-color-cyan-dark-200,
+          '300': $qn-primitive-color-cyan-dark-300,
+          '400': $qn-primitive-color-cyan-dark-400,
+          '500': $qn-primitive-color-cyan-dark-500,
+          '600': $qn-primitive-color-cyan-dark-600,
+          '700': $qn-primitive-color-cyan-dark-700,
+          '800': $qn-primitive-color-cyan-dark-800,
+          '900': $qn-primitive-color-cyan-dark-900
+        )
+      ),
+      'gray': (
+        'light': (
+          '0': $qn-primitive-color-gray-light-0,
+          '25': $qn-primitive-color-gray-light-25,
+          '50': $qn-primitive-color-gray-light-50,
+          '100': $qn-primitive-color-gray-light-100,
+          '200': $qn-primitive-color-gray-light-200,
+          '300': $qn-primitive-color-gray-light-300,
+          '400': $qn-primitive-color-gray-light-400,
+          '500': $qn-primitive-color-gray-light-500,
+          '600': $qn-primitive-color-gray-light-600,
+          '700': $qn-primitive-color-gray-light-700,
+          '800': $qn-primitive-color-gray-light-800,
+          '900': $qn-primitive-color-gray-light-900
+        ),
+        'dark': (
+          '0': $qn-primitive-color-gray-dark-0,
+          '25': $qn-primitive-color-gray-dark-25,
+          '50': $qn-primitive-color-gray-dark-50,
+          '100': $qn-primitive-color-gray-dark-100,
+          '200': $qn-primitive-color-gray-dark-200,
+          '300': $qn-primitive-color-gray-dark-300,
+          '400': $qn-primitive-color-gray-dark-400,
+          '500': $qn-primitive-color-gray-dark-500,
+          '600': $qn-primitive-color-gray-dark-600,
+          '700': $qn-primitive-color-gray-dark-700,
+          '800': $qn-primitive-color-gray-dark-800,
+          '900': $qn-primitive-color-gray-dark-900
+        )
+      ),
+      'base': (
+        'black': $qn-primitive-color-base-black,
+        'white': $qn-primitive-color-base-white,
+        'transparent': $qn-primitive-color-base-transparent
+      ),
+      'green': (
+        'light': (
+          '100': $qn-primitive-color-green-light-100,
+          '200': $qn-primitive-color-green-light-200,
+          '300': $qn-primitive-color-green-light-300,
+          '400': $qn-primitive-color-green-light-400,
+          '500': $qn-primitive-color-green-light-500,
+          '600': $qn-primitive-color-green-light-600,
+          '700': $qn-primitive-color-green-light-700,
+          '800': $qn-primitive-color-green-light-800,
+          '900': $qn-primitive-color-green-light-900
+        ),
+        'alpha': (
+          '100': $qn-primitive-color-green-alpha-100,
+          '200': $qn-primitive-color-green-alpha-200,
+          '300': $qn-primitive-color-green-alpha-300,
+          '400': $qn-primitive-color-green-alpha-400,
+          '500': $qn-primitive-color-green-alpha-500,
+          '600': $qn-primitive-color-green-alpha-600,
+          '700': $qn-primitive-color-green-alpha-700,
+          '800': $qn-primitive-color-green-alpha-800,
+          '900': $qn-primitive-color-green-alpha-900
+        ),
+        'dark': (
+          '100': $qn-primitive-color-green-dark-100,
+          '200': $qn-primitive-color-green-dark-200,
+          '300': $qn-primitive-color-green-dark-300,
+          '400': $qn-primitive-color-green-dark-400,
+          '500': $qn-primitive-color-green-dark-500,
+          '600': $qn-primitive-color-green-dark-600,
+          '700': $qn-primitive-color-green-dark-700,
+          '800': $qn-primitive-color-green-dark-800,
+          '900': $qn-primitive-color-green-dark-900
+        )
+      ),
+      'alpha': (
+        'black': (
+          '0': $qn-primitive-color-alpha-black-0,
+          '25': $qn-primitive-color-alpha-black-25,
+          '50': $qn-primitive-color-alpha-black-50,
+          '100': $qn-primitive-color-alpha-black-100,
+          '200': $qn-primitive-color-alpha-black-200,
+          '300': $qn-primitive-color-alpha-black-300,
+          '400': $qn-primitive-color-alpha-black-400,
+          '500': $qn-primitive-color-alpha-black-500,
+          '600': $qn-primitive-color-alpha-black-600,
+          '700': $qn-primitive-color-alpha-black-700,
+          '800': $qn-primitive-color-alpha-black-800,
+          '900': $qn-primitive-color-alpha-black-900
+        ),
+        'white': (
+          '100': $qn-primitive-color-alpha-white-100,
+          '200': $qn-primitive-color-alpha-white-200,
+          '300': $qn-primitive-color-alpha-white-300,
+          '400': $qn-primitive-color-alpha-white-400,
+          '500': $qn-primitive-color-alpha-white-500,
+          '600': $qn-primitive-color-alpha-white-600,
+          '700': $qn-primitive-color-alpha-white-700,
+          '800': $qn-primitive-color-alpha-white-800,
+          '900': $qn-primitive-color-alpha-white-900
+        )
+      ),
+      'azure': (
+        'light': (
+          '100': $qn-primitive-color-azure-light-100,
+          '200': $qn-primitive-color-azure-light-200,
+          '300': $qn-primitive-color-azure-light-300,
+          '400': $qn-primitive-color-azure-light-400,
+          '500': $qn-primitive-color-azure-light-500,
+          '600': $qn-primitive-color-azure-light-600,
+          '700': $qn-primitive-color-azure-light-700,
+          '800': $qn-primitive-color-azure-light-800,
+          '900': $qn-primitive-color-azure-light-900
+        ),
+        'alpha': (
+          '100': $qn-primitive-color-azure-alpha-100,
+          '200': $qn-primitive-color-azure-alpha-200,
+          '300': $qn-primitive-color-azure-alpha-300,
+          '400': $qn-primitive-color-azure-alpha-400,
+          '500': $qn-primitive-color-azure-alpha-500,
+          '600': $qn-primitive-color-azure-alpha-600,
+          '700': $qn-primitive-color-azure-alpha-700,
+          '800': $qn-primitive-color-azure-alpha-800,
+          '900': $qn-primitive-color-azure-alpha-900
+        ),
+        'dark': (
+          '100': $qn-primitive-color-azure-dark-100,
+          '200': $qn-primitive-color-azure-dark-200,
+          '300': $qn-primitive-color-azure-dark-300,
+          '400': $qn-primitive-color-azure-dark-400,
+          '500': $qn-primitive-color-azure-dark-500,
+          '600': $qn-primitive-color-azure-dark-600,
+          '700': $qn-primitive-color-azure-dark-700,
+          '800': $qn-primitive-color-azure-dark-800,
+          '900': $qn-primitive-color-azure-dark-900
+        )
+      )
+    ),
+    'typography': (
+      'family': (
+        'sans serif': $qn-primitive-typography-family-sans-serif,
+        'monospace': $qn-primitive-typography-family-monospace,
+        'serif': $qn-primitive-typography-family-serif
+      ),
+      'weight': (
+        'reguler': $qn-primitive-typography-weight-reguler,
+        'medium': $qn-primitive-typography-weight-medium,
+        'semibold': $qn-primitive-typography-weight-semibold,
+        'bold': $qn-primitive-typography-weight-bold,
+        'italic': $qn-primitive-typography-weight-italic,
+        'medium-italic': $qn-primitive-typography-weight-medium-italic,
+        'medium-underline': $qn-primitive-typography-weight-medium-underline
+      ),
+      'letter-spacing': (
+        'xs': $qn-primitive-typography-letter-spacing-xs,
+        'sm': $qn-primitive-typography-letter-spacing-sm,
+        'none': $qn-primitive-typography-letter-spacing-none,
+        'md': $qn-primitive-typography-letter-spacing-md
+      )
+    )
+  ),
+  'utilities': (
+    'spacing': (
+      'none': $qn-utilities-spacing-none,
+      'xxs': $qn-utilities-spacing-xxs,
+      'xs': $qn-utilities-spacing-xs,
+      'sm': $qn-utilities-spacing-sm,
+      'md': $qn-utilities-spacing-md,
+      'lg': $qn-utilities-spacing-lg,
+      'xl': $qn-utilities-spacing-xl,
+      '2xl': $qn-utilities-spacing-2xl,
+      '3xl': $qn-utilities-spacing-3xl,
+      '4xl': $qn-utilities-spacing-4xl,
+      '5xl': $qn-utilities-spacing-5xl,
+      '6xl': $qn-utilities-spacing-6xl,
+      '7xl': $qn-utilities-spacing-7xl,
+      '8xl': $qn-utilities-spacing-8xl,
+      '9xl': $qn-utilities-spacing-9xl,
+      '10xl': $qn-utilities-spacing-10xl,
+      '11xl': $qn-utilities-spacing-11xl,
+      '12xl': $qn-utilities-spacing-12xl,
+      '13xl': $qn-utilities-spacing-13xl
+    ),
+    'radius': (
+      'none': $qn-utilities-radius-none,
+      'xxs': $qn-utilities-radius-xxs,
+      'xs': $qn-utilities-radius-xs,
+      'sm': $qn-utilities-radius-sm,
+      'md': $qn-utilities-radius-md,
+      'lg': $qn-utilities-radius-lg,
+      'xl': $qn-utilities-radius-xl,
+      '2xl': $qn-utilities-radius-2xl,
+      '3xl': $qn-utilities-radius-3xl,
+      'full': $qn-utilities-radius-full,
+      '4xl': $qn-utilities-radius-4xl
+    ),
+    'border': (
+      'xs': $qn-utilities-border-xs,
+      'sm': $qn-utilities-border-sm,
+      'md': $qn-utilities-border-md,
+      'lg': $qn-utilities-border-lg
+    )
+  )
+);

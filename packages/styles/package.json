@@ -1,0 +1,54 @@
+{
+  "name": "@explore-ds/styles",
+  "version": "3.4.0",
+  "description": "Explore Design System Styles",
+  "main": "dist/css/style.css",
+  "scripts": {
+    "css": "sass --pkg-importer=node --style expanded --source-map --embed-sources --no-error-css --watch src/:dist/css/",
+    "css-compile": "sass --pkg-importer=node --style expanded --source-map --embed-sources --no-error-css src/:dist/css/",
+    "css-rtl": "cross-env NODE_ENV=RTL postcss --config postcss.config.mjs --dir \"dist/css\" --ext \".rtl.css\" \"dist/css/*.css\" \"!dist/css/*.min.css\" \"!dist/css/*.rtl.css\"",
+    "css-minify": "npm-run-all --aggregate-output --parallel css-minify-*",
+    "css-minify-main": "node scripts/minify-css.js main",
+    "css-minify-rtl": "node scripts/minify-css.js rtl",
+    "css-prefix": "npm-run-all --aggregate-output --parallel css-prefix-*",
+    "css-prefix-main": "postcss --config postcss.config.mjs --replace \"dist/css/*.css\" \"!dist/css/*.rtl*.css\" \"!dist/css/*.min.css\"",
+    "build": "npm-run-all css-compile css-prefix css-rtl css-minify",
+    "release": "node scripts/publish.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "cross-env": "^7.0.3",
+    "inquirer": "^7.3.3",
+    "npm-run-all2": "^6.2.3",
+    "ora": "^8.1.0",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "postcss-scss": "^4.0.9",
+    "rtlcss": "^4.3.0",
+    "sass": "1.78.0",
+    "sass-true": "^8.1.0",
+    "lightningcss": "^1.29.1"
+  },
+  "files": [
+    "src",
+    "dist",
+    "assets",
+    "package.json"
+  ],
+  "exclude": [
+    "dist/**/*.map"
+  ],
+  "peerDependencies": {
+    "@popperjs/core": "^2.11.8",
+    "daterangepicker": "^3.1.0",
+    "jquery": "^3.7.1",
+    "select2": "^4.1.0-rc.0 "
+  },
+  "dependencies": {
+    "@explore-ds/symbols": "^1.3.0",
+    "@explore-ds/tokens": "^2.0.0",
+    "bootstrap": "^5.3.3"
+  },
+  "keywords": [],
+  "author": "Antman Design System Team"
+}

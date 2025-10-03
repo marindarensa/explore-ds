@@ -1,0 +1,122 @@
+// Form validation
+//
+// Provide feedback to users when form field values are valid or invalid. Works
+// primarily for client-side validation via scoped `:invalid` and `:valid`
+// pseudo-classes but also includes `.is-invalid` and `.is-valid` classes for
+// server-side validation.
+
+// This mixin uses an `if()` technique to be compatible with Dart Sass
+// See https://github.com/sass/sass/issues/1873#issuecomment-152293725 for more details
+
+// scss-docs-start form-validation-mixins
+@mixin form-validation-state(
+    $state,
+    $color,
+    $icon,
+    $tooltip-color: color-contrast($color),
+    $tooltip-bg-color: rgba($color, $form-feedback-tooltip-opacity),
+    $focus-box-shadow: 0 0 $input-btn-focus-blur $input-focus-width rgba($color, $input-btn-focus-color-opacity),
+    $focus-box-shadow-select: 0 0 $input-btn-focus-blur $input-focus-width rgba($color, $input-btn-focus-color-opacity),
+    $border-color: $color,
+    $focus-border-color: $color,
+    $focus-outline-color: $color
+) {
+    .#{$state}-feedback {
+        display: none;
+        width: 100%;
+        margin-top: #{$qn-utilities-spacing-sm};
+        font-size: var(--#{$qn-prefix}font-size-label-xs);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--#{$qn-prefix}line-height-label-xs);
+        letter-spacing: #{$qn-primitive-typography-letter-spacing-xs};
+        color: $color;
+    }
+
+    // qn-note class .#{$state}-tooltip is not used in design
+    // .#{$state}-tooltip { }
+
+    @include form-validation-state-selector($state) {
+        ~.#{$state}-feedback
+        // , ~.#{$state}-tooltip // qn-note class .#{$state}-tooltip is not used in design
+        {
+            display: block;
+        }
+    }
+
+    .form-control {
+        @include form-validation-state-selector($state) {
+            --#{$qn-prefix}form-control-border-color: #{$border-color};
+            --#{$qn-prefix}form-control-focus-border-color: #{$focus-border-color};
+            --#{$qn-prefix}form-control-focus-outline-color: #{$focus-outline-color};
+            &:focus {
+                box-shadow: $focus-box-shadow;
+            }
+        }
+    }
+
+    // FIXME: belum disesuaikan dengan comp select dan select2
+    .form-select {
+        @include form-validation-state-selector($state) {
+            --#{$qn-prefix}form-select-border-color: #{$border-color};
+            --#{$qn-prefix}form-select-focus-border-color: #{$focus-border-color};
+            --#{$qn-prefix}form-select-focus-outline-color: #{$focus-outline-color};
+            &:focus {
+                box-shadow: $focus-box-shadow-select;
+            }
+        }
+    }
+
+    // qn-note class .form-check-input is not used in design
+    // `.form-check-input { }`
+    // `.form-check-inline .form-check-input { ~.#{$state}-feedback { } }`
+
+    .input-group {
+        >.form-control:not(:focus),
+        >.form-select:not(:focus),
+        >.form-floating:not(:focus-within) {
+            @include form-validation-state-selector($state) {
+                @if $state =="valid" {
+                    z-index: 3;
+                }
+                @else if $state =="invalid" {
+                    z-index: 4;
+                }
+            }
+        }
+    }
+}
+
+// scss-docs-end form-validation-mixins
+
+
+$form-validation-states: (
+    "valid": (
+        "color": var(--#{$qn-prefix}colors-semantic-text-success-secondary),
+        "icon": unset,
+        "tooltip-color": #fff,
+        "tooltip-bg-color": var(--#{$qn-prefix}colors-component-bg-success-default),
+        "focus-box-shadow": #{0px 0px 0.8px 1px var(--#{$qn-prefix}colors-component-form-effect-success-1) inset, 0px 1px 2px 0px var(--#{$qn-prefix}colors-component-form-effect-success-2), 0px 0px 0px 1px var(--#{$qn-prefix}colors-component-form-effect-success-3), 0px 0px 0px 3px var(--#{$qn-prefix}colors-component-form-effect-success-4), 0 0 0 var(--#{$qn-prefix}form-control-border-width) var(--#{$qn-prefix}form-control-border-color)},
+        "border-color": var(--#{$qn-prefix}colors-semantic-border-success-default),
+        "focus-border-color": var(--#{$qn-prefix}colors-semantic-border-success-default),
+        "focus-outline-color": rgba(var(--#{$prefix}success-rgb), 0.12),
+        "focus-box-shadow-select": #{0px 0px 0.8px 1px var(--#{$qn-prefix}colors-component-form-effect-success-1) inset, 0px 1px 2px 0px var(--#{$qn-prefix}colors-component-form-effect-success-2), 0px 0px 0px 1px var(--#{$qn-prefix}colors-component-form-effect-success-3), 0px 0px 0px 3px var(--#{$qn-prefix}colors-component-form-effect-success-4), 0 0 0 var(--#{$qn-prefix}form-control-border-width) var(--#{$qn-prefix}form-control-border-color)},
+    ),
+    "invalid": (
+        "color": var(--#{$qn-prefix}colors-semantic-text-danger-secondary),
+        "icon": unset,
+        "tooltip-color": #fff,
+        "tooltip-bg-color": var(--#{$qn-prefix}colors-component-bg-danger-default),
+        "focus-box-shadow": #{0px 0px 0.8px 1px var(--#{$qn-prefix}colors-component-form-effect-danger-1, rgba(240, 13, 5, 0.12)) inset, 0px 1px 2px 0px var(--#{$qn-prefix}colors-component-form-effect-danger-2, rgba(240, 13, 5, 0.12)), 0px 0px 0px 1px var(--#{$qn-prefix}colors-component-form-effect-danger-3, rgba(197, 2, 21, 0.84)), 0px 0px 0px 3px var(--#{$qn-prefix}colors-component-form-effect-danger-4, rgba(240, 13, 5, 0.12)), 0 0 0 var(--#{$qn-prefix}form-control-border-width) var(--#{$qn-prefix}form-control-border-color)},
+        "border-color": var(--#{$qn-prefix}colors-semantic-border-danger-default),
+        "focus-border-color": var(--#{$qn-prefix}colors-semantic-border-danger-default),
+        "focus-outline-color": #{$qn-colors-component-form-effect-danger-4},
+        "focus-box-shadow-select": #{0px 0px 0.8px 1px var(--#{$qn-prefix}colors-component-form-effect-danger-1, rgba(240, 13, 5, 0.12)) inset, 0px 1px 2px 0px var(--#{$qn-prefix}colors-component-form-effect-danger-2, rgba(240, 13, 5, 0.12)), 0px 0px 0px 1px var(--#{$qn-prefix}colors-component-form-effect-danger-3, rgba(197, 2, 21, 0.84)), 0px 0px 0px 3px var(--#{$qn-prefix}colors-component-form-effect-danger-4, rgba(240, 13, 5, 0.12)), 0 0 0 var(--#{$qn-prefix}form-select-border-width) var(--#{$qn-prefix}form-select-border-color)},
+    )
+);
+
+// scss-docs-start form-validation-states-loop
+@each $state, $data in $form-validation-states {
+    @include form-validation-state($state, $data...);
+}
+// scss-docs-end form-validation-states-loop

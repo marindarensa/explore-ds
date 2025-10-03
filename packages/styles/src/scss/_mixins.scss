@@ -1,0 +1,62 @@
+/* stylelint-disable declaration-no-important */
+// scss-docs-start caret-mixins
+
+@mixin sym-config-pseudo($icon){
+  display: inline-block;
+  font-family: quantum-symbols !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-variant: normal;
+  text-transform: none;
+  vertical-align: -.15em;
+  content: $icon !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin caret-down($width: $caret-width) {
+  @include sym-config-pseudo($sym-var-chevron-down);
+}
+
+@mixin caret-up($width: $caret-width) {
+  @include sym-config-pseudo($sym-var-chevron-up);
+}
+
+@mixin caret-end($width: $caret-width) {
+  @include sym-config-pseudo($sym-var-chevron-right);
+}
+
+@mixin caret-start($width: $caret-width) {
+  @include sym-config-pseudo($sym-var-chevron-left);
+}
+
+@mixin qn-create-css-var($map, $prefix: "--") {
+  @each $key, $value in $map {
+    $cleaned-key: clean-css-var-key($key);
+
+    @if type-of($value) == "map" {
+      @include qn-create-css-var($value, $prefix + $cleaned-key + "-");
+    } @else {
+      #{$prefix + $cleaned-key}: #{ $value };
+    }
+  }
+}
+
+@function clean-css-var-key($key) {
+  $key-str: if(type-of($key) == "string", $key, inspect($key)); // Konversi ke string jika perlu
+  $cleaned-key: "";
+
+  @for $i from 1 through str-length($key-str) {
+    $char: str-slice($key-str, $i, $i);
+
+    // Jika karakter adalah ".", ganti dengan "-"
+    @if $char == "." {
+      $cleaned-key: $cleaned-key + "-";
+    }
+    // Hanya tambahkan karakter yang valid (huruf, angka, -, dan _)
+    @else if $char == "-" or $char == "_" or str-index("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", $char) {
+      $cleaned-key: $cleaned-key + $char;
+    }
+  }
+
+  @return $cleaned-key;
+}

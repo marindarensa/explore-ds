@@ -1,0 +1,30 @@
+{
+  "name": "@explore-ds/tokens",
+  "version": "2.0.0",
+  "description": "",
+  "main": "build.js",
+  "type": "module",
+  "sass": "dist/siakad/light.scss",
+  "scripts": {
+    "build": "node ./build.js",
+    "clean": "rm -rf build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "node scripts/publish.js"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "files": [
+    "src",
+    "dist",
+    "package.json",
+    "build.js",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.24.8",
+    "style-dictionary": "latest"
+  },
+  "dependencies": {
+    "@quantum/tokens": "file:"
+  }
+}

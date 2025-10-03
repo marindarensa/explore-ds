@@ -1,0 +1,10 @@
+.qn-form {
+  * {
+    scroll-margin-top: calc(0rem + var(--qn-form-scroll-margin-top-offset, 1rem) + var(--qn-header-sticky-height, 0rem));
+  }
+}
+
+.qn-form-breadcrumb {
+  --qn-form-breadcrumb-tolerance: 0;
+  transition: opacity ease-in-out .25s;
+}
