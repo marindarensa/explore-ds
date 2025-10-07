@@ -11,6 +11,9 @@
     "url": "git+https://github.com/marindarensa/explore-ds.git"
   },
    "workspaces": [
+    "apps",
+    "packages/core",
+    "packages/react",
     "packages/styles",
     "packages/symbols",
     "packages/tokens"
